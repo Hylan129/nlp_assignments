@@ -1,0 +1,1497 @@
+Bottle v0.12.17 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8129/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    run(host="0.0.0.0", port=8129)
+  File "/home/student/anaconda3/lib/python3.6/site-packages/bottle.py", line 3131, in run
+    server.run(app)
+  File "/home/student/anaconda3/lib/python3.6/site-packages/bottle.py", line 2783, in run
+    srv = make_server(self.host, self.port, app, server_cls, handler_cls)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 153, in make_server
+    server = server_class((host, port), handler_class)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 453, in __init__
+    self.server_bind()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 50, in server_bind
+    HTTPServer.server_bind(self)
+  File "/home/student/anaconda3/lib/python3.6/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 467, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Bottle v0.12.17 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8129/
+Hit Ctrl-C to quit.
+
+61.151.178.172 - - [01/Sep/2019 01:03:25] "GET /?nsukey=waaHyUKT4PcUoFhvgnALuAr1x4sBUctrtFMFKVy6mimpZVewg0ePlRix7ghe2UvmPn7BIhkpmhuIjheaon2BXwamqcJrWZ4aGbvtVvM42BRjH805aZ3aUvDQnWFZgEtrgjUB6d2F2BXMTffeJQBGv0YvDg3D3D HTTP/1.1" 200 5819
+61.151.207.252 - - [01/Sep/2019 01:03:25] "GET /assets/js/util.js HTTP/1.1" 200 12433
+61.151.207.252 - - [01/Sep/2019 01:03:25] "GET /assets/css/main.css HTTP/1.1" 200 77011
+61.151.178.180 - - [01/Sep/2019 01:03:25] "GET /assets/js/skel.min.js HTTP/1.1" 200 9066
+61.151.180.39 - - [01/Sep/2019 01:03:25] "GET /assets/js/main.js HTTP/1.1" 200 6557
+101.226.225.59 - - [01/Sep/2019 01:03:25] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 200 2257
+61.151.178.180 - - [01/Sep/2019 01:03:25] "GET /assets/js/jquery.min.js HTTP/1.1" 200 95957
+101.226.225.85 - - [01/Sep/2019 01:03:25] "GET /images/slide01.jpg HTTP/1.1" 200 575353
+61.151.178.172 - - [01/Sep/2019 01:03:25] "GET /assets/css/font-awesome.min.css HTTP/1.1" 200 29063
+101.226.225.59 - - [01/Sep/2019 01:03:26] "GET /images/slide05.jpg HTTP/1.1" 200 505742
+101.226.225.59 - - [01/Sep/2019 01:03:27] "GET /images/slide03.jpg HTTP/1.1" 200 547740
+61.151.207.252 - - [01/Sep/2019 01:03:27] "GET /readme.json HTTP/1.1" 200 11414
+61.151.178.180 - - [01/Sep/2019 01:03:27] "GET /assets/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 200 90412
+119.123.42.232 - - [01/Sep/2019 01:03:28] "GET /assets/css/main.css HTTP/1.1" 200 77011
+119.123.42.232 - - [01/Sep/2019 01:03:29] "GET /images/slide01.jpg HTTP/1.1" 200 575353
+119.123.42.232 - - [01/Sep/2019 01:03:29] "GET /assets/css/font-awesome.min.css HTTP/1.1" 200 29063
+119.123.42.232 - - [01/Sep/2019 01:03:30] "GET /images/slide03.jpg HTTP/1.1" 200 547740
+119.123.42.232 - - [01/Sep/2019 01:03:31] "GET /images/slide05.jpg HTTP/1.1" 200 505742
+119.123.42.232 - - [01/Sep/2019 01:03:31] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 57344
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+119.123.42.232 - - [01/Sep/2019 01:03:31] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('119.123.42.232', 44214)
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 133, in handle
+    handler.run(self.server.get_app())
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+119.123.42.232 - - [01/Sep/2019 01:03:31] "GET /assets/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 200 57344
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+119.123.42.232 - - [01/Sep/2019 01:03:31] "GET /assets/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('119.123.42.232', 44215)
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 133, in handle
+    handler.run(self.server.get_app())
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+119.123.42.232 - - [01/Sep/2019 01:03:31] "GET /assets/fonts/fontawesome-webfont.ttf?v=4.6.3 HTTP/1.1" 200 90112
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+119.123.42.232 - - [01/Sep/2019 01:03:31] "GET /assets/fonts/fontawesome-webfont.ttf?v=4.6.3 HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('119.123.42.232', 44216)
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 133, in handle
+    handler.run(self.server.get_app())
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+61.129.7.217 - - [01/Sep/2019 01:03:45] "GET /?nsukey=waaHyUKT4PcUoFhvgnALuAr1x4sBUctrtFMFKVy6mimpZVewg0ePlRix7ghe2UvmPn7BIhkpmhuIjheaon2BXwamqcJrWZ4aGbvtVvM42BRjH805aZ3aUvDQnWFZgEtrgjUB6d2F2BXMTffeJQBGv0YvDg3D3D HTTP/1.1" 200 5819
+61.129.7.254 - - [01/Sep/2019 01:03:45] "GET /images/slide01.jpg HTTP/1.1" 200 575353
+61.129.7.254 - - [01/Sep/2019 01:03:45] "GET /images/slide05.jpg HTTP/1.1" 200 505742
+101.226.225.85 - - [01/Sep/2019 01:03:46] "GET /images/slide03.jpg HTTP/1.1" 200 547740
+101.226.225.59 - - [01/Sep/2019 01:03:46] "GET /assets/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 200 90412
+119.123.42.232 - - [01/Sep/2019 01:03:47] "GET /assets/css/main.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:03:47] "GET /images/slide01.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:03:47] "GET /assets/css/font-awesome.min.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:03:47] "GET /images/slide03.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:03:47] "GET /images/slide05.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:03:48] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+119.123.42.232 - - [01/Sep/2019 01:03:48] "GET /assets/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 200 90112
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+119.123.42.232 - - [01/Sep/2019 01:03:48] "GET /assets/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('119.123.42.232', 41159)
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 133, in handle
+    handler.run(self.server.get_app())
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+119.123.42.232 - - [01/Sep/2019 01:03:48] "GET /assets/fonts/fontawesome-webfont.ttf?v=4.6.3 HTTP/1.1" 200 90112
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+119.123.42.232 - - [01/Sep/2019 01:03:48] "GET /assets/fonts/fontawesome-webfont.ttf?v=4.6.3 HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('119.123.42.232', 41160)
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 133, in handle
+    handler.run(self.server.get_app())
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+119.123.42.232 - - [01/Sep/2019 01:04:02] "GET /?nsukey=waaHyUKT4PcUoFhvgnALuAr1x4sBUctrtFMFKVy6mimpZVewg0ePlRix7ghe2UvmPn7BIhkpmhuIjheaon2BXwamqcJrWZ4aGbvtVvM42BRjH805aZ3aUvDQnWFZgEtrgjUB6d2F2BXMTffeJQBGv0YvDg3D3D HTTP/1.1" 200 5819
+113.96.219.249 - - [01/Sep/2019 01:04:05] "GET /?nsukey=5OzmGgshor31cY10Hh2FPTdbcfVdQ2BUblLyUTsDvTdhdye0Bh1fK1DnBTUW1QVTJb242Kp7Mvu2FLEnTMu9gEt7j4zYlGh2B5B2FIIx2Bl0MUILWi8dFWYEY5SNm4yZub6VrLiOJ5VCnrktBU7KyxCMcsq2Fiww0uMHz3pIuGf2BIBIdWIwqOGbj2FdtANk5poD7ZD2By2srJWv5yMspXWd0tFytIyQ3D3D HTTP/1.1" 200 5819
+14.116.133.171 - - [01/Sep/2019 01:04:05] "GET /assets/css/main.css HTTP/1.1" 200 77011
+113.96.219.249 - - [01/Sep/2019 01:04:05] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 200 2257
+113.96.219.243 - - [01/Sep/2019 01:04:05] "GET /assets/js/util.js HTTP/1.1" 200 12433
+183.3.255.32 - - [01/Sep/2019 01:04:05] "GET /assets/js/jquery.min.js HTTP/1.1" 200 95957
+183.3.227.100 - - [01/Sep/2019 01:04:05] "GET /assets/js/skel.min.js HTTP/1.1" 200 9066
+14.116.137.170 - - [01/Sep/2019 01:04:05] "GET /assets/js/main.js HTTP/1.1" 200 6557
+113.96.219.249 - - [01/Sep/2019 01:04:05] "GET /images/slide01.jpg HTTP/1.1" 200 575353
+183.3.255.28 - - [01/Sep/2019 01:04:05] "GET /assets/css/font-awesome.min.css HTTP/1.1" 200 29063
+113.96.219.250 - - [01/Sep/2019 01:04:06] "GET /images/slide03.jpg HTTP/1.1" 200 547740
+183.3.226.234 - - [01/Sep/2019 01:04:06] "GET /images/slide05.jpg HTTP/1.1" 200 505742
+183.3.227.100 - - [01/Sep/2019 01:04:07] "GET /assets/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 200 90412
+183.3.255.35 - - [01/Sep/2019 01:04:07] "GET /readme.json HTTP/1.1" 200 11414
+119.123.42.232 - - [01/Sep/2019 01:04:07] "GET /assets/css/main.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:04:07] "GET /images/slide01.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:04:07] "GET /images/slide03.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:04:07] "GET /assets/css/font-awesome.min.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:04:07] "GET /images/slide05.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:04:08] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+119.123.42.232 - - [01/Sep/2019 01:04:08] "GET /assets/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 200 57344
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+119.123.42.232 - - [01/Sep/2019 01:04:08] "GET /assets/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('119.123.42.232', 41184)
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 133, in handle
+    handler.run(self.server.get_app())
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+119.123.42.232 - - [01/Sep/2019 01:04:08] "GET /assets/fonts/fontawesome-webfont.ttf?v=4.6.3 HTTP/1.1" 200 57344
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+119.123.42.232 - - [01/Sep/2019 01:04:08] "GET /assets/fonts/fontawesome-webfont.ttf?v=4.6.3 HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('119.123.42.232', 41185)
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 133, in handle
+    handler.run(self.server.get_app())
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+119.123.42.232 - - [01/Sep/2019 01:04:33] "GET / HTTP/1.1" 200 5819
+119.123.42.232 - - [01/Sep/2019 01:04:34] "GET /images/slide01.jpg HTTP/1.1" 200 575353
+119.123.42.232 - - [01/Sep/2019 01:04:34] "GET /assets/css/main.css HTTP/1.1" 200 77011
+119.123.42.232 - - [01/Sep/2019 01:04:35] "GET /images/slide05.jpg HTTP/1.1" 200 505742
+119.123.42.232 - - [01/Sep/2019 01:04:37] "GET /images/slide03.jpg HTTP/1.1" 200 547740
+119.123.42.232 - - [01/Sep/2019 01:04:37] "GET /assets/js/jquery.min.js HTTP/1.1" 200 95957
+119.123.42.232 - - [01/Sep/2019 01:04:37] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 200 2257
+119.123.42.232 - - [01/Sep/2019 01:04:37] "GET /assets/js/skel.min.js HTTP/1.1" 200 9066
+119.123.42.232 - - [01/Sep/2019 01:04:37] "GET /assets/js/main.js HTTP/1.1" 200 6557
+119.123.42.232 - - [01/Sep/2019 01:04:37] "GET /assets/js/util.js HTTP/1.1" 200 12433
+119.123.42.232 - - [01/Sep/2019 01:04:37] "GET /assets/css/font-awesome.min.css HTTP/1.1" 200 29063
+119.123.42.232 - - [01/Sep/2019 01:04:37] "GET /readme.json HTTP/1.1" 200 11414
+119.123.42.232 - - [01/Sep/2019 01:04:37] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+119.123.42.232 - - [01/Sep/2019 01:04:59] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+119.123.42.232 - - [01/Sep/2019 01:05:00] "GET /assets/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 200 90112
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+119.123.42.232 - - [01/Sep/2019 01:05:00] "GET /assets/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('119.123.42.232', 42204)
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 133, in handle
+    handler.run(self.server.get_app())
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+119.123.42.232 - - [01/Sep/2019 01:05:00] "GET /assets/fonts/fontawesome-webfont.ttf?v=4.6.3 HTTP/1.1" 200 57344
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+119.123.42.232 - - [01/Sep/2019 01:05:00] "GET /assets/fonts/fontawesome-webfont.ttf?v=4.6.3 HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('119.123.42.232', 42205)
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 133, in handle
+    handler.run(self.server.get_app())
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+61.129.6.251 - - [01/Sep/2019 01:05:02] "GET /?nsukey=waaHyUKT4PcUoFhvgnALuAr1x4sBUctrtFMFKVy6mimpZVewg0ePlRix7ghe2UvmPn7BIhkpmhuIjheaon2BXwamqcJrWZ4aGbvtVvM42BRjH805aZ3aUvDQnWFZgEtrgjUB6d2F2BXMTffeJQBGv0YvDg3D3D HTTP/1.1" 200 5819
+119.123.42.232 - - [01/Sep/2019 01:05:02] "GET /assets/js/jquery.min.js HTTP/1.1" 200 95957
+119.123.42.232 - - [01/Sep/2019 01:05:02] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 200 2257
+119.123.42.232 - - [01/Sep/2019 01:05:02] "GET /assets/js/main.js HTTP/1.1" 200 6557
+119.123.42.232 - - [01/Sep/2019 01:05:02] "GET /assets/js/util.js HTTP/1.1" 200 12433
+119.123.42.232 - - [01/Sep/2019 01:05:02] "GET /assets/js/skel.min.js HTTP/1.1" 200 9066
+119.123.42.232 - - [01/Sep/2019 01:05:02] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+61.129.6.151 - - [01/Sep/2019 01:05:04] "GET /?nsukey=5OzmGgshor31cY10Hh%2FPTdbcfVdQ%2BUblLyUTsDvTdhdye0Bh1fK1DnBTUW1QVTJb242Kp7Mvu%2FLEnTMu9gEt7j4zYlGh%2B5B%2FIIx%2Bl0MUILWi8dFWYEY5SNm4yZub6VrLiOJ5VCnrktBU7KyxCMcsq%2Fiww0uMHz3pIuGf%2BIBIdWIwqOGbj%2FdtANk5poD7ZD%2By2srJWv5yMspXWd0tFytIyQ%3D%3D HTTP/1.1" 200 5819
+61.129.6.251 - - [01/Sep/2019 01:05:04] "GET /assets/js/jquery.min.js HTTP/1.1" 200 95957
+61.129.6.151 - - [01/Sep/2019 01:05:05] "GET /assets/js/jquery.min.js HTTP/1.1" 200 95957
+61.129.6.251 - - [01/Sep/2019 01:05:05] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 200 2257
+61.129.6.151 - - [01/Sep/2019 01:05:05] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 200 2257
+61.129.6.151 - - [01/Sep/2019 01:05:05] "GET /assets/js/skel.min.js HTTP/1.1" 200 9066
+119.123.42.232 - - [01/Sep/2019 01:05:05] "GET /readme.json HTTP/1.1" 200 11414
+61.129.6.251 - - [01/Sep/2019 01:05:05] "GET /assets/js/skel.min.js HTTP/1.1" 200 9066
+61.129.6.151 - - [01/Sep/2019 01:05:05] "GET /assets/js/util.js HTTP/1.1" 200 12433
+61.129.6.151 - - [01/Sep/2019 01:05:05] "GET /assets/js/main.js HTTP/1.1" 200 6557
+61.129.6.251 - - [01/Sep/2019 01:05:05] "GET /assets/js/util.js HTTP/1.1" 200 12433
+61.129.6.251 - - [01/Sep/2019 01:05:07] "GET /assets/js/main.js HTTP/1.1" 200 6557
+119.123.42.232 - - [01/Sep/2019 01:05:11] "GET /demo?textin= HTTP/1.1" 200 110
+119.123.42.232 - - [01/Sep/2019 01:05:23] "GET /assets/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 200 90112
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+119.123.42.232 - - [01/Sep/2019 01:05:23] "GET /assets/fonts/fontawesome-webfont.woff?v=4.6.3 HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('119.123.42.232', 42227)
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 133, in handle
+    handler.run(self.server.get_app())
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+119.123.42.232 - - [01/Sep/2019 01:05:23] "GET /assets/fonts/fontawesome-webfont.ttf?v=4.6.3 HTTP/1.1" 200 90112
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+119.123.42.232 - - [01/Sep/2019 01:05:23] "GET /assets/fonts/fontawesome-webfont.ttf?v=4.6.3 HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('119.123.42.232', 42228)
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 800, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 721, in __init__
+    self.handle()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 133, in handle
+    handler.run(self.server.get_app())
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+61.151.207.186 - - [01/Sep/2019 01:06:11] "GET /demo?textin= HTTP/1.1" 200 110
+119.123.42.232 - - [01/Sep/2019 01:06:25] "GET / HTTP/1.1" 200 5819
+119.123.42.232 - - [01/Sep/2019 01:06:25] "GET /assets/css/main.css HTTP/1.1" 200 77011
+119.123.42.232 - - [01/Sep/2019 01:06:26] "GET /images/slide01.jpg HTTP/1.1" 200 575353
+119.123.42.232 - - [01/Sep/2019 01:06:26] "GET /assets/css/font-awesome.min.css HTTP/1.1" 200 29063
+119.123.42.232 - - [01/Sep/2019 01:06:26] "GET /assets/js/skel.min.js HTTP/1.1" 200 9066
+119.123.42.232 - - [01/Sep/2019 01:06:26] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 200 2257
+119.123.42.232 - - [01/Sep/2019 01:06:26] "GET /assets/js/jquery.min.js HTTP/1.1" 200 95957
+119.123.42.232 - - [01/Sep/2019 01:06:26] "GET /assets/js/util.js HTTP/1.1" 200 12433
+119.123.42.232 - - [01/Sep/2019 01:06:26] "GET /assets/js/main.js HTTP/1.1" 200 6557
+119.123.42.232 - - [01/Sep/2019 01:06:27] "GET /images/slide03.jpg HTTP/1.1" 200 547740
+119.123.42.232 - - [01/Sep/2019 01:06:27] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+119.123.42.232 - - [01/Sep/2019 01:06:28] "GET /images/slide05.jpg HTTP/1.1" 200 505742
+119.123.42.232 - - [01/Sep/2019 01:06:28] "GET /readme.json HTTP/1.1" 200 11414
+119.123.42.232 - - [01/Sep/2019 01:06:29] "GET /favicon.ico HTTP/1.1" 404 730
+119.123.42.232 - - [01/Sep/2019 01:07:25] "GET / HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:25] "GET / HTTP/1.1" 200 5819
+119.123.42.232 - - [01/Sep/2019 01:07:25] "GET /assets/css/main.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:25] "GET /assets/js/jquery.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:25] "GET /images/slide01.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:25] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:25] "GET /assets/css/font-awesome.min.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:25] "GET /assets/js/skel.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:25] "GET /assets/js/util.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:25] "GET /assets/js/main.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:25] "GET /images/slide03.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:25] "GET /images/slide05.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:25] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:25] "GET /readme.json HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET / HTTP/1.1" 200 5819
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /assets/js/skel.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /assets/css/main.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /images/slide01.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /images/slide03.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /assets/js/util.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /assets/css/font-awesome.min.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /assets/js/main.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /readme.json HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /assets/js/jquery.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /assets/js/jquery.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /assets/css/main.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /assets/js/main.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /assets/js/skel.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /assets/js/util.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /images/slide05.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /images/slide03.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /images/slide01.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /images/slide05.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /assets/css/font-awesome.min.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /readme.json HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:07:54] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+Bottle v0.12.17 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8129/
+Hit Ctrl-C to quit.
+
+119.123.42.232 - - [01/Sep/2019 01:10:17] "GET / HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:17] "GET /images/slide01.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:47] "GET /assets/js/jquery.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:47] "GET /assets/css/main.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:47] "GET / HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:47] "GET /images/slide01.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:47] "GET /images/slide03.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:47] "GET /assets/css/font-awesome.min.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:47] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:47] "GET /assets/js/util.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:47] "GET /assets/js/main.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:47] "GET /assets/js/skel.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:47] "GET /images/slide03.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:47] "GET /assets/css/main.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:47] "GET /assets/js/jquery.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:48] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:48] "GET /images/slide05.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:48] "GET /assets/js/skel.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:48] "GET /readme.json HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:48] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:48] "GET /readme.json HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:48] "GET /images/slide05.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:48] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:48] "GET /assets/js/main.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:48] "GET /assets/js/util.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:10:51] "GET /assets/css/font-awesome.min.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:11:03] "GET /introduction.html HTTP/1.1" 200 2872
+119.123.42.232 - - [01/Sep/2019 01:11:04] "GET /favicon.ico HTTP/1.1" 404 730
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET / HTTP/1.1" 200 5819
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /images/slide05.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /assets/css/main.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /images/slide03.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /images/slide01.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /assets/js/skel.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /assets/js/jquery.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /assets/js/main.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /readme.json HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /assets/css/font-awesome.min.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /assets/js/util.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /assets/js/skel.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /assets/js/main.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /assets/js/jquery.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /assets/css/main.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /assets/js/util.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /images/slide03.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /images/slide01.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /images/slide05.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /assets/css/font-awesome.min.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /readme.json HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:28] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:13:33] "GET /demo?textin= HTTP/1.1" 200 110
+119.123.42.232 - - [01/Sep/2019 01:13:33] "GET /favicon.ico HTTP/1.1" 404 730
+119.123.42.232 - - [01/Sep/2019 01:15:46] "GET /images/slide03.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:46] "GET / HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:46] "GET /images/slide01.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:46] "GET /assets/js/jquery.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:46] "GET /images/slide05.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:46] "GET /assets/css/main.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:46] "GET /assets/js/skel.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:46] "GET /assets/js/main.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:46] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:46] "GET /assets/css/font-awesome.min.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:46] "GET /readme.json HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:46] "GET /assets/js/util.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:46] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:47] "GET / HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:47] "GET /assets/js/jquery.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:47] "GET /images/slide01.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:47] "GET /images/slide05.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:47] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:47] "GET /images/slide03.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:47] "GET /assets/css/main.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:47] "GET /assets/js/main.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:47] "GET /assets/js/util.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:47] "GET /assets/css/font-awesome.min.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:47] "GET /assets/js/skel.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:47] "GET /readme.json HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:15:47] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+59.36.121.172 - - [01/Sep/2019 01:16:40] "GET / HTTP/1.0" 200 5819
+119.123.42.232 - - [01/Sep/2019 01:16:47] "GET /?nsukey=K%2BuNfuItHNugmx2cLPHoUYTajZUAwfjy0i9cdQ76IJFIGjQ4EaG9ahFdqTCgrXBsV%2B6v5UOxXm8e0jxi1RN0DOUn2DX4R8i1L8skGoZrpYLJDecYlyU2X%2FicFSOZmyS2ZhDix4HZOxdFMzcyi%2Bo%2FkOZvkzkKRxuMycMti8c3Idf0mUPGCVQOe%2BcjcvULFvu4gFsuslv37i%2FLts9ht737dQ%3D%3D HTTP/1.1" 200 5819
+119.123.42.232 - - [01/Sep/2019 01:16:47] "GET /favicon.ico HTTP/1.1" 404 730
+119.123.42.232 - - [01/Sep/2019 01:19:27] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:19:27] "GET /assets/css/main.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:19:27] "GET / HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:19:27] "GET /assets/js/jquery.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:19:27] "GET /images/slide03.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:19:27] "GET /images/slide05.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:19:27] "GET /assets/js/skel.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:19:27] "GET /assets/js/main.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:19:27] "GET /assets/css/font-awesome.min.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:19:27] "GET /images/slide01.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:19:27] "GET /readme.json HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:19:28] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:19:28] "GET /assets/js/util.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:19:30] "GET /hylan HTTP/1.1" 404 724
+119.123.42.232 - - [01/Sep/2019 01:19:32] "GET /html HTTP/1.1" 404 723
+119.123.42.232 - - [01/Sep/2019 01:19:32] "GET /favicon.ico HTTP/1.1" 404 730
+119.123.42.232 - - [01/Sep/2019 01:19:42] "GET /html/index.html HTTP/1.1" 404 753
+119.123.42.232 - - [01/Sep/2019 01:19:42] "GET /favicon.ico HTTP/1.1" 404 730
+119.123.42.232 - - [01/Sep/2019 01:19:57] "GET /html/index.html HTTP/1.1" 404 753
+119.123.42.232 - - [01/Sep/2019 01:19:59] "GET /html/ HTTP/1.1" 200 2863
+119.123.42.232 - - [01/Sep/2019 01:19:59] "GET /html/readme.json HTTP/1.1" 404 755
+119.123.42.232 - - [01/Sep/2019 01:20:12] "GET /html/ HTTP/1.1" 200 2863
+119.123.42.232 - - [01/Sep/2019 01:20:12] "GET /html/readme.json HTTP/1.1" 404 755
+119.123.42.232 - - [01/Sep/2019 01:23:11] "GET /introduction.html HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:23:11] "GET /assets/css/main.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:23:11] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:23:11] "GET /assets/js/util.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:23:11] "GET /assets/js/main.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:23:11] "GET /assets/js/jquery.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:23:11] "GET /assets/js/skel.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:23:11] "GET /assets/css/font-awesome.min.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:23:11] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:26:30] "GET / HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:26:55] "GET /images/slide01.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:26:55] "GET /assets/css/main.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:26:55] "GET /assets/css/font-awesome.min.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:26:55] "GET /assets/js/util.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:26:55] "GET /assets/js/jquery.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:26:55] "GET /assets/js/skel.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:26:55] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:26:55] "GET /assets/js/main.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:26:55] "GET /images/slide03.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:26:55] "GET /images/slide05.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:26:55] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:26:55] "GET /readme.json HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 01:30:19] "GET / HTTP/1.1" 200 5819
+119.123.42.232 - - [01/Sep/2019 01:30:30] "GET /images/slide01.jpg HTTP/1.1" 200 575353
+119.123.42.232 - - [01/Sep/2019 01:30:30] "GET /assets/css/main.css HTTP/1.1" 200 77011
+119.123.42.232 - - [01/Sep/2019 01:30:30] "GET /assets/js/jquery.min.js HTTP/1.1" 200 95957
+119.123.42.232 - - [01/Sep/2019 01:30:30] "GET /assets/js/skel.min.js HTTP/1.1" 200 9066
+119.123.42.232 - - [01/Sep/2019 01:30:30] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 200 2257
+119.123.42.232 - - [01/Sep/2019 01:30:30] "GET /assets/js/util.js HTTP/1.1" 200 12433
+119.123.42.232 - - [01/Sep/2019 01:30:30] "GET /assets/css/font-awesome.min.css HTTP/1.1" 200 29063
+119.123.42.232 - - [01/Sep/2019 01:30:30] "GET /assets/js/main.js HTTP/1.1" 200 6557
+119.123.42.232 - - [01/Sep/2019 01:30:31] "GET /images/slide03.jpg HTTP/1.1" 200 547740
+119.123.42.232 - - [01/Sep/2019 01:30:32] "GET /images/slide05.jpg HTTP/1.1" 200 505742
+119.123.42.232 - - [01/Sep/2019 01:30:32] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+119.123.42.232 - - [01/Sep/2019 01:30:32] "GET /readme.json HTTP/1.1" 200 11414
+119.123.42.232 - - [01/Sep/2019 01:31:17] "GET /introduction.html HTTP/1.1" 200 2872
+119.123.42.232 - - [01/Sep/2019 01:31:48] "GET /index.html HTTP/1.1" 200 5819
+119.123.42.232 - - [01/Sep/2019 11:25:09] "GET /?nsukey=ue9Hfmz%2B9GBdy92TrmaaY3XnbGtCPx7rDnOJMeJT7RNH7feY%2BeOcGXcnXANKX5MaQPKRYnnbxfasDvjL0TWRWreoGzsxLfvSmJEgmGPieLEW300xbULyNlPo65InxuRtPW666hbhkt0%2BKYJTt%2BQNTMgio0443GZa8f6hg%2BLTFC7fZgOJO0ShWfpYapDwqSL8ZcyY3SYaSK8Ty%2FJfYWhfnQ%3D%3D HTTP/1.1" 200 5819
+119.123.42.232 - - [01/Sep/2019 11:25:09] "GET /assets/css/main.css HTTP/1.1" 200 77011
+119.123.42.232 - - [01/Sep/2019 11:25:10] "GET /images/slide01.jpg HTTP/1.1" 200 575353
+119.123.42.232 - - [01/Sep/2019 11:25:10] "GET /assets/js/jquery.min.js HTTP/1.1" 200 95957
+119.123.42.232 - - [01/Sep/2019 11:25:10] "GET /assets/css/font-awesome.min.css HTTP/1.1" 200 29063
+119.123.42.232 - - [01/Sep/2019 11:25:10] "GET /assets/js/skel.min.js HTTP/1.1" 200 9066
+119.123.42.232 - - [01/Sep/2019 11:25:10] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 200 2257
+119.123.42.232 - - [01/Sep/2019 11:25:10] "GET /assets/js/util.js HTTP/1.1" 200 12433
+119.123.42.232 - - [01/Sep/2019 11:25:10] "GET /assets/js/main.js HTTP/1.1" 200 6557
+119.123.42.232 - - [01/Sep/2019 11:25:10] "GET /images/slide03.jpg HTTP/1.1" 200 547740
+119.123.42.232 - - [01/Sep/2019 11:25:11] "GET /images/slide05.jpg HTTP/1.1" 200 505742
+119.123.42.232 - - [01/Sep/2019 11:25:11] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+119.123.42.232 - - [01/Sep/2019 11:25:12] "GET /readme.json HTTP/1.1" 200 11414
+101.91.60.11 - - [01/Sep/2019 11:26:10] "GET /?nsukey=ue9Hfmz%2B9GBdy92TrmaaY3XnbGtCPx7rDnOJMeJT7RNH7feY%2BeOcGXcnXANKX5MaQPKRYnnbxfasDvjL0TWRWreoGzsxLfvSmJEgmGPieLEW300xbULyNlPo65InxuRtPW666hbhkt0%2BKYJTt%2BQNTMgio0443GZa8f6hg%2BLTFC7fZgOJO0ShWfpYapDwqSL8ZcyY3SYaSK8Ty%2FJfYWhfnQ%3D%3D HTTP/1.1" 200 5819
+101.91.60.11 - - [01/Sep/2019 11:26:35] "GET /assets/js/jquery.min.js HTTP/1.1" 200 95957
+101.91.60.11 - - [01/Sep/2019 11:27:16] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 200 2257
+101.91.60.11 - - [01/Sep/2019 11:27:25] "GET /assets/js/skel.min.js HTTP/1.1" 200 9066
+101.91.60.11 - - [01/Sep/2019 11:27:36] "GET /assets/js/util.js HTTP/1.1" 200 12433
+101.91.60.11 - - [01/Sep/2019 11:27:44] "GET /assets/js/main.js HTTP/1.1" 200 6557
+119.123.42.232 - - [01/Sep/2019 12:50:05] "GET / HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 12:50:05] "GET /assets/js/jquery.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 12:50:05] "GET /assets/css/main.css HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 12:50:05] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 12:50:05] "GET /images/slide01.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 12:50:05] "GET /assets/js/util.js HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 12:50:05] "GET /images/slide03.jpg HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 12:50:05] "GET /images/slide05.jpg HTTP/1.1" 200 505742
+119.123.42.232 - - [01/Sep/2019 12:50:05] "GET /assets/js/main.js HTTP/1.1" 200 6557
+119.123.42.232 - - [01/Sep/2019 12:50:05] "GET /assets/js/skel.min.js HTTP/1.1" 200 9066
+119.123.42.232 - - [01/Sep/2019 12:50:05] "GET /assets/css/font-awesome.min.css HTTP/1.1" 200 29063
+119.123.42.232 - - [01/Sep/2019 12:50:06] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 304 0
+119.123.42.232 - - [01/Sep/2019 12:50:07] "GET /readme.json HTTP/1.1" 200 11414
+119.123.42.232 - - [01/Sep/2019 12:50:24] "GET /introduction.html HTTP/1.1" 200 2872
+119.123.42.232 - - [01/Sep/2019 12:50:33] "GET /demo?textin= HTTP/1.1" 200 110
+113.57.182.242 - - [03/Sep/2019 08:41:54] "GET / HTTP/1.1" 200 5819
+113.57.182.242 - - [03/Sep/2019 08:41:55] "GET /assets/css/main.css HTTP/1.1" 200 77011
+113.57.182.242 - - [03/Sep/2019 08:41:55] "GET /images/slide01.jpg HTTP/1.1" 304 0
+113.57.182.242 - - [03/Sep/2019 08:41:55] "GET /assets/js/main.js HTTP/1.1" 304 0
+[W 21:28:48.946 NotebookApp] Config option `allow_remote_access` not recognized by `NotebookApp`.  Did you mean one of: `allow_credentials, allow_root`?
+[W 21:28:49.176 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 21:28:49.205 NotebookApp] JupyterLab beta preview extension loaded from /home/student/anaconda3/lib/python3.6/site-packages/jupyterlab
+[I 21:28:49.205 NotebookApp] JupyterLab application directory is /home/student/anaconda3/share/jupyter/lab
+[I 21:28:49.209 NotebookApp] Serving notebooks from local directory: /home/student/project/project-01/sxql_nlp/project_test
+[I 21:28:49.209 NotebookApp] 0 active kernels
+[I 21:28:49.209 NotebookApp] The Jupyter Notebook is running at:
+[I 21:28:49.209 NotebookApp] http://ai-NLP-004:8889/?token=%3Cgenerated%3E
+[I 21:28:49.209 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 21:28:49.210 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://ai-NLP-004:8889/?token=%3Cgenerated%3E&token=%3Cgenerated%3E
+[I 21:29:24.220 NotebookApp] 302 GET /?token=%3Cgenerated%3E&token=%3Cgenerated%3E (219.134.114.34) 0.71ms
+[I 21:30:27.705 NotebookApp] Shutting down on /api/shutdown request.
+[I 21:30:27.706 NotebookApp] Shutting down 0 kernels
+Bottle v0.12.17 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8129/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    run(host="0.0.0.0", port=8129)
+  File "/home/student/anaconda3/lib/python3.6/site-packages/bottle.py", line 3131, in run
+    server.run(app)
+  File "/home/student/anaconda3/lib/python3.6/site-packages/bottle.py", line 2783, in run
+    srv = make_server(self.host, self.port, app, server_cls, handler_cls)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 153, in make_server
+    server = server_class((host, port), handler_class)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 453, in __init__
+    self.server_bind()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 50, in server_bind
+    HTTPServer.server_bind(self)
+  File "/home/student/anaconda3/lib/python3.6/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 467, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Bottle v0.12.17 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8129/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    run(host="0.0.0.0", port=8129)
+  File "/home/student/anaconda3/lib/python3.6/site-packages/bottle.py", line 3131, in run
+    server.run(app)
+  File "/home/student/anaconda3/lib/python3.6/site-packages/bottle.py", line 2783, in run
+    srv = make_server(self.host, self.port, app, server_cls, handler_cls)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 153, in make_server
+    server = server_class((host, port), handler_class)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 453, in __init__
+    self.server_bind()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 50, in server_bind
+    HTTPServer.server_bind(self)
+  File "/home/student/anaconda3/lib/python3.6/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 467, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Bottle v0.12.17 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8129/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    run(host="0.0.0.0", port=8129)
+  File "/home/student/anaconda3/lib/python3.6/site-packages/bottle.py", line 3131, in run
+    server.run(app)
+  File "/home/student/anaconda3/lib/python3.6/site-packages/bottle.py", line 2783, in run
+    srv = make_server(self.host, self.port, app, server_cls, handler_cls)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 153, in make_server
+    server = server_class((host, port), handler_class)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 453, in __init__
+    self.server_bind()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 50, in server_bind
+    HTTPServer.server_bind(self)
+  File "/home/student/anaconda3/lib/python3.6/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 467, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Bottle v0.12.17 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:80129/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    run(host="0.0.0.0", port=80129)
+  File "/home/student/anaconda3/lib/python3.6/site-packages/bottle.py", line 3131, in run
+    server.run(app)
+  File "/home/student/anaconda3/lib/python3.6/site-packages/bottle.py", line 2783, in run
+    srv = make_server(self.host, self.port, app, server_cls, handler_cls)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 153, in make_server
+    server = server_class((host, port), handler_class)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 453, in __init__
+    self.server_bind()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 50, in server_bind
+    HTTPServer.server_bind(self)
+  File "/home/student/anaconda3/lib/python3.6/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 467, in server_bind
+    self.socket.bind(self.server_address)
+OverflowError: getsockaddrarg: port must be 0-65535.
+Bottle v0.12.17 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:80129/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "main.py", line 46, in <module>
+    run(host="0.0.0.0", port=80129)
+  File "/home/student/anaconda3/lib/python3.6/site-packages/bottle.py", line 3131, in run
+    server.run(app)
+  File "/home/student/anaconda3/lib/python3.6/site-packages/bottle.py", line 2783, in run
+    srv = make_server(self.host, self.port, app, server_cls, handler_cls)
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 153, in make_server
+    server = server_class((host, port), handler_class)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 453, in __init__
+    self.server_bind()
+  File "/home/student/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 50, in server_bind
+    HTTPServer.server_bind(self)
+  File "/home/student/anaconda3/lib/python3.6/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/home/student/anaconda3/lib/python3.6/socketserver.py", line 467, in server_bind
+    self.socket.bind(self.server_address)
+OverflowError: getsockaddrarg: port must be 0-65535.
+Bottle v0.12.17 server starting up (using WSGIRefServer())...
+Listening on http://127.0.0.1:8229/
+Hit Ctrl-C to quit.
+
+Bottle v0.12.17 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8229/
+Hit Ctrl-C to quit.
+
+119.123.40.60 - - [22/Sep/2019 15:54:39] "GET / HTTP/1.1" 304 0
+119.123.40.60 - - [22/Sep/2019 15:54:42] "GET /demo?textin= HTTP/1.1" 200 86
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.467 seconds.
+Prefix dict has been built succesfully.
+Bottle v0.12.17 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8229/
+Hit Ctrl-C to quit.
+
+119.123.40.60 - - [22/Sep/2019 15:59:39] "GET / HTTP/1.1" 304 0
+119.123.40.60 - - [22/Sep/2019 15:59:41] "GET /try? HTTP/1.1" 200 367
+119.123.40.60 - - [22/Sep/2019 15:59:43] "GET /try? HTTP/1.1" 200 367
+119.123.40.60 - - [22/Sep/2019 15:59:44] "GET /try? HTTP/1.1" 200 367
+119.123.40.60 - - [22/Sep/2019 15:59:45] "GET /try? HTTP/1.1" 200 367
+119.123.40.60 - - [22/Sep/2019 15:59:46] "GET /try? HTTP/1.1" 200 367
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.414 seconds.
+Prefix dict has been built succesfully.
+Bottle v0.12.17 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8229/
+Hit Ctrl-C to quit.
+
+183.95.250.206 - - [22/Sep/2019 17:23:42] "GET / HTTP/1.1" 304 0
+183.95.250.206 - - [22/Sep/2019 17:25:20] "GET / HTTP/1.1" 200 2579
+183.95.250.206 - - [22/Sep/2019 17:25:31] "GET /introduction.html HTTP/1.1" 200 3035
+183.95.250.206 - - [22/Sep/2019 17:25:37] "GET /try? HTTP/1.1" 200 397
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.298 seconds.
+Prefix dict has been built succesfully.
+183.95.250.206 - - [22/Sep/2019 17:25:40] "GET /try? HTTP/1.1" 200 397
+183.95.250.206 - - [22/Sep/2019 17:25:41] "GET /try? HTTP/1.1" 200 397
+183.95.250.206 - - [22/Sep/2019 17:25:43] "GET /try? HTTP/1.1" 200 397
+183.95.250.206 - - [22/Sep/2019 17:25:45] "GET /try? HTTP/1.1" 200 629
+183.95.250.206 - - [22/Sep/2019 17:25:46] "GET /try? HTTP/1.1" 200 1898
+183.95.250.206 - - [22/Sep/2019 17:25:48] "GET /try? HTTP/1.1" 200 397
+183.95.250.206 - - [22/Sep/2019 17:25:49] "GET /try? HTTP/1.1" 200 397
+183.95.250.206 - - [22/Sep/2019 17:25:50] "GET /try? HTTP/1.1" 200 628
+183.95.250.206 - - [22/Sep/2019 17:25:52] "GET /try? HTTP/1.1" 200 397
+183.95.250.206 - - [22/Sep/2019 17:25:53] "GET /try? HTTP/1.1" 200 397
+183.95.250.206 - - [22/Sep/2019 17:25:54] "GET /try? HTTP/1.1" 200 397
+183.95.250.206 - - [22/Sep/2019 17:25:55] "GET /try? HTTP/1.1" 200 397
+183.95.250.206 - - [22/Sep/2019 17:25:56] "GET /try? HTTP/1.1" 200 1792
+119.123.40.60 - - [22/Sep/2019 17:27:03] "GET /try? HTTP/1.1" 200 1119
+119.123.40.60 - - [22/Sep/2019 17:27:09] "GET / HTTP/1.1" 200 2579
+119.123.40.60 - - [22/Sep/2019 17:27:18] "GET /demo?textin= HTTP/1.1" 200 86
+183.95.250.206 - - [22/Sep/2019 17:29:36] "GET /?nsukey=WzMtNs05gHf2zEgWPPWVNHQC4z8oNVSDUQWa2oQGy1Kc78GURAxyhjjMkz2BoWRP9EbwTTgcpGbX84LgPX2927JU8q%2BdqhTz9btauuVybntFDJoUHZW%2Bx9sb%2BIpbgyksdw3dbZyzEei3AALQx%2FeRP8hCin%2Ft%2BHxZOb3QfnEweblTOh7MHTy9XbbgWj944Cw0GvI8KqXmT65dUAMl9aEMxQ%3D%3D HTTP/1.1" 200 2579
+183.95.250.206 - - [22/Sep/2019 17:29:44] "GET /try? HTTP/1.1" 200 397
+183.95.250.206 - - [22/Sep/2019 17:29:47] "GET /demo?textin= HTTP/1.1" 200 86
+61.151.178.197 - - [22/Sep/2019 17:30:35] "GET /?nsukey=WzMtNs05gHf2zEgWPPWVNHQC4z8oNVSDUQWa2oQGy1Kc78GURAxyhjjMkz2BoWRP9EbwTTgcpGbX84LgPX2927JU8q%2BdqhTz9btauuVybntFDJoUHZW%2Bx9sb%2BIpbgyksdw3dbZyzEei3AALQx%2FeRP8hCin%2Ft%2BHxZOb3QfnEweblTOh7MHTy9XbbgWj944Cw0GvI8KqXmT65dUAMl9aEMxQ%3D%3D HTTP/1.1" 200 2579
+61.151.178.197 - - [22/Sep/2019 17:30:36] "GET /assets/js/jquery.min.js HTTP/1.1" 200 95957
+61.151.178.197 - - [22/Sep/2019 17:30:37] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 200 2257
+61.151.178.197 - - [22/Sep/2019 17:30:37] "GET /assets/js/skel.min.js HTTP/1.1" 200 9066
+61.151.178.197 - - [22/Sep/2019 17:30:38] "GET /assets/js/util.js HTTP/1.1" 200 12433
+61.151.178.197 - - [22/Sep/2019 17:30:38] "GET /assets/js/main.js HTTP/1.1" 200 6557
+101.227.139.163 - - [22/Sep/2019 17:30:45] "GET /try? HTTP/1.1" 200 645
+119.123.40.60 - - [22/Sep/2019 17:35:44] "GET / HTTP/1.1" 304 0
+223.104.212.76 - - [22/Sep/2019 17:36:46] "GET / HTTP/1.1" 200 2579
+119.123.40.60 - - [22/Sep/2019 17:36:46] "GET /index.html HTTP/1.1" 200 2579
+119.123.40.60 - - [22/Sep/2019 17:36:46] "GET /index.html HTTP/1.1" 200 2579
+119.123.40.60 - - [22/Sep/2019 17:36:46] "GET / HTTP/1.1" 304 0
+119.123.40.60 - - [22/Sep/2019 17:37:02] "GET /index.html HTTP/1.1" 200 2579
+119.123.40.60 - - [22/Sep/2019 17:37:02] "GET / HTTP/1.1" 304 0
+119.123.40.60 - - [22/Sep/2019 17:37:02] "GET / HTTP/1.1" 200 2579
+119.123.40.60 - - [22/Sep/2019 17:37:02] "GET /demo?textin= HTTP/1.1" 200 86
+119.123.40.60 - - [22/Sep/2019 17:37:02] "GET /demo?textin= HTTP/1.1" 200 86
+119.123.40.60 - - [22/Sep/2019 17:37:06] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:37:07] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:37:08] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:37:08] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:37:09] "GET /try? HTTP/1.1" 200 2631
+119.123.40.60 - - [22/Sep/2019 17:37:09] "GET /try? HTTP/1.1" 200 1071
+119.123.40.60 - - [22/Sep/2019 17:37:09] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:37:10] "GET /try? HTTP/1.1" 200 1198
+119.123.40.60 - - [22/Sep/2019 17:37:11] "GET /try? HTTP/1.1" 200 648
+119.123.40.60 - - [22/Sep/2019 17:37:12] "GET /try? HTTP/1.1" 200 1562
+119.123.40.60 - - [22/Sep/2019 17:37:25] "GET / HTTP/1.1" 304 0
+119.123.40.60 - - [22/Sep/2019 17:37:29] "GET /demo?textin= HTTP/1.1" 200 86
+119.123.40.60 - - [22/Sep/2019 17:37:37] "GET /index.html HTTP/1.1" 200 2579
+119.123.40.60 - - [22/Sep/2019 17:37:37] "GET /favicon.ico HTTP/1.1" 404 730
+119.123.40.60 - - [22/Sep/2019 17:41:03] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:41:03] "GET /favicon.ico HTTP/1.1" 404 730
+119.123.40.60 - - [22/Sep/2019 17:42:03] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:04] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:05] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:06] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:08] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:10] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:11] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:12] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:12] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:13] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:14] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:15] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:16] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:17] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:18] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:18] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:19] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:19] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:19] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:19] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:20] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:20] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:42:20] "GET /demo?textin=%E6%88%91%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C HTTP/1.1" 200 397
+223.104.212.76 - - [22/Sep/2019 17:44:09] "GET / HTTP/1.1" 200 2579
+223.104.212.76 - - [22/Sep/2019 17:44:09] "GET /assets/css/main.css HTTP/1.1" 200 77011
+223.104.212.76 - - [22/Sep/2019 17:44:09] "GET /assets/js/jquery.min.js HTTP/1.1" 200 95957
+223.104.212.76 - - [22/Sep/2019 17:44:10] "GET /images/slide01.jpg HTTP/1.1" 200 575353
+223.104.212.76 - - [22/Sep/2019 17:44:10] "GET /assets/css/font-awesome.min.css HTTP/1.1" 200 29063
+223.104.212.76 - - [22/Sep/2019 17:44:10] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 200 2257
+223.104.212.76 - - [22/Sep/2019 17:44:10] "GET /assets/js/util.js HTTP/1.1" 200 12433
+223.104.212.76 - - [22/Sep/2019 17:44:10] "GET /assets/js/skel.min.js HTTP/1.1" 200 9066
+223.104.212.76 - - [22/Sep/2019 17:44:10] "GET /assets/js/main.js HTTP/1.1" 200 6557
+223.104.212.76 - - [22/Sep/2019 17:44:11] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+223.104.212.76 - - [22/Sep/2019 17:44:11] "GET /favicon.ico HTTP/1.1" 404 730
+223.104.212.76 - - [22/Sep/2019 17:44:23] "GET /introduction.html HTTP/1.1" 200 3035
+223.104.212.76 - - [22/Sep/2019 17:44:30] "GET /index.html HTTP/1.1" 200 2579
+223.104.212.76 - - [22/Sep/2019 17:44:53] "GET /demo?textin=%E4%B8%8D%E6%98%AF%E8%AF%B4%E5%A5%BD%E5%A5%BD%E8%AF%B4%E5%8F%A5%E5%A7%90%E5%A7%90%E4%B8%A2%E4%BA%BA%E5%AE%B6 HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:44:57] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03æÂyãªß\x0b\x07\x00\tÔä\x15\x81\x8e\x85¿«\x18ÌSLÎbGgÜ\x1d&tÎä ï`H®s¬X-\x0fÈëPþ;\x90\x1fÄD4ÏS{:\x9b21\x0bò\x17!cî\x00"ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+119.123.40.60 - - [22/Sep/2019 17:44:57] "  üæÂyãªß 	Ôä¿«ÌSLÎbGgÜ&tÎä ï`H®s¬X-ÈëPþ;ÄD4ÏS{:21ò!cî "ÊÊÀ+À/À,À0Ì©Ì¨ÀÀ   / 5 " 400 -
+119.123.40.60 - - [22/Sep/2019 17:44:57] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03>nÇ\x1bßÎ¿ºÆ¶Ù\x84cÎzH\x16û\x98EÖ\x19-\x12¶d\x15´\x98\x17')
+119.123.40.60 - - [22/Sep/2019 17:44:57] "  ü>nÇßÎ¿ºÆ¶ÙcÎzHûEÖ-¶d´² " 400 -
+119.123.40.60 - - [22/Sep/2019 17:45:24] "GET / HTTP/1.1" 304 0
+223.104.212.76 - - [22/Sep/2019 17:45:24] "GET /demo?textin=%E5%B0%8F%E7%8E%8B%E8%AF%B4%E4%BD%A0%E5%BE%88%E6%BC%82%E4%BA%AE HTTP/1.1" 200 521
+119.123.40.60 - - [22/Sep/2019 17:45:28] "GET /try? HTTP/1.1" 200 1655
+119.123.40.60 - - [22/Sep/2019 17:51:09] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:52:41] "GET /demo?textin= HTTP/1.1" 200 86
+119.123.40.60 - - [22/Sep/2019 17:52:52] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:52:52] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Ò\x12\x91ÿæWá3\t9\x98,#*-þÔEe\x0e\x98YX¬\x8aø\x0f¨µ±êæ åÚÑêñ\xa05\x0e\xa0\x9f\x00ÌÎË\x12\x04\x7f·\x03\x9dE\x99Z\x04\x93\x87:¹<\x01s\x9d\x00"\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+119.123.40.60 - - [22/Sep/2019 17:52:52] "  üÒÿæWá3	9,#*-þÔEeYX¬ø¨µ±êæ åÚÑêñ 5  ÌÎË·EZ:¹<s "À+À/À,À0Ì©Ì¨ÀÀ   / 5 " 400 -
+119.123.40.60 - - [22/Sep/2019 17:52:52] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x94Z\x03"e\\ÙW\x84ì\x91{ç')
+119.123.40.60 - - [22/Sep/2019 17:52:52] "  üZ"e\ÙWì{ç" 400 -
+119.123.40.60 - - [22/Sep/2019 17:53:33] "GET / HTTP/1.1" 304 0
+119.123.40.60 - - [22/Sep/2019 17:53:38] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:58:08] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:58:09] "GET / HTTP/1.1" 304 0
+119.123.40.60 - - [22/Sep/2019 17:59:24] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 17:59:30] "GET / HTTP/1.1" 304 0
+119.123.40.60 - - [22/Sep/2019 17:59:34] "GET /try? HTTP/1.1" 200 1866
+119.123.40.60 - - [22/Sep/2019 18:00:37] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ô\x9aYÛ_ßÃ\x91ä«»!÷Á=o¿;T£çIÑ1×\x13lJ\x84î\xa0\x15 \x85Ù|\x85ö¸i\x96º¹Ä\x0bÃiG\x05\x89\x97¯Ö\x1fT\xa0¾À\x08´Ø (\x96Û\x00"**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+119.123.40.60 - - [22/Sep/2019 18:00:37] "  üôYÛ_ßÃä«»!÷Á=o¿;T£çIÑ1×lJî  Ù|ö¸iº¹ÄÃiG¯ÖT ¾À´Ø (Û "**À+À/À,À0Ì©Ì¨ÀÀ   / 5 " 400 -
+119.123.40.60 - - [22/Sep/2019 18:00:37] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Ü\x9a\x16;ks0<¤ÊIÙ\x8f\r?ÝÌ\x9e]Vã\x8dý\x90§\x15+\x9d\x83\x83\x7fÒ \x9cÎ{(zý\xa0I\x10ô\x1b\x05Y>@3\x97ÉÊ>îQcMá£\x82v\x87ï!7\x00"úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+119.123.40.60 - - [22/Sep/2019 18:00:37] "  üÜ;ks0<¤ÊIÙ?ÝÌ]Vãý§+Ò Î{(zý IôY>@3ÉÊ>îQcMá£vï!7 "úúÀ+À/À,À0Ì©Ì¨ÀÀ   / 5 " 400 -
+119.123.40.60 - - [22/Sep/2019 18:00:49] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x0c\x89ºDpQÒò¡ìlÔ\x18\x8fXR²Xc£¨£T\x85Q³\x12§SóÈÂ \x14\x97´\x16°UÓ;Ã©åÇ\x11\x96®\tº¦à\x87¯k\x87)ÂQ±\x8b8µYÍ\x00"jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+119.123.40.60 - - [22/Sep/2019 18:00:49] "  üºDpQÒò¡ìlÔXR²Xc£¨£TQ³§SóÈÂ ´°UÓ;Ã©åÇ®	º¦à¯k)ÂQ±8µYÍ "jjÀ+À/À,À0Ì©Ì¨ÀÀ   / 5 " 400 -
+119.123.40.60 - - [22/Sep/2019 18:00:49] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03á\x9f\x03\x8b9{ê\x90Òk\x17¬»äå[¯ß\x8b'Üà\x07Få\x03t\x8b\x9a\x14³Y")
+119.123.40.60 - - [22/Sep/2019 18:00:49] "  üá9{êÒk¬»äå[¯ß'ÜàFåt³Y ærò·9Qö5a~äÂÐ7Í8ÍSßÅíÑ?¦ý( "À+À/À,À0Ì©Ì¨ÀÀ   / 5 " 400 -
+119.123.40.60 - - [22/Sep/2019 18:01:03] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x12W\x85gp\x80{jÓ\x94Â\x94Woá0÷\x1aí\x81§iÅ\x845\x8f})S\x8cTÓ Ò\x11ØJaÉ¡\x0cà\x8c{Z°\x82ókI\x8cq°cù³\x98X\x03¶\x88%Ï\x87Ê\x00"\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+119.123.40.60 - - [22/Sep/2019 18:01:03] "  üWgp{jÓÂWoá0÷í§iÅ5})STÓ ÒØJaÉ¡à{Z°ókIq°cù³X¶%ÏÊ "À+À/À,À0Ì©Ì¨ÀÀ   / 5 " 400 -
+119.123.40.60 - - [22/Sep/2019 18:01:03] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ù^\x12Ð*öó;Þ`=fÉ\x91³\r\x04\x18Ë9aTÝHAÊuÅ{¡ÑP \x0b\x01\x94\x19³é\x10jÃ  ®7T\x04Ô¸#\x19X\\\t\x93j\x98ç+\tL\tP\x06\x00"JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+119.123.40.60 - - [22/Sep/2019 18:01:03] "  üù^Ð*öó;Þ`=fÉ³Ë9aTÝHAÊuÅ{¡ÑP ³éjÃ  ®7TÔ¸#X\	jç+	L	P "JJÀ+À/À,À0Ì©Ì¨ÀÀ   / 5 " 400 -
+119.123.40.60 - - [22/Sep/2019 18:01:10] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ä$Öm\x13e\x97ò×\x97\x7f\x18âmÑ¤')
+119.123.40.60 - - [22/Sep/2019 18:01:10] "  üä$Ömeò×âmÑ¤ÔnKí" 400 -
+119.123.40.60 - - [22/Sep/2019 18:01:10] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03®\xa0*ZÕ¸>9Ls5¹G\x93:\x86å\x1aÍÅt\x85Æ2cÕ()]â\x0f\x04 \x08\x0b\x95^\x7ftBq\x7f\x84÷|\x88¢_\x8c-nå¦\x08¯Ú@\x89T4R*³ck\x00"ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+119.123.40.60 - - [22/Sep/2019 18:01:10] "  ü® *ZÕ¸>9Ls5¹G:åÍÅtÆ2cÕ()]â ^tBq÷|¢_-nå¦¯Ú@T4R*³ck "ÊÊÀ+À/À,À0Ì©Ì¨ÀÀ   / 5 " 400 -
+119.123.40.60 - - [22/Sep/2019 18:01:29] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\ràVâó\x97Üø£ïz±fÍ\x80ºïÎÕqxr\x8dæ\tó?ï\x8aª{\x85 \x83ÞÙ\t\x85\x08\x82\x01\x92í-\x10Üü\x034\x0eqåBÀ#|[jp3\x1bmµ\x99µ\x00"zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+119.123.40.60 - - [22/Sep/2019 18:01:29] "  üàVâóÜø£ïz±fÍºïÎÕqxræ	ó?ïª{ ÞÙ	í-Üü4qåBÀ#|[jp3mµµ "zzÀ+À/À,À0Ì©Ì¨ÀÀ   / 5 " 400 -
+119.123.40.60 - - [22/Sep/2019 18:01:29] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ä\x87Í\x98UR½ _\x96¿$pÄ¬r\x973ä9 ápÝ\x12¥`)ÊKqÄ \x82Z]G\x1c\x99\x06p÷uA¬ï-%46X¥Ó{×õ\x99$\x88)8m\x89?\x8f\x00"ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+119.123.40.60 - - [22/Sep/2019 18:01:29] "  üäÍUR½ _¿$pÄ¬r3ä9 ápÝ¥`)ÊKqÄ Z]Gp÷uA¬ï-%46X¥Ó{×õ$)8m? "ªªÀ+À/À,À0Ì©Ì¨ÀÀ   / 5 " 400 -
+119.123.40.60 - - [22/Sep/2019 18:01:34] "GET /demo?textin=%E5%AD%A6%E5%85%83%E7%B4%A0%E7%AC%A6%E5%8F%B7%E6%98%AFBa%E3%80%82%E6%98%AF%E4%B8%80%E7%A7%8D%E6%9F%94%E8%BD%AF%E7%9A%84%E6%9C%89%E9%93%B6%E7%99%BD%E8%89%B2%E5%85%89%E6%B3%BD%E7%9A%84%E7%A2%B1%E5%9C%9F%E9%87%91%E5%B1%9E%E3%80%82%E7%94%B1%E4%BA%8E%E5%AE%83%E7%9A%84%E5%8C%96%E5%AD%A6%E6%80%A7%E8%B4%A8%E5%8D%81%E5%88%86%E6%B4%BB%E6%B3%BC%EF%BC%8C%E4%BB%8E%E6%9D%A5%E6%B2%A1%E6%9C%89%E5%9C%A8%E8%87%AA%E7%84%B6%E7%95%8C%E4%B8%AD%E5%8F%91%E7%8E%B0%E9%92%A1%E5%8D%95%E8%B4%A8%E3%80%82%E9%92%A1%E5%9C%A8%E8%87%AA%E7%84%B6%E7%95%8C%E4%B8%AD%E6%9C%80%E5%B8%B8%E8%A7%81%E7%9A%84%E7%9F%BF%E7%89%A9%E6%98%AF%E9%87%8D%E6%99%B6%E7%9F%B3%EF%BC%88%E7%A1%AB%E9%85%B8%E9%92%A1%EF%BC%89%E5%92%8C%E6%AF%92%E9%87%8D%E7%9F%B3%EF%BC%88%E7%A2%B3%E9%85%B8%E9%92%A1%EF%BC%89%EF%BC%8C%E4%BA%8C%E8%80%85%E7%9A%86%E4%B8%8D%E6%BA%B6%E4%BA%8E%E6%B0%B4%E3%80%82%E9%92%A1%E5%9C%A81774%E5%B9%B4%E8%A2%AB%E7%A1%AE%E8%AE%A4%E4%B8%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E5%85%83%E7%B4%A0%EF%BC%8C%E4%BD%86%E7%9B%B4%E5%88%B01808%E5%B9%B4%E7%94%B5%E8%A7%A3%E6%B3%95%E5%8F%91%E6%98%8E%E4%B8%8D%E4%B9%85%E5%90%8E%E6%89%8D%E8%A2%AB%E5%BD%92%E7%BA%B3%E4%B8%BA%E9%87%91%E5%B1%9E%E5%85%83%E7%B4%A0%E3%80%82%E9%92%A1%E7%9A%84%E5%8C%96%E5%90%88%E7%89%A9%E7%94%A8%E4%BA%8E%E5%88%B6%E9%80%A0%E7%83%9F%E7%81%AB%E4%B8%AD%E7%9A%84%E7%BB%BF%E8%89%B2%EF%BC%88%E4%BB%A5%E7%84%B0%E8%89%B2%E5%8F%8D%E5%BA%94%E4%B8%BA%E5%8E%9F%E7%90%86%EF%BC%89%E3%80%82%E7%94%B5%E8%A7%A3%E7%86%94%E8%9E%8D%E7%9A%84%E6%B0%AF%E5%8C%96%E9%92%A1%E6%88%96%E7%94%A8%E9%93%9D%E8%BF%98%E5%8E%9F%E6%B0%AF%E5%8C%96%E9%92%A1%EF%BC%8C%E5%8F%AF%E5%88%B6%E5%BE%97%E9%87%91%E5%B1%9E%E9%92%A1 HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 18:01:35] "GET /favicon.ico HTTP/1.1" 404 730
+119.123.40.60 - - [22/Sep/2019 18:04:09] "GET / HTTP/1.1" 304 0
+119.123.40.60 - - [22/Sep/2019 18:04:14] "GET /demo?textin=%E5%9C%A8%E4%BB%BB%E6%AD%A3%E9%9D%9E%E7%9A%84%E4%BC%A0%E8%AE%B0%E9%87%8C%E6%9C%89%E8%BF%99%E6%A0%B7%E4%B8%80%E4%B8%AA%E6%95%85%E4%BA%8B%EF%BC%9A++%E6%9C%89%E4%B8%AA%E5%A4%A7%E5%AD%A6%E7%94%9F%EF%BC%8C%E6%98%AF%E5%8C%97%E5%A4%A7%E7%9A%84%E9%AB%98%E6%9D%90%E7%94%9F%EF%BC%8C%E6%AF%95%E4%B8%9A%E5%90%8E%E5%8A%A0%E5%85%A5%E5%88%B0%E5%8D%8E%E4%B8%BA%EF%BC%8C%E5%9C%A8%E5%8D%8E%E4%B8%BA%E5%BE%85%E4%BA%86%E4%B8%80%E5%91%A8%E5%B7%A6%E5%8F%B3%E5%90%8E%E7%AB%9F%E7%84%B6%E7%BB%99%E4%BB%BB%E6%AD%A3%E9%9D%9E%E5%86%99%E4%BA%86%E4%B8%80%E4%BB%BD%E2%80%9C%E4%B8%87%E8%A8%80%E4%B9%A6%E2%80%9D%EF%BC%8C%E4%BB%96%E6%8A%8A%E8%87%AA%E5%B7%B1%E6%89%80%E5%AD%A6%E5%88%B0%E7%9A%84%E6%89%80%E6%9C%89%E4%B8%9C%E8%A5%BF%E9%83%BD%E5%88%86%E6%9E%90%E5%88%B0%E8%BF%99%E4%B8%8A%E9%9D%A2%EF%BC%8C%E6%B4%8B%E6%B4%8B%E6%B4%92%E6%B4%92%E7%9A%84%E4%B8%80%E4%B8%87%E5%AD%97%EF%BC%8C%E4%BB%96%E8%87%AA%E5%B7%B1%E5%B8%8C%E6%9C%9B%E7%9A%84%E6%97%B6%E5%80%99%E4%BB%BB%E6%AD%A3%E9%9D%9E%E7%9C%8B%E5%88%B0%E8%BF%99%E4%BB%BD%E4%BF%A1%E5%90%8E%E4%BC%9A%E9%87%8D%E8%A7%86%E8%87%AA%E5%B7%B1%EF%BC%8C%E4%BD%86%E6%98%AF%E4%BB%BB%E6%AD%A3%E9%9D%9E%E7%9A%84%E5%9B%9E%E5%A4%8D%E6%98%AF%EF%BC%9A%E5%A6%82%E6%9E%9C%E6%AD%A4%E5%91%98%E5%B7%A5%E6%9C%89%E7%B2%BE%E7%A5%9E%E7%97%85%EF%BC%8C%E5%BB%BA%E8%AE%AE%E9%80%81%E5%8C%BB%E9%99%A2%EF%BC%8C%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89%EF%BC%8C%E5%BB%BA%E8%AE%AE%E5%BC%80%E9%99%A4%EF%BC%81++%E7%9C%8B%E5%88%B0%E8%BF%99%E4%B8%AA%E6%95%85%E4%BA%8B%E7%9C%9F%E7%9A%84%E6%84%9F%E8%A7%89%E8%BF%99%E4%B8%AA%E6%96%B0%E5%91%98%E5%B7%A5%E8%B7%9F%E5%AD%A9%E5%AD%90%E4%B8%80%E6%A0%B7%EF%BC%8C%E6%B2%A1%E6%9C%89%E9%95%BF%E5%A4%A7%EF%BC%8C%E5%81%B6%E5%83%8F%E5%89%A7%E7%9C%8B%E5%A4%9A%E4%BA%86%EF%BC%8C%E4%BB%A5%E4%B8%BA%E9%9D%A0%E4%B8%80%E4%BB%BD%E4%B8%87%E8%A8%80%E4%B9%A6%E5%B0%B1%E5%8F%AF%E4%BB%A5%E8%AE%A9%E8%80%81%E6%9D%BF%E7%BB%99%E6%9C%BA%E4%BC%9A%EF%BC%8C%E5%A4%AA%E4%B8%8D%E7%8E%B0%E5%AE%9E%E4%BA%86%E3%80%82%E8%80%8C%E4%B8%94%E5%8D%8E%E4%B8%BA%E7%9A%84%E7%AE%A1%E7%90%86%E6%98%AF%E7%BB%8F%E8%BF%87%E9%94%A4%E7%82%BC%E8%BF%87%E5%90%8E%E6%89%8D%E5%BD%A2%E6%88%90%E7%9A%84%EF%BC%8C%E7%BB%9D%E5%AF%B9%E4%B8%8D%E6%98%AF%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86%E5%8F%AF%E4%BB%A5%E6%8E%A8%E7%BF%BB%E7%9A%84%E3%80%82++%E8%BF%99%E4%B8%AA%E6%96%B0%E4%BA%BA%E5%81%9A%E4%BA%8B%E4%B8%8D%E5%A4%9F%E8%B8%8F%E5%AE%9E%EF%BC%8C%E4%B8%8D%E7%9F%A5%E9%81%93%E8%84%9A%E8%B8%8F%E5%AE%9E%E5%9C%B0%EF%BC%8C%E5%A4%AA%E5%BC%82%E6%83%B3%E5%A4%A9%E5%BC%80%E4%BA%86%EF%BC%8C%E5%A6%82%E6%9E%9C%E4%BD%A0%E6%98%AF%E8%80%81%E6%9D%BF%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%BC%80%E9%99%A4%E8%BF%99%E6%A0%B7%E7%9A%84%E4%BA%BA%E5%90%97%EF%BC%9F HTTP/1.1" 200 669
+119.123.40.60 - - [22/Sep/2019 18:04:14] "GET /favicon.ico HTTP/1.1" 404 730
+119.123.40.60 - - [22/Sep/2019 18:05:05] "GET /try? HTTP/1.1" 200 624
+119.123.40.60 - - [22/Sep/2019 18:09:15] "GET /demo?textin=%E6%8D%AE%E4%BA%BA%E7%A4%BE%E9%83%A8%E7%BD%91%E7%AB%99%E6%B6%88%E6%81%AF%EF%BC%8C25%E6%97%A5%EF%BC%8C%E4%BA%BA%E7%A4%BE%E9%83%A8%E4%BF%A1%E6%81%AF%E4%B8%AD%E5%BF%83%E6%9C%89%E5%85%B3%E8%B4%9F%E8%B4%A3%E4%BA%BA%E8%A7%A3%E8%AF%BB%E8%AF%A5%E3%80%8A%E9%80%9A%E7%9F%A5%E3%80%8B%E7%A7%B0%EF%BC%8C%E4%BB%8A%E5%B9%B4%E8%A6%81%E5%9C%A8%E6%89%80%E6%9C%89%E5%9C%B0%E5%B8%82%E5%AE%9E%E7%8E%B0%E7%AD%BE%E5%8F%91%E5%BA%94%E7%94%A8%E5%85%A8%E5%9B%BD%E7%BB%9F%E4%B8%80%E6%A0%87%E5%87%86%E7%9A%84%E7%94%B5%E5%AD%90%E7%A4%BE%E4%BF%9D%E5%8D%A1%EF%BC%8C%E8%87%B3%E5%B0%911%E4%BA%BF%E4%BA%BA%E9%A2%86%E5%8F%96%E7%94%B5%E5%AD%90%E7%A4%BE%E4%BF%9D%E5%8D%A1%EF%BC%8C%E6%89%80%E6%9C%89%E5%9C%B0%E5%B8%82%E5%9D%87%E5%BC%80%E9%80%9A%E7%A7%BB%E5%8A%A8%E6%94%AF%E4%BB%98%E6%9C%8D%E5%8A%A1%E3%80%82++%E9%9B%B7%E5%85%88%E7%94%9F%E8%AF%B4%EF%BC%8C%E4%BA%A4%E8%AD%A6%E9%83%A8%E9%97%A8%E7%BD%9A%E4%BA%86%E4%BB%9616%E6%AC%A1%EF%BC%8C%E4%BB%96%E5%8F%AA%E8%AE%A4%E4%BA%86%E4%B8%80%E6%AC%A1%EF%BC%8C%E4%BA%A4%E4%BA%86%E4%B8%80%E6%AC%A1%E7%BD%9A%E6%AC%BE%EF%BC%8C%E6%8B%BF%E5%88%B0%E6%B3%95%E9%99%A2%E7%9A%84%E5%88%A4%E5%86%B3%E4%B9%A6%E5%90%8E%EF%BC%8C%E4%BC%9A%E5%89%8D%E5%BE%80%E4%BA%A4%E8%AD%A6%E9%98%9F%EF%BC%8C%E8%A6%81%E6%B1%82%E6%92%A4%E9%94%80%E6%AD%A4%E5%89%8D%E7%9A%84%E5%A4%84%E7%BD%9A%E3%80%82+%E5%BE%8B%E5%B8%88%EF%BC%9A%E4%B8%8D%E4%BE%9D%E6%B3%95%E7%B2%98%E8%B4%B4%E5%91%8A%E7%9F%A5%E5%8D%95%2C%E6%9C%89%E8%B0%8B%E5%8F%96%E7%BD%9A%E6%AC%BE%E4%B9%8B%E5%AB%8C%E3%80%82+%E9%99%95%E8%A5%BF%E9%87%91%E9%95%9D%E5%BE%8B%E5%B8%88%E4%BA%8B%E5%8A%A1%E6%89%80%E5%BE%8B%E5%B8%88%E9%AA%86%E8%A3%95%E5%BE%B7%E8%AF%B4%EF%BC%8C%E8%BF%99%E8%B5%B7%E6%A1%88%E4%BB%B6%E4%B8%AD%EF%BC%8C%E4%BA%A4%E8%AD%A6%E9%83%A8%E9%97%A8%E5%9C%A8%E5%A4%84%E7%90%86%E4%BA%A4%E9%80%9A%E8%BF%9D%E6%B3%95%E7%9A%84%E7%A8%8B%E5%BA%8F%E4%B8%8A%E5%AD%98%E5%9C%A8%E9%97%AE%E9%A2%98%E3%80%82%E5%8F%B8%E6%9C%BA%E8%BF%9D%E5%81%9C%E4%BA%86%EF%BC%8C%E4%BA%A4%E8%AD%A6%E5%BA%94%E5%B0%86%E5%A4%84%E7%BD%9A%E5%8D%95%E5%BC%A0%E8%B4%B4%E5%9C%A8%E8%BD%A6%E4%B8%8A%EF%BC%8C%E5%B9%B6%E5%91%8A%E7%9F%A5%E4%B8%8D%E6%9C%8D%E5%8F%AF%E4%BB%A5%E8%A1%8C%E4%BD%BF%E7%94%B3%E8%AF%B7%E5%A4%8D%E8%AE%AE%E5%92%8C%E6%8F%90%E8%B5%B7%E8%AF%89%E8%AE%BC%E7%9A%84%E6%9D%83%E5%88%A9%E3%80%82%E8%BF%99%E6%97%A2%E6%98%AF%E4%BA%A4%E8%AD%A6%E7%9A%84%E5%91%8A%E7%9F%A5%E4%B9%89%E5%8A%A1%EF%BC%8C%E4%B9%9F%E6%98%AF%E5%8F%B8%E6%9C%BA%E7%9A%84%E7%9F%A5%E6%83%85%E6%9D%83%E5%88%A9%E3%80%82%E4%BA%A4%E8%AD%A6%E5%A6%82%E6%9E%9C%E8%BF%99%E4%B9%88%E5%81%9A%E4%BA%86%EF%BC%8C%E6%9C%AC%E6%A1%88%E5%8F%B8%E6%9C%BA%E4%BD%95%E4%BB%A5%E8%A2%AB%E7%9F%AD%E6%97%B6%E9%97%B4%E5%86%85%E5%A4%84%E7%BD%9A16%E6%AC%A1%E5%90%8E%E6%89%8D%E7%9F%A5%E6%99%93%E8%A2%AB%E7%BD%9A%EF%BC%9F%E7%A8%8B%E5%BA%8F%E8%BF%9D%E6%B3%95%EF%BC%8C%E4%B8%BA%E7%BD%9A%E8%80%8C%E7%BD%9A%EF%BC%8C%E6%B2%A1%E6%9C%89%E8%B5%B7%E5%88%B0%E6%95%99%E8%82%B2%E7%9A%84%E7%9B%AE%E7%9A%84%E3%80%82++%E3%80%8A%E9%9F%A9%E5%9B%BD%E5%89%8D%E4%B8%AD%E5%A4%AE%E6%97%A5%E6%8A%A5%E3%80%8B%E7%A7%B0%EF%BC%8C%E5%BD%93%E5%89%8D%E9%9F%A9%E5%9B%BD%E6%B5%B7%E5%86%9B%E9%99%86%E6%88%98%E9%98%9F%E6%8B%A5%E6%9C%892%E4%B8%AA%E5%B8%88%E5%92%8C2%E4%B8%AA%E6%97%85%EF%BC%8C%E8%BF%98%E6%89%93%E7%AE%97%E5%9C%A82021%E5%B9%B4%E5%A2%9E%E8%AE%BE%E8%88%AA%E7%A9%BA%E5%9B%A2%EF%BC%8C%E5%B9%B6%E4%BB%8E%E4%BB%8A%E5%B9%B4%E5%BC%80%E5%A7%8B%E5%BC%95%E8%BF%9B30%E4%BD%99%E6%9E%B6%E8%BF%90%E8%BE%93%E7%9B%B4%E5%8D%87%E6%9C%BA%E5%92%8C20%E6%9E%B6%E6%94%BB%E5%87%BB%E7%9B%B4%E5%8D%87%E6%9C%BA%E3%80%82%E6%AD%A4%E5%A4%96%EF%BC%8C%E9%9F%A9%E5%86%9B%E6%AD%A3%E5%9C%A8%E7%A0%94%E5%8F%91%E6%96%B0%E5%9E%8B%E7%99%BB%E9%99%86%E8%A3%85%E7%94%B2%E8%BD%A6%EF%BC%8C%E6%AF%94%E7%8E%B0%E6%9C%89AAV-7%E7%9A%84%E9%80%9F%E5%BA%A6%E6%9B%B4%E5%BF%AB%E3%80%81%E7%81%AB%E5%8A%9B%E6%9B%B4%E7%8C%9B%E3%80%82%E6%9C%AA%E6%9D%A5%E9%9F%A9%E5%9B%BD%E6%B5%B7%E5%86%9B%E9%99%86%E6%88%98%E9%98%9F%E8%BF%98%E4%BC%9A%E9%85%8D%E5%A4%87%E6%97%A0%E4%BA%BA%E6%9C%BA%EF%BC%8C%E2%80%9C%E5%B0%86%E5%9C%A8%E4%B8%9C%E5%8C%97%E4%BA%9A%E4%B8%89%E5%9B%BD%E4%B8%AD%E5%8D%A0%E6%8D%AE%E4%BC%98%E5%8A%BF%E2%80%9D%E3%80%82+%E4%BD%86%E9%9F%A9%E5%9B%BD%E7%BD%91%E5%8F%8B%E5%AF%B9%E2%80%9C%E9%9F%A9%E5%9B%BD%E6%B5%B7%E5%86%9B%E9%99%86%E6%88%98%E9%98%9F%E4%B8%96%E7%95%8C%E7%AC%AC%E4%BA%8C%E2%80%9D%E7%9A%84%E8%AF%B4%E6%B3%95%E4%B8%8D%E4%BB%A5%E4%B8%BA%E7%84%B6%E3%80%82%E4%B8%8D%E5%B0%91%E7%BD%91%E5%8F%8B%E7%95%99%E8%A8%80%E5%98%B2%E8%AE%BD%E7%A7%B0%EF%BC%9A%E2%80%9C%E8%BF%99%E4%BC%BC%E4%B9%8E%E6%98%AF%E9%9F%A9%E5%9B%BD%E6%B5%B7%E5%86%9B%E9%99%86%E6%88%98%E9%98%9F%E4%BA%89%E5%8F%96%E5%9B%BD%E9%98%B2%E9%A2%84%E7%AE%97%E7%9A%84%E8%BD%AF%E6%96%87%E2%80%9D%E2%80%9C%E7%8E%B0%E5%9C%A8%E5%BE%88%E5%A4%9A%E9%9F%A9%E5%9B%BD%E6%B5%B7%E5%86%9B%E9%99%86%E6%88%98%E9%98%9F%E5%91%98%E9%83%BD%E6%98%AF%E6%88%B4%E7%9C%BC%E9%95%9C%E3%80%81%E7%98%A6%E8%B1%86%E8%8A%BD%E4%BD%93%E5%9E%8B%EF%BC%8C%E4%B8%8D%E7%9F%A5%E9%81%93%E6%80%8E%E4%B9%88%E9%80%89%E6%8B%94%E7%9A%84%E2%80%9D%E2%80%9C%E8%AE%B0%E8%80%85%E5%A4%A7%E6%A6%82%E6%98%AF%E6%B5%B7%E5%86%9B%E9%99%86%E6%88%98%E9%98%9F%E9%80%80%E5%BD%B9%E7%9A%84%E5%90%A7%E2%80%9D%E3%80%82 HTTP/1.1" 200 2385
+119.123.40.60 - - [22/Sep/2019 18:09:15] "GET /favicon.ico HTTP/1.1" 404 730
+119.123.40.60 - - [22/Sep/2019 18:09:47] "GET / HTTP/1.1" 304 0
+119.123.40.60 - - [22/Sep/2019 18:12:05] "GET /demo?textin=%E6%96%B0%E5%8D%8E%E7%A4%BE%E9%A6%99%E6%B8%AF8%E6%9C%8811%E6%97%A5%E7%94%B5+%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A11%E6%97%A5%E5%9C%A8%E6%96%B0%E7%95%8C%E5%85%83%E6%9C%97%E4%B8%80%E5%AE%B6%E4%B8%AD%E5%AD%A6%E4%B8%BE%E8%A1%8C%E2%80%9C%E5%AE%B6%E5%9C%A8%E4%B8%AD%E5%8D%8E%E2%80%9D%E5%8D%87%E6%97%97%E7%A4%BC%EF%BC%8C%E5%90%B8%E5%BC%95%E5%A4%9A%E5%90%8D%E5%B8%82%E6%B0%91%E5%8F%82%E4%B8%8E%E3%80%82++%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%85%88%E7%94%9F%E4%B9%9F%E8%AF%B4%E8%BF%87%E8%BF%99%E6%98%AF%E4%B8%80%E4%BB%B6%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85%E3%80%82++%E6%AD%A3%E5%8D%88%E6%97%B6%E5%88%86%EF%BC%8C%E8%89%B3%E9%98%B3%E9%AB%98%E7%85%A7%E3%80%82%E7%94%B1%E9%A6%99%E6%B8%AF%E5%A4%9A%E5%AE%B6%E4%B8%AD%E5%AD%A6%E7%BB%84%E6%88%90%E7%9A%84%E5%8D%87%E6%97%97%E9%98%9F%E4%BC%8D%EF%BC%8C%E6%8A%A4%E9%80%81%E5%9B%BD%E6%97%97%E5%88%B0%E5%AD%A6%E6%A0%A1%E6%93%8D%E5%9C%BA%E7%9A%84%E6%97%97%E6%9D%86%E4%B8%8B%E3%80%82%E4%BA%94%E6%98%9F%E7%BA%A2%E6%97%97%E4%BC%B4%E9%9A%8F%E7%9D%80%E5%9B%BD%E6%AD%8C%E5%86%89%E5%86%89%E5%8D%87%E8%B5%B7%EF%BC%8C%E6%B0%94%E6%B0%9B%E5%BA%84%E4%B8%A5%E3%80%82+%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A%E4%B8%BB%E5%B8%AD%E5%91%A8%E4%B8%96%E8%80%80%E5%9C%A8%E5%9B%BD%E6%97%97%E4%B8%8B%E8%87%B4%E8%BE%9E%E6%97%B6%E8%A1%A8%E7%A4%BA%EF%BC%8C%E6%9C%80%E8%BF%91%E9%A6%99%E6%B8%AF%E5%8F%91%E7%94%9F%E5%BE%88%E5%A4%9A%E4%B8%8D%E6%84%89%E5%BF%AB%E7%9A%84%E4%BA%8B%E4%BB%B6%EF%BC%8C%E5%8C%85%E6%8B%AC%E9%83%A8%E5%88%86%E4%BA%BA%E4%BE%AE%E8%BE%B1%E5%9B%BD%E6%97%97%E5%9B%BD%E5%BE%BD%E3%80%81%E6%8C%91%E6%88%98%E2%80%9C%E4%B8%80%E5%9B%BD%E4%B8%A4%E5%88%B6%E2%80%9D%E5%8E%9F%E5%88%99%E5%BA%95%E7%BA%BF%EF%BC%8C%E4%B9%9F%E5%88%86%E5%8C%96%E4%BA%86%E9%A6%99%E6%B8%AF%E5%92%8C%E5%86%85%E5%9C%B0%E7%9A%84%E5%90%8C%E8%83%9E%E3%80%82%E5%B8%8C%E6%9C%9B%E9%80%9A%E8%BF%87%E5%BD%93%E5%A4%A9%E4%B8%BE%E8%A1%8C%E5%8D%87%E6%97%97%E6%B4%BB%E5%8A%A8%E5%BC%98%E6%89%AC%E6%AD%A3%E8%83%BD%E9%87%8F%EF%BC%8C%E5%B9%B6%E4%BC%A0%E9%80%92%E4%B8%80%E4%B8%AA%E9%87%8D%E8%A6%81%E8%AE%AF%E6%81%AF%EF%BC%9A%E9%A6%99%E6%B8%AF%E5%B1%9E%E4%BA%8E%E4%B8%AD%E5%8D%8E%E6%B0%91%E6%97%8F%E5%A4%A7%E5%AE%B6%E5%BA%AD%E3%80%82++%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A%E6%80%BB%E7%9B%91%E8%AE%B8%E6%8C%AF%E9%9A%86%E5%8B%89%E5%8A%B1%E5%B9%B4%E8%BD%BB%E4%BA%BA%E8%AF%B4%EF%BC%8C%E8%A6%81%E5%85%B3%E5%BF%83%E7%A4%BE%E4%BC%9A%EF%BC%8C%E5%85%B3%E5%BF%83%E5%9B%BD%E5%AE%B6%EF%BC%8C%E5%B8%8C%E6%9C%9B%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%BB%A5%E5%9B%BD%E4%B8%BA%E8%8D%A3%EF%BC%8C%E4%B8%BA%E5%9B%BD%E4%BA%89%E5%85%89%E3%80%82+%E6%B4%BB%E5%8A%A8%E6%8E%A5%E8%BF%91%E5%B0%BE%E5%A3%B0%EF%BC%8C%E5%8F%82%E4%B8%8E%E8%80%85%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%9C%B0%E5%9B%BE%E4%B8%8A%E8%B4%B4%E4%B8%8A%E4%B8%AD%E5%9B%BD%E5%9B%BD%E6%97%97%EF%BC%8C%E8%B1%A1%E5%BE%81%E5%A4%A7%E5%AE%B6%E5%85%B1%E5%90%8C%E5%8A%AA%E5%8A%9B%E5%BB%BA%E8%AE%BE%E5%9B%BD%E5%AE%B6%E3%80%82%E6%9C%80%E5%90%8E%EF%BC%8C%E5%85%A8%E4%BD%93%E4%BA%BA%E5%91%98%E5%90%88%E5%94%B1%E3%80%8A%E6%98%8E%E5%A4%A9%E4%BC%9A%E6%9B%B4%E5%A5%BD%E3%80%8B%EF%BC%8C%E4%B8%BA%E9%A6%99%E6%B8%AF%E9%80%81%E4%B8%8A%E7%BE%8E%E5%A5%BD%E7%A5%9D%E6%84%BF%E3%80%82++%E4%BB%8A%E5%B9%B415%E5%B2%81%E7%9A%84%E9%83%AD%E7%B4%AB%E6%99%B4%E5%9C%A8%E9%A6%99%E6%B8%AF%E5%9C%9F%E7%94%9F%E5%9C%9F%E9%95%BF%E3%80%82%E5%A5%B9%E8%A1%A8%E7%A4%BA%EF%BC%8C%E8%BF%99%E6%AC%A1%E5%8D%87%E6%97%97%E7%A4%BC%E6%98%AF%E7%89%B9%E5%88%AB%E4%B8%BA%E9%A6%99%E6%B8%AF%E5%8A%A0%E6%B2%B9%E8%80%8C%E4%B8%BE%E8%A1%8C%E7%9A%84%EF%BC%8C%E5%B8%8C%E6%9C%9B%E5%A4%A7%E5%AE%B6%E9%83%BD%E6%87%82%E5%BE%97%E5%B0%8A%E9%87%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9B%BD%E5%AE%B6%E3%80%82%E2%80%9C%E7%9C%8B%E7%9D%80%E5%9B%BD%E6%97%97%E5%8D%87%E8%B5%B7%EF%BC%8C%E6%83%B3%E5%88%B0%E8%87%AA%E5%B7%B1%E5%9C%A8%E4%B8%AD%E5%9B%BD%E8%BF%99%E7%89%87%E5%9C%9F%E5%9C%B0%E4%B8%8A%E6%88%90%E9%95%BF%EF%BC%8C%E6%84%9F%E5%88%B0%E5%8D%81%E5%88%86%E8%87%AA%E8%B1%AA%E3%80%82%E2%80%9D+%E2%80%9C%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%28%E4%B8%8E%E4%BB%A5%E5%BE%80%29%E4%B8%80%E6%A0%B7%EF%BC%8C%E4%BD%86%E6%84%8F%E4%B9%89%E5%8D%B4%E4%B8%8D%E5%90%8C%E3%80%82%E2%80%9D%E4%BD%9C%E4%B8%BA%E5%BD%93%E5%A4%A9%E5%8D%87%E6%97%97%E9%98%9F%E6%88%90%E5%91%98%E4%B9%8B%E4%B8%80%E7%9A%84%E9%AB%98%E4%B8%AD%E7%94%9F%E8%B5%B5%E9%A2%96%E8%B4%A4%E8%AF%B4%EF%BC%8C%E5%9B%BD%E6%97%97%E5%92%8C%E5%9B%BD%E5%BE%BD%E4%BB%A3%E8%A1%A8%E4%BA%86%E4%B8%80%E4%B8%AA%E5%9B%BD%E5%AE%B6%E7%9A%84%E5%B0%8A%E4%B8%A5%EF%BC%8C%E4%B8%8D%E5%AE%B9%E8%B7%B5%E8%B8%8F%EF%BC%8C%E5%BE%88%E6%9C%9F%E6%9C%9B%E5%BD%93%E5%A4%A9%E7%9A%84%E6%B4%BB%E5%8A%A8%E8%83%BD%E5%90%91%E5%B9%BF%E5%A4%A7%E5%B8%82%E6%B0%91%E4%BC%A0%E8%BE%BE%E8%BF%99%E4%B8%80%E4%BF%A1%E6%81%AF%E3%80%82++%E5%8D%B3%E5%B0%86%E5%8D%87%E8%AF%BB%E5%88%9D%E4%B8%89%E7%9A%84%E8%92%8B%E9%9D%96%E8%BD%A9%E8%AE%A4%E4%B8%BA%EF%BC%8C%E8%BF%91%E6%97%A5%E9%A6%99%E6%B8%AF%E5%8F%91%E7%94%9F%E8%BF%9E%E4%B8%B2%E6%9A%B4%E5%8A%9B%E4%BA%8B%E4%BB%B6%EF%BC%8C%E5%BD%93%E5%A4%A9%E7%9A%84%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%E6%9B%B4%E6%98%BE%E6%84%8F%E4%B9%89%EF%BC%8C%E5%B8%8C%E6%9C%9B%E9%A6%99%E6%B8%AF%E5%BF%AB%E5%BF%AB%E6%81%A2%E5%A4%8D%E5%B9%B3%E9%9D%99%EF%BC%8C%E6%B8%AF%E4%BA%BA%E9%83%BD%E5%9B%A2%E7%BB%93%E8%B5%B7%E6%9D%A5%E3%80%82 HTTP/1.1" 200 1521
+119.123.40.60 - - [22/Sep/2019 18:16:20] "GET /demo?textin=%E6%96%B0%E5%8D%8E%E7%A4%BE%E9%A6%99%E6%B8%AF8%E6%9C%8811%E6%97%A5%E7%94%B5+%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A11%E6%97%A5%E5%9C%A8%E6%96%B0%E7%95%8C%E5%85%83%E6%9C%97%E4%B8%80%E5%AE%B6%E4%B8%AD%E5%AD%A6%E4%B8%BE%E8%A1%8C%E2%80%9C%E5%AE%B6%E5%9C%A8%E4%B8%AD%E5%8D%8E%E2%80%9D%E5%8D%87%E6%97%97%E7%A4%BC%EF%BC%8C%E5%90%B8%E5%BC%95%E5%A4%9A%E5%90%8D%E5%B8%82%E6%B0%91%E5%8F%82%E4%B8%8E%E3%80%82++%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%85%88%E7%94%9F%E4%B9%9F%E8%AF%B4%E8%BF%87%E8%BF%99%E6%98%AF%E4%B8%80%E4%BB%B6%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85%E3%80%82++%E6%AD%A3%E5%8D%88%E6%97%B6%E5%88%86%EF%BC%8C%E8%89%B3%E9%98%B3%E9%AB%98%E7%85%A7%E3%80%82%E7%94%B1%E9%A6%99%E6%B8%AF%E5%A4%9A%E5%AE%B6%E4%B8%AD%E5%AD%A6%E7%BB%84%E6%88%90%E7%9A%84%E5%8D%87%E6%97%97%E9%98%9F%E4%BC%8D%EF%BC%8C%E6%8A%A4%E9%80%81%E5%9B%BD%E6%97%97%E5%88%B0%E5%AD%A6%E6%A0%A1%E6%93%8D%E5%9C%BA%E7%9A%84%E6%97%97%E6%9D%86%E4%B8%8B%E3%80%82%E4%BA%94%E6%98%9F%E7%BA%A2%E6%97%97%E4%BC%B4%E9%9A%8F%E7%9D%80%E5%9B%BD%E6%AD%8C%E5%86%89%E5%86%89%E5%8D%87%E8%B5%B7%EF%BC%8C%E6%B0%94%E6%B0%9B%E5%BA%84%E4%B8%A5%E3%80%82+%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A%E4%B8%BB%E5%B8%AD%E5%91%A8%E4%B8%96%E8%80%80%E5%9C%A8%E5%9B%BD%E6%97%97%E4%B8%8B%E8%87%B4%E8%BE%9E%E6%97%B6%E8%A1%A8%E7%A4%BA%EF%BC%8C%E6%9C%80%E8%BF%91%E9%A6%99%E6%B8%AF%E5%8F%91%E7%94%9F%E5%BE%88%E5%A4%9A%E4%B8%8D%E6%84%89%E5%BF%AB%E7%9A%84%E4%BA%8B%E4%BB%B6%EF%BC%8C%E5%8C%85%E6%8B%AC%E9%83%A8%E5%88%86%E4%BA%BA%E4%BE%AE%E8%BE%B1%E5%9B%BD%E6%97%97%E5%9B%BD%E5%BE%BD%E3%80%81%E6%8C%91%E6%88%98%E2%80%9C%E4%B8%80%E5%9B%BD%E4%B8%A4%E5%88%B6%E2%80%9D%E5%8E%9F%E5%88%99%E5%BA%95%E7%BA%BF%EF%BC%8C%E4%B9%9F%E5%88%86%E5%8C%96%E4%BA%86%E9%A6%99%E6%B8%AF%E5%92%8C%E5%86%85%E5%9C%B0%E7%9A%84%E5%90%8C%E8%83%9E%E3%80%82%E5%B8%8C%E6%9C%9B%E9%80%9A%E8%BF%87%E5%BD%93%E5%A4%A9%E4%B8%BE%E8%A1%8C%E5%8D%87%E6%97%97%E6%B4%BB%E5%8A%A8%E5%BC%98%E6%89%AC%E6%AD%A3%E8%83%BD%E9%87%8F%EF%BC%8C%E5%B9%B6%E4%BC%A0%E9%80%92%E4%B8%80%E4%B8%AA%E9%87%8D%E8%A6%81%E8%AE%AF%E6%81%AF%EF%BC%9A%E9%A6%99%E6%B8%AF%E5%B1%9E%E4%BA%8E%E4%B8%AD%E5%8D%8E%E6%B0%91%E6%97%8F%E5%A4%A7%E5%AE%B6%E5%BA%AD%E3%80%82++%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A%E6%80%BB%E7%9B%91%E8%AE%B8%E6%8C%AF%E9%9A%86%E5%8B%89%E5%8A%B1%E5%B9%B4%E8%BD%BB%E4%BA%BA%E8%AF%B4%EF%BC%8C%E8%A6%81%E5%85%B3%E5%BF%83%E7%A4%BE%E4%BC%9A%EF%BC%8C%E5%85%B3%E5%BF%83%E5%9B%BD%E5%AE%B6%EF%BC%8C%E5%B8%8C%E6%9C%9B%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%BB%A5%E5%9B%BD%E4%B8%BA%E8%8D%A3%EF%BC%8C%E4%B8%BA%E5%9B%BD%E4%BA%89%E5%85%89%E3%80%82+%E6%B4%BB%E5%8A%A8%E6%8E%A5%E8%BF%91%E5%B0%BE%E5%A3%B0%EF%BC%8C%E5%8F%82%E4%B8%8E%E8%80%85%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%9C%B0%E5%9B%BE%E4%B8%8A%E8%B4%B4%E4%B8%8A%E4%B8%AD%E5%9B%BD%E5%9B%BD%E6%97%97%EF%BC%8C%E8%B1%A1%E5%BE%81%E5%A4%A7%E5%AE%B6%E5%85%B1%E5%90%8C%E5%8A%AA%E5%8A%9B%E5%BB%BA%E8%AE%BE%E5%9B%BD%E5%AE%B6%E3%80%82%E6%9C%80%E5%90%8E%EF%BC%8C%E5%85%A8%E4%BD%93%E4%BA%BA%E5%91%98%E5%90%88%E5%94%B1%E3%80%8A%E6%98%8E%E5%A4%A9%E4%BC%9A%E6%9B%B4%E5%A5%BD%E3%80%8B%EF%BC%8C%E4%B8%BA%E9%A6%99%E6%B8%AF%E9%80%81%E4%B8%8A%E7%BE%8E%E5%A5%BD%E7%A5%9D%E6%84%BF%E3%80%82++%E4%BB%8A%E5%B9%B415%E5%B2%81%E7%9A%84%E9%83%AD%E7%B4%AB%E6%99%B4%E5%9C%A8%E9%A6%99%E6%B8%AF%E5%9C%9F%E7%94%9F%E5%9C%9F%E9%95%BF%E3%80%82%E5%A5%B9%E8%A1%A8%E7%A4%BA%EF%BC%8C%E8%BF%99%E6%AC%A1%E5%8D%87%E6%97%97%E7%A4%BC%E6%98%AF%E7%89%B9%E5%88%AB%E4%B8%BA%E9%A6%99%E6%B8%AF%E5%8A%A0%E6%B2%B9%E8%80%8C%E4%B8%BE%E8%A1%8C%E7%9A%84%EF%BC%8C%E5%B8%8C%E6%9C%9B%E5%A4%A7%E5%AE%B6%E9%83%BD%E6%87%82%E5%BE%97%E5%B0%8A%E9%87%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9B%BD%E5%AE%B6%E3%80%82%E2%80%9C%E7%9C%8B%E7%9D%80%E5%9B%BD%E6%97%97%E5%8D%87%E8%B5%B7%EF%BC%8C%E6%83%B3%E5%88%B0%E8%87%AA%E5%B7%B1%E5%9C%A8%E4%B8%AD%E5%9B%BD%E8%BF%99%E7%89%87%E5%9C%9F%E5%9C%B0%E4%B8%8A%E6%88%90%E9%95%BF%EF%BC%8C%E6%84%9F%E5%88%B0%E5%8D%81%E5%88%86%E8%87%AA%E8%B1%AA%E3%80%82%E2%80%9D+%E2%80%9C%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%28%E4%B8%8E%E4%BB%A5%E5%BE%80%29%E4%B8%80%E6%A0%B7%EF%BC%8C%E4%BD%86%E6%84%8F%E4%B9%89%E5%8D%B4%E4%B8%8D%E5%90%8C%E3%80%82%E2%80%9D%E4%BD%9C%E4%B8%BA%E5%BD%93%E5%A4%A9%E5%8D%87%E6%97%97%E9%98%9F%E6%88%90%E5%91%98%E4%B9%8B%E4%B8%80%E7%9A%84%E9%AB%98%E4%B8%AD%E7%94%9F%E8%B5%B5%E9%A2%96%E8%B4%A4%E8%AF%B4%EF%BC%8C%E5%9B%BD%E6%97%97%E5%92%8C%E5%9B%BD%E5%BE%BD%E4%BB%A3%E8%A1%A8%E4%BA%86%E4%B8%80%E4%B8%AA%E5%9B%BD%E5%AE%B6%E7%9A%84%E5%B0%8A%E4%B8%A5%EF%BC%8C%E4%B8%8D%E5%AE%B9%E8%B7%B5%E8%B8%8F%EF%BC%8C%E5%BE%88%E6%9C%9F%E6%9C%9B%E5%BD%93%E5%A4%A9%E7%9A%84%E6%B4%BB%E5%8A%A8%E8%83%BD%E5%90%91%E5%B9%BF%E5%A4%A7%E5%B8%82%E6%B0%91%E4%BC%A0%E8%BE%BE%E8%BF%99%E4%B8%80%E4%BF%A1%E6%81%AF%E3%80%82++%E5%8D%B3%E5%B0%86%E5%8D%87%E8%AF%BB%E5%88%9D%E4%B8%89%E7%9A%84%E8%92%8B%E9%9D%96%E8%BD%A9%E8%AE%A4%E4%B8%BA%EF%BC%8C%E8%BF%91%E6%97%A5%E9%A6%99%E6%B8%AF%E5%8F%91%E7%94%9F%E8%BF%9E%E4%B8%B2%E6%9A%B4%E5%8A%9B%E4%BA%8B%E4%BB%B6%EF%BC%8C%E5%BD%93%E5%A4%A9%E7%9A%84%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%E6%9B%B4%E6%98%BE%E6%84%8F%E4%B9%89%EF%BC%8C%E5%B8%8C%E6%9C%9B%E9%A6%99%E6%B8%AF%E5%BF%AB%E5%BF%AB%E6%81%A2%E5%A4%8D%E5%B9%B3%E9%9D%99%EF%BC%8C%E6%B8%AF%E4%BA%BA%E9%83%BD%E5%9B%A2%E7%BB%93%E8%B5%B7%E6%9D%A5%E3%80%82 HTTP/1.1" 200 1521
+119.123.40.60 - - [22/Sep/2019 18:16:25] "GET /demo?textin=%E5%9C%A8%E4%BB%BB%E6%AD%A3%E9%9D%9E%E7%9A%84%E4%BC%A0%E8%AE%B0%E9%87%8C%E6%9C%89%E8%BF%99%E6%A0%B7%E4%B8%80%E4%B8%AA%E6%95%85%E4%BA%8B%EF%BC%9A++%E6%9C%89%E4%B8%AA%E5%A4%A7%E5%AD%A6%E7%94%9F%EF%BC%8C%E6%98%AF%E5%8C%97%E5%A4%A7%E7%9A%84%E9%AB%98%E6%9D%90%E7%94%9F%EF%BC%8C%E6%AF%95%E4%B8%9A%E5%90%8E%E5%8A%A0%E5%85%A5%E5%88%B0%E5%8D%8E%E4%B8%BA%EF%BC%8C%E5%9C%A8%E5%8D%8E%E4%B8%BA%E5%BE%85%E4%BA%86%E4%B8%80%E5%91%A8%E5%B7%A6%E5%8F%B3%E5%90%8E%E7%AB%9F%E7%84%B6%E7%BB%99%E4%BB%BB%E6%AD%A3%E9%9D%9E%E5%86%99%E4%BA%86%E4%B8%80%E4%BB%BD%E2%80%9C%E4%B8%87%E8%A8%80%E4%B9%A6%E2%80%9D%EF%BC%8C%E4%BB%96%E6%8A%8A%E8%87%AA%E5%B7%B1%E6%89%80%E5%AD%A6%E5%88%B0%E7%9A%84%E6%89%80%E6%9C%89%E4%B8%9C%E8%A5%BF%E9%83%BD%E5%88%86%E6%9E%90%E5%88%B0%E8%BF%99%E4%B8%8A%E9%9D%A2%EF%BC%8C%E6%B4%8B%E6%B4%8B%E6%B4%92%E6%B4%92%E7%9A%84%E4%B8%80%E4%B8%87%E5%AD%97%EF%BC%8C%E4%BB%96%E8%87%AA%E5%B7%B1%E5%B8%8C%E6%9C%9B%E7%9A%84%E6%97%B6%E5%80%99%E4%BB%BB%E6%AD%A3%E9%9D%9E%E7%9C%8B%E5%88%B0%E8%BF%99%E4%BB%BD%E4%BF%A1%E5%90%8E%E4%BC%9A%E9%87%8D%E8%A7%86%E8%87%AA%E5%B7%B1%EF%BC%8C%E4%BD%86%E6%98%AF%E4%BB%BB%E6%AD%A3%E9%9D%9E%E7%9A%84%E5%9B%9E%E5%A4%8D%E6%98%AF%EF%BC%9A%E5%A6%82%E6%9E%9C%E6%AD%A4%E5%91%98%E5%B7%A5%E6%9C%89%E7%B2%BE%E7%A5%9E%E7%97%85%EF%BC%8C%E5%BB%BA%E8%AE%AE%E9%80%81%E5%8C%BB%E9%99%A2%EF%BC%8C%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89%EF%BC%8C%E5%BB%BA%E8%AE%AE%E5%BC%80%E9%99%A4%EF%BC%81++%E7%9C%8B%E5%88%B0%E8%BF%99%E4%B8%AA%E6%95%85%E4%BA%8B%E7%9C%9F%E7%9A%84%E6%84%9F%E8%A7%89%E8%BF%99%E4%B8%AA%E6%96%B0%E5%91%98%E5%B7%A5%E8%B7%9F%E5%AD%A9%E5%AD%90%E4%B8%80%E6%A0%B7%EF%BC%8C%E6%B2%A1%E6%9C%89%E9%95%BF%E5%A4%A7%EF%BC%8C%E5%81%B6%E5%83%8F%E5%89%A7%E7%9C%8B%E5%A4%9A%E4%BA%86%EF%BC%8C%E4%BB%A5%E4%B8%BA%E9%9D%A0%E4%B8%80%E4%BB%BD%E4%B8%87%E8%A8%80%E4%B9%A6%E5%B0%B1%E5%8F%AF%E4%BB%A5%E8%AE%A9%E8%80%81%E6%9D%BF%E7%BB%99%E6%9C%BA%E4%BC%9A%EF%BC%8C%E5%A4%AA%E4%B8%8D%E7%8E%B0%E5%AE%9E%E4%BA%86%E3%80%82%E8%80%8C%E4%B8%94%E5%8D%8E%E4%B8%BA%E7%9A%84%E7%AE%A1%E7%90%86%E6%98%AF%E7%BB%8F%E8%BF%87%E9%94%A4%E7%82%BC%E8%BF%87%E5%90%8E%E6%89%8D%E5%BD%A2%E6%88%90%E7%9A%84%EF%BC%8C%E7%BB%9D%E5%AF%B9%E4%B8%8D%E6%98%AF%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86%E5%8F%AF%E4%BB%A5%E6%8E%A8%E7%BF%BB%E7%9A%84%E3%80%82++%E8%BF%99%E4%B8%AA%E6%96%B0%E4%BA%BA%E5%81%9A%E4%BA%8B%E4%B8%8D%E5%A4%9F%E8%B8%8F%E5%AE%9E%EF%BC%8C%E4%B8%8D%E7%9F%A5%E9%81%93%E8%84%9A%E8%B8%8F%E5%AE%9E%E5%9C%B0%EF%BC%8C%E5%A4%AA%E5%BC%82%E6%83%B3%E5%A4%A9%E5%BC%80%E4%BA%86%EF%BC%8C%E5%A6%82%E6%9E%9C%E4%BD%A0%E6%98%AF%E8%80%81%E6%9D%BF%EF%BC%8C%E4%BD%A0%E4%BC%9A%E5%BC%80%E9%99%A4%E8%BF%99%E6%A0%B7%E7%9A%84%E4%BA%BA%E5%90%97%EF%BC%9F HTTP/1.1" 200 669
+119.123.40.60 - - [22/Sep/2019 18:16:31] "GET /demo?textin=%E6%96%B0%E5%8D%8E%E7%A4%BE%E9%A6%99%E6%B8%AF8%E6%9C%8811%E6%97%A5%E7%94%B5+%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A11%E6%97%A5%E5%9C%A8%E6%96%B0%E7%95%8C%E5%85%83%E6%9C%97%E4%B8%80%E5%AE%B6%E4%B8%AD%E5%AD%A6%E4%B8%BE%E8%A1%8C%E2%80%9C%E5%AE%B6%E5%9C%A8%E4%B8%AD%E5%8D%8E%E2%80%9D%E5%8D%87%E6%97%97%E7%A4%BC%EF%BC%8C%E5%90%B8%E5%BC%95%E5%A4%9A%E5%90%8D%E5%B8%82%E6%B0%91%E5%8F%82%E4%B8%8E%E3%80%82++%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%85%88%E7%94%9F%E4%B9%9F%E8%AF%B4%E8%BF%87%E8%BF%99%E6%98%AF%E4%B8%80%E4%BB%B6%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85%E3%80%82++%E6%AD%A3%E5%8D%88%E6%97%B6%E5%88%86%EF%BC%8C%E8%89%B3%E9%98%B3%E9%AB%98%E7%85%A7%E3%80%82%E7%94%B1%E9%A6%99%E6%B8%AF%E5%A4%9A%E5%AE%B6%E4%B8%AD%E5%AD%A6%E7%BB%84%E6%88%90%E7%9A%84%E5%8D%87%E6%97%97%E9%98%9F%E4%BC%8D%EF%BC%8C%E6%8A%A4%E9%80%81%E5%9B%BD%E6%97%97%E5%88%B0%E5%AD%A6%E6%A0%A1%E6%93%8D%E5%9C%BA%E7%9A%84%E6%97%97%E6%9D%86%E4%B8%8B%E3%80%82%E4%BA%94%E6%98%9F%E7%BA%A2%E6%97%97%E4%BC%B4%E9%9A%8F%E7%9D%80%E5%9B%BD%E6%AD%8C%E5%86%89%E5%86%89%E5%8D%87%E8%B5%B7%EF%BC%8C%E6%B0%94%E6%B0%9B%E5%BA%84%E4%B8%A5%E3%80%82+%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A%E4%B8%BB%E5%B8%AD%E5%91%A8%E4%B8%96%E8%80%80%E5%9C%A8%E5%9B%BD%E6%97%97%E4%B8%8B%E8%87%B4%E8%BE%9E%E6%97%B6%E8%A1%A8%E7%A4%BA%EF%BC%8C%E6%9C%80%E8%BF%91%E9%A6%99%E6%B8%AF%E5%8F%91%E7%94%9F%E5%BE%88%E5%A4%9A%E4%B8%8D%E6%84%89%E5%BF%AB%E7%9A%84%E4%BA%8B%E4%BB%B6%EF%BC%8C%E5%8C%85%E6%8B%AC%E9%83%A8%E5%88%86%E4%BA%BA%E4%BE%AE%E8%BE%B1%E5%9B%BD%E6%97%97%E5%9B%BD%E5%BE%BD%E3%80%81%E6%8C%91%E6%88%98%E2%80%9C%E4%B8%80%E5%9B%BD%E4%B8%A4%E5%88%B6%E2%80%9D%E5%8E%9F%E5%88%99%E5%BA%95%E7%BA%BF%EF%BC%8C%E4%B9%9F%E5%88%86%E5%8C%96%E4%BA%86%E9%A6%99%E6%B8%AF%E5%92%8C%E5%86%85%E5%9C%B0%E7%9A%84%E5%90%8C%E8%83%9E%E3%80%82%E5%B8%8C%E6%9C%9B%E9%80%9A%E8%BF%87%E5%BD%93%E5%A4%A9%E4%B8%BE%E8%A1%8C%E5%8D%87%E6%97%97%E6%B4%BB%E5%8A%A8%E5%BC%98%E6%89%AC%E6%AD%A3%E8%83%BD%E9%87%8F%EF%BC%8C%E5%B9%B6%E4%BC%A0%E9%80%92%E4%B8%80%E4%B8%AA%E9%87%8D%E8%A6%81%E8%AE%AF%E6%81%AF%EF%BC%9A%E9%A6%99%E6%B8%AF%E5%B1%9E%E4%BA%8E%E4%B8%AD%E5%8D%8E%E6%B0%91%E6%97%8F%E5%A4%A7%E5%AE%B6%E5%BA%AD%E3%80%82++%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A%E6%80%BB%E7%9B%91%E8%AE%B8%E6%8C%AF%E9%9A%86%E5%8B%89%E5%8A%B1%E5%B9%B4%E8%BD%BB%E4%BA%BA%E8%AF%B4%EF%BC%8C%E8%A6%81%E5%85%B3%E5%BF%83%E7%A4%BE%E4%BC%9A%EF%BC%8C%E5%85%B3%E5%BF%83%E5%9B%BD%E5%AE%B6%EF%BC%8C%E5%B8%8C%E6%9C%9B%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%BB%A5%E5%9B%BD%E4%B8%BA%E8%8D%A3%EF%BC%8C%E4%B8%BA%E5%9B%BD%E4%BA%89%E5%85%89%E3%80%82+%E6%B4%BB%E5%8A%A8%E6%8E%A5%E8%BF%91%E5%B0%BE%E5%A3%B0%EF%BC%8C%E5%8F%82%E4%B8%8E%E8%80%85%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%9C%B0%E5%9B%BE%E4%B8%8A%E8%B4%B4%E4%B8%8A%E4%B8%AD%E5%9B%BD%E5%9B%BD%E6%97%97%EF%BC%8C%E8%B1%A1%E5%BE%81%E5%A4%A7%E5%AE%B6%E5%85%B1%E5%90%8C%E5%8A%AA%E5%8A%9B%E5%BB%BA%E8%AE%BE%E5%9B%BD%E5%AE%B6%E3%80%82%E6%9C%80%E5%90%8E%EF%BC%8C%E5%85%A8%E4%BD%93%E4%BA%BA%E5%91%98%E5%90%88%E5%94%B1%E3%80%8A%E6%98%8E%E5%A4%A9%E4%BC%9A%E6%9B%B4%E5%A5%BD%E3%80%8B%EF%BC%8C%E4%B8%BA%E9%A6%99%E6%B8%AF%E9%80%81%E4%B8%8A%E7%BE%8E%E5%A5%BD%E7%A5%9D%E6%84%BF%E3%80%82++%E4%BB%8A%E5%B9%B415%E5%B2%81%E7%9A%84%E9%83%AD%E7%B4%AB%E6%99%B4%E5%9C%A8%E9%A6%99%E6%B8%AF%E5%9C%9F%E7%94%9F%E5%9C%9F%E9%95%BF%E3%80%82%E5%A5%B9%E8%A1%A8%E7%A4%BA%EF%BC%8C%E8%BF%99%E6%AC%A1%E5%8D%87%E6%97%97%E7%A4%BC%E6%98%AF%E7%89%B9%E5%88%AB%E4%B8%BA%E9%A6%99%E6%B8%AF%E5%8A%A0%E6%B2%B9%E8%80%8C%E4%B8%BE%E8%A1%8C%E7%9A%84%EF%BC%8C%E5%B8%8C%E6%9C%9B%E5%A4%A7%E5%AE%B6%E9%83%BD%E6%87%82%E5%BE%97%E5%B0%8A%E9%87%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9B%BD%E5%AE%B6%E3%80%82%E2%80%9C%E7%9C%8B%E7%9D%80%E5%9B%BD%E6%97%97%E5%8D%87%E8%B5%B7%EF%BC%8C%E6%83%B3%E5%88%B0%E8%87%AA%E5%B7%B1%E5%9C%A8%E4%B8%AD%E5%9B%BD%E8%BF%99%E7%89%87%E5%9C%9F%E5%9C%B0%E4%B8%8A%E6%88%90%E9%95%BF%EF%BC%8C%E6%84%9F%E5%88%B0%E5%8D%81%E5%88%86%E8%87%AA%E8%B1%AA%E3%80%82%E2%80%9D+%E2%80%9C%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%28%E4%B8%8E%E4%BB%A5%E5%BE%80%29%E4%B8%80%E6%A0%B7%EF%BC%8C%E4%BD%86%E6%84%8F%E4%B9%89%E5%8D%B4%E4%B8%8D%E5%90%8C%E3%80%82%E2%80%9D%E4%BD%9C%E4%B8%BA%E5%BD%93%E5%A4%A9%E5%8D%87%E6%97%97%E9%98%9F%E6%88%90%E5%91%98%E4%B9%8B%E4%B8%80%E7%9A%84%E9%AB%98%E4%B8%AD%E7%94%9F%E8%B5%B5%E9%A2%96%E8%B4%A4%E8%AF%B4%EF%BC%8C%E5%9B%BD%E6%97%97%E5%92%8C%E5%9B%BD%E5%BE%BD%E4%BB%A3%E8%A1%A8%E4%BA%86%E4%B8%80%E4%B8%AA%E5%9B%BD%E5%AE%B6%E7%9A%84%E5%B0%8A%E4%B8%A5%EF%BC%8C%E4%B8%8D%E5%AE%B9%E8%B7%B5%E8%B8%8F%EF%BC%8C%E5%BE%88%E6%9C%9F%E6%9C%9B%E5%BD%93%E5%A4%A9%E7%9A%84%E6%B4%BB%E5%8A%A8%E8%83%BD%E5%90%91%E5%B9%BF%E5%A4%A7%E5%B8%82%E6%B0%91%E4%BC%A0%E8%BE%BE%E8%BF%99%E4%B8%80%E4%BF%A1%E6%81%AF%E3%80%82++%E5%8D%B3%E5%B0%86%E5%8D%87%E8%AF%BB%E5%88%9D%E4%B8%89%E7%9A%84%E8%92%8B%E9%9D%96%E8%BD%A9%E8%AE%A4%E4%B8%BA%EF%BC%8C%E8%BF%91%E6%97%A5%E9%A6%99%E6%B8%AF%E5%8F%91%E7%94%9F%E8%BF%9E%E4%B8%B2%E6%9A%B4%E5%8A%9B%E4%BA%8B%E4%BB%B6%EF%BC%8C%E5%BD%93%E5%A4%A9%E7%9A%84%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%E6%9B%B4%E6%98%BE%E6%84%8F%E4%B9%89%EF%BC%8C%E5%B8%8C%E6%9C%9B%E9%A6%99%E6%B8%AF%E5%BF%AB%E5%BF%AB%E6%81%A2%E5%A4%8D%E5%B9%B3%E9%9D%99%EF%BC%8C%E6%B8%AF%E4%BA%BA%E9%83%BD%E5%9B%A2%E7%BB%93%E8%B5%B7%E6%9D%A5%E3%80%82 HTTP/1.1" 200 1521
+119.123.40.60 - - [22/Sep/2019 18:16:58] "GET /demo?textin=%E6%96%B0%E5%8D%8E%E7%A4%BE%E9%A6%99%E6%B8%AF8%E6%9C%8811%E6%97%A5%E7%94%B5+%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A11%E6%97%A5%E5%9C%A8%E6%96%B0%E7%95%8C%E5%85%83%E6%9C%97%E4%B8%80%E5%AE%B6%E4%B8%AD%E5%AD%A6%E4%B8%BE%E8%A1%8C%E2%80%9C%E5%AE%B6%E5%9C%A8%E4%B8%AD%E5%8D%8E%E2%80%9D%E5%8D%87%E6%97%97%E7%A4%BC%EF%BC%8C%E5%90%B8%E5%BC%95%E5%A4%9A%E5%90%8D%E5%B8%82%E6%B0%91%E5%8F%82%E4%B8%8E%E3%80%82++%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%85%88%E7%94%9F%E4%B9%9F%E8%AF%B4%E8%BF%87%E8%BF%99%E6%98%AF%E4%B8%80%E4%BB%B6%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85%E3%80%82++%E6%AD%A3%E5%8D%88%E6%97%B6%E5%88%86%EF%BC%8C%E8%89%B3%E9%98%B3%E9%AB%98%E7%85%A7%E3%80%82%E7%94%B1%E9%A6%99%E6%B8%AF%E5%A4%9A%E5%AE%B6%E4%B8%AD%E5%AD%A6%E7%BB%84%E6%88%90%E7%9A%84%E5%8D%87%E6%97%97%E9%98%9F%E4%BC%8D%EF%BC%8C%E6%8A%A4%E9%80%81%E5%9B%BD%E6%97%97%E5%88%B0%E5%AD%A6%E6%A0%A1%E6%93%8D%E5%9C%BA%E7%9A%84%E6%97%97%E6%9D%86%E4%B8%8B%E3%80%82%E4%BA%94%E6%98%9F%E7%BA%A2%E6%97%97%E4%BC%B4%E9%9A%8F%E7%9D%80%E5%9B%BD%E6%AD%8C%E5%86%89%E5%86%89%E5%8D%87%E8%B5%B7%EF%BC%8C%E6%B0%94%E6%B0%9B%E5%BA%84%E4%B8%A5%E3%80%82+%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A%E4%B8%BB%E5%B8%AD%E5%91%A8%E4%B8%96%E8%80%80%E5%9C%A8%E5%9B%BD%E6%97%97%E4%B8%8B%E8%87%B4%E8%BE%9E%E6%97%B6%E8%A1%A8%E7%A4%BA%EF%BC%8C%E6%9C%80%E8%BF%91%E9%A6%99%E6%B8%AF%E5%8F%91%E7%94%9F%E5%BE%88%E5%A4%9A%E4%B8%8D%E6%84%89%E5%BF%AB%E7%9A%84%E4%BA%8B%E4%BB%B6%EF%BC%8C%E5%8C%85%E6%8B%AC%E9%83%A8%E5%88%86%E4%BA%BA%E4%BE%AE%E8%BE%B1%E5%9B%BD%E6%97%97%E5%9B%BD%E5%BE%BD%E3%80%81%E6%8C%91%E6%88%98%E2%80%9C%E4%B8%80%E5%9B%BD%E4%B8%A4%E5%88%B6%E2%80%9D%E5%8E%9F%E5%88%99%E5%BA%95%E7%BA%BF%EF%BC%8C%E4%B9%9F%E5%88%86%E5%8C%96%E4%BA%86%E9%A6%99%E6%B8%AF%E5%92%8C%E5%86%85%E5%9C%B0%E7%9A%84%E5%90%8C%E8%83%9E%E3%80%82%E5%B8%8C%E6%9C%9B%E9%80%9A%E8%BF%87%E5%BD%93%E5%A4%A9%E4%B8%BE%E8%A1%8C%E5%8D%87%E6%97%97%E6%B4%BB%E5%8A%A8%E5%BC%98%E6%89%AC%E6%AD%A3%E8%83%BD%E9%87%8F%EF%BC%8C%E5%B9%B6%E4%BC%A0%E9%80%92%E4%B8%80%E4%B8%AA%E9%87%8D%E8%A6%81%E8%AE%AF%E6%81%AF%EF%BC%9A%E9%A6%99%E6%B8%AF%E5%B1%9E%E4%BA%8E%E4%B8%AD%E5%8D%8E%E6%B0%91%E6%97%8F%E5%A4%A7%E5%AE%B6%E5%BA%AD%E3%80%82++%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A%E6%80%BB%E7%9B%91%E8%AE%B8%E6%8C%AF%E9%9A%86%E5%8B%89%E5%8A%B1%E5%B9%B4%E8%BD%BB%E4%BA%BA%E8%AF%B4%EF%BC%8C%E8%A6%81%E5%85%B3%E5%BF%83%E7%A4%BE%E4%BC%9A%EF%BC%8C%E5%85%B3%E5%BF%83%E5%9B%BD%E5%AE%B6%EF%BC%8C%E5%B8%8C%E6%9C%9B%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%BB%A5%E5%9B%BD%E4%B8%BA%E8%8D%A3%EF%BC%8C%E4%B8%BA%E5%9B%BD%E4%BA%89%E5%85%89%E3%80%82+%E6%B4%BB%E5%8A%A8%E6%8E%A5%E8%BF%91%E5%B0%BE%E5%A3%B0%EF%BC%8C%E5%8F%82%E4%B8%8E%E8%80%85%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%9C%B0%E5%9B%BE%E4%B8%8A%E8%B4%B4%E4%B8%8A%E4%B8%AD%E5%9B%BD%E5%9B%BD%E6%97%97%EF%BC%8C%E8%B1%A1%E5%BE%81%E5%A4%A7%E5%AE%B6%E5%85%B1%E5%90%8C%E5%8A%AA%E5%8A%9B%E5%BB%BA%E8%AE%BE%E5%9B%BD%E5%AE%B6%E3%80%82%E6%9C%80%E5%90%8E%EF%BC%8C%E5%85%A8%E4%BD%93%E4%BA%BA%E5%91%98%E5%90%88%E5%94%B1%E3%80%8A%E6%98%8E%E5%A4%A9%E4%BC%9A%E6%9B%B4%E5%A5%BD%E3%80%8B%EF%BC%8C%E4%B8%BA%E9%A6%99%E6%B8%AF%E9%80%81%E4%B8%8A%E7%BE%8E%E5%A5%BD%E7%A5%9D%E6%84%BF%E3%80%82++%E4%BB%8A%E5%B9%B415%E5%B2%81%E7%9A%84%E9%83%AD%E7%B4%AB%E6%99%B4%E5%9C%A8%E9%A6%99%E6%B8%AF%E5%9C%9F%E7%94%9F%E5%9C%9F%E9%95%BF%E3%80%82%E5%A5%B9%E8%A1%A8%E7%A4%BA%EF%BC%8C%E8%BF%99%E6%AC%A1%E5%8D%87%E6%97%97%E7%A4%BC%E6%98%AF%E7%89%B9%E5%88%AB%E4%B8%BA%E9%A6%99%E6%B8%AF%E5%8A%A0%E6%B2%B9%E8%80%8C%E4%B8%BE%E8%A1%8C%E7%9A%84%EF%BC%8C%E5%B8%8C%E6%9C%9B%E5%A4%A7%E5%AE%B6%E9%83%BD%E6%87%82%E5%BE%97%E5%B0%8A%E9%87%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9B%BD%E5%AE%B6%E3%80%82%E2%80%9C%E7%9C%8B%E7%9D%80%E5%9B%BD%E6%97%97%E5%8D%87%E8%B5%B7%EF%BC%8C%E6%83%B3%E5%88%B0%E8%87%AA%E5%B7%B1%E5%9C%A8%E4%B8%AD%E5%9B%BD%E8%BF%99%E7%89%87%E5%9C%9F%E5%9C%B0%E4%B8%8A%E6%88%90%E9%95%BF%EF%BC%8C%E6%84%9F%E5%88%B0%E5%8D%81%E5%88%86%E8%87%AA%E8%B1%AA%E3%80%82%E2%80%9D+%E2%80%9C%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%28%E4%B8%8E%E4%BB%A5%E5%BE%80%29%E4%B8%80%E6%A0%B7%EF%BC%8C%E4%BD%86%E6%84%8F%E4%B9%89%E5%8D%B4%E4%B8%8D%E5%90%8C%E3%80%82%E2%80%9D%E4%BD%9C%E4%B8%BA%E5%BD%93%E5%A4%A9%E5%8D%87%E6%97%97%E9%98%9F%E6%88%90%E5%91%98%E4%B9%8B%E4%B8%80%E7%9A%84%E9%AB%98%E4%B8%AD%E7%94%9F%E8%B5%B5%E9%A2%96%E8%B4%A4%E8%AF%B4%EF%BC%8C%E5%9B%BD%E6%97%97%E5%92%8C%E5%9B%BD%E5%BE%BD%E4%BB%A3%E8%A1%A8%E4%BA%86%E4%B8%80%E4%B8%AA%E5%9B%BD%E5%AE%B6%E7%9A%84%E5%B0%8A%E4%B8%A5%EF%BC%8C%E4%B8%8D%E5%AE%B9%E8%B7%B5%E8%B8%8F%EF%BC%8C%E5%BE%88%E6%9C%9F%E6%9C%9B%E5%BD%93%E5%A4%A9%E7%9A%84%E6%B4%BB%E5%8A%A8%E8%83%BD%E5%90%91%E5%B9%BF%E5%A4%A7%E5%B8%82%E6%B0%91%E4%BC%A0%E8%BE%BE%E8%BF%99%E4%B8%80%E4%BF%A1%E6%81%AF%E3%80%82++%E5%8D%B3%E5%B0%86%E5%8D%87%E8%AF%BB%E5%88%9D%E4%B8%89%E7%9A%84%E8%92%8B%E9%9D%96%E8%BD%A9%E8%AE%A4%E4%B8%BA%EF%BC%8C%E8%BF%91%E6%97%A5%E9%A6%99%E6%B8%AF%E5%8F%91%E7%94%9F%E8%BF%9E%E4%B8%B2%E6%9A%B4%E5%8A%9B%E4%BA%8B%E4%BB%B6%EF%BC%8C%E5%BD%93%E5%A4%A9%E7%9A%84%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%E6%9B%B4%E6%98%BE%E6%84%8F%E4%B9%89%EF%BC%8C%E5%B8%8C%E6%9C%9B%E9%A6%99%E6%B8%AF%E5%BF%AB%E5%BF%AB%E6%81%A2%E5%A4%8D%E5%B9%B3%E9%9D%99%EF%BC%8C%E6%B8%AF%E4%BA%BA%E9%83%BD%E5%9B%A2%E7%BB%93%E8%B5%B7%E6%9D%A5%E3%80%82 HTTP/1.1" 200 1521
+Bottle v0.12.17 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8229/
+Hit Ctrl-C to quit.
+
+119.123.40.60 - - [22/Sep/2019 18:25:44] "GET /demo?textin=%E6%96%B0%E5%8D%8E%E7%A4%BE%E9%A6%99%E6%B8%AF8%E6%9C%8811%E6%97%A5%E7%94%B5+%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A11%E6%97%A5%E5%9C%A8%E6%96%B0%E7%95%8C%E5%85%83%E6%9C%97%E4%B8%80%E5%AE%B6%E4%B8%AD%E5%AD%A6%E4%B8%BE%E8%A1%8C%E2%80%9C%E5%AE%B6%E5%9C%A8%E4%B8%AD%E5%8D%8E%E2%80%9D%E5%8D%87%E6%97%97%E7%A4%BC%EF%BC%8C%E5%90%B8%E5%BC%95%E5%A4%9A%E5%90%8D%E5%B8%82%E6%B0%91%E5%8F%82%E4%B8%8E%E3%80%82++%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%85%88%E7%94%9F%E4%B9%9F%E8%AF%B4%E8%BF%87%E8%BF%99%E6%98%AF%E4%B8%80%E4%BB%B6%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85%E3%80%82++%E6%AD%A3%E5%8D%88%E6%97%B6%E5%88%86%EF%BC%8C%E8%89%B3%E9%98%B3%E9%AB%98%E7%85%A7%E3%80%82%E7%94%B1%E9%A6%99%E6%B8%AF%E5%A4%9A%E5%AE%B6%E4%B8%AD%E5%AD%A6%E7%BB%84%E6%88%90%E7%9A%84%E5%8D%87%E6%97%97%E9%98%9F%E4%BC%8D%EF%BC%8C%E6%8A%A4%E9%80%81%E5%9B%BD%E6%97%97%E5%88%B0%E5%AD%A6%E6%A0%A1%E6%93%8D%E5%9C%BA%E7%9A%84%E6%97%97%E6%9D%86%E4%B8%8B%E3%80%82%E4%BA%94%E6%98%9F%E7%BA%A2%E6%97%97%E4%BC%B4%E9%9A%8F%E7%9D%80%E5%9B%BD%E6%AD%8C%E5%86%89%E5%86%89%E5%8D%87%E8%B5%B7%EF%BC%8C%E6%B0%94%E6%B0%9B%E5%BA%84%E4%B8%A5%E3%80%82+%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A%E4%B8%BB%E5%B8%AD%E5%91%A8%E4%B8%96%E8%80%80%E5%9C%A8%E5%9B%BD%E6%97%97%E4%B8%8B%E8%87%B4%E8%BE%9E%E6%97%B6%E8%A1%A8%E7%A4%BA%EF%BC%8C%E6%9C%80%E8%BF%91%E9%A6%99%E6%B8%AF%E5%8F%91%E7%94%9F%E5%BE%88%E5%A4%9A%E4%B8%8D%E6%84%89%E5%BF%AB%E7%9A%84%E4%BA%8B%E4%BB%B6%EF%BC%8C%E5%8C%85%E6%8B%AC%E9%83%A8%E5%88%86%E4%BA%BA%E4%BE%AE%E8%BE%B1%E5%9B%BD%E6%97%97%E5%9B%BD%E5%BE%BD%E3%80%81%E6%8C%91%E6%88%98%E2%80%9C%E4%B8%80%E5%9B%BD%E4%B8%A4%E5%88%B6%E2%80%9D%E5%8E%9F%E5%88%99%E5%BA%95%E7%BA%BF%EF%BC%8C%E4%B9%9F%E5%88%86%E5%8C%96%E4%BA%86%E9%A6%99%E6%B8%AF%E5%92%8C%E5%86%85%E5%9C%B0%E7%9A%84%E5%90%8C%E8%83%9E%E3%80%82%E5%B8%8C%E6%9C%9B%E9%80%9A%E8%BF%87%E5%BD%93%E5%A4%A9%E4%B8%BE%E8%A1%8C%E5%8D%87%E6%97%97%E6%B4%BB%E5%8A%A8%E5%BC%98%E6%89%AC%E6%AD%A3%E8%83%BD%E9%87%8F%EF%BC%8C%E5%B9%B6%E4%BC%A0%E9%80%92%E4%B8%80%E4%B8%AA%E9%87%8D%E8%A6%81%E8%AE%AF%E6%81%AF%EF%BC%9A%E9%A6%99%E6%B8%AF%E5%B1%9E%E4%BA%8E%E4%B8%AD%E5%8D%8E%E6%B0%91%E6%97%8F%E5%A4%A7%E5%AE%B6%E5%BA%AD%E3%80%82++%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A%E6%80%BB%E7%9B%91%E8%AE%B8%E6%8C%AF%E9%9A%86%E5%8B%89%E5%8A%B1%E5%B9%B4%E8%BD%BB%E4%BA%BA%E8%AF%B4%EF%BC%8C%E8%A6%81%E5%85%B3%E5%BF%83%E7%A4%BE%E4%BC%9A%EF%BC%8C%E5%85%B3%E5%BF%83%E5%9B%BD%E5%AE%B6%EF%BC%8C%E5%B8%8C%E6%9C%9B%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%BB%A5%E5%9B%BD%E4%B8%BA%E8%8D%A3%EF%BC%8C%E4%B8%BA%E5%9B%BD%E4%BA%89%E5%85%89%E3%80%82+%E6%B4%BB%E5%8A%A8%E6%8E%A5%E8%BF%91%E5%B0%BE%E5%A3%B0%EF%BC%8C%E5%8F%82%E4%B8%8E%E8%80%85%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%9C%B0%E5%9B%BE%E4%B8%8A%E8%B4%B4%E4%B8%8A%E4%B8%AD%E5%9B%BD%E5%9B%BD%E6%97%97%EF%BC%8C%E8%B1%A1%E5%BE%81%E5%A4%A7%E5%AE%B6%E5%85%B1%E5%90%8C%E5%8A%AA%E5%8A%9B%E5%BB%BA%E8%AE%BE%E5%9B%BD%E5%AE%B6%E3%80%82%E6%9C%80%E5%90%8E%EF%BC%8C%E5%85%A8%E4%BD%93%E4%BA%BA%E5%91%98%E5%90%88%E5%94%B1%E3%80%8A%E6%98%8E%E5%A4%A9%E4%BC%9A%E6%9B%B4%E5%A5%BD%E3%80%8B%EF%BC%8C%E4%B8%BA%E9%A6%99%E6%B8%AF%E9%80%81%E4%B8%8A%E7%BE%8E%E5%A5%BD%E7%A5%9D%E6%84%BF%E3%80%82++%E4%BB%8A%E5%B9%B415%E5%B2%81%E7%9A%84%E9%83%AD%E7%B4%AB%E6%99%B4%E5%9C%A8%E9%A6%99%E6%B8%AF%E5%9C%9F%E7%94%9F%E5%9C%9F%E9%95%BF%E3%80%82%E5%A5%B9%E8%A1%A8%E7%A4%BA%EF%BC%8C%E8%BF%99%E6%AC%A1%E5%8D%87%E6%97%97%E7%A4%BC%E6%98%AF%E7%89%B9%E5%88%AB%E4%B8%BA%E9%A6%99%E6%B8%AF%E5%8A%A0%E6%B2%B9%E8%80%8C%E4%B8%BE%E8%A1%8C%E7%9A%84%EF%BC%8C%E5%B8%8C%E6%9C%9B%E5%A4%A7%E5%AE%B6%E9%83%BD%E6%87%82%E5%BE%97%E5%B0%8A%E9%87%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9B%BD%E5%AE%B6%E3%80%82%E2%80%9C%E7%9C%8B%E7%9D%80%E5%9B%BD%E6%97%97%E5%8D%87%E8%B5%B7%EF%BC%8C%E6%83%B3%E5%88%B0%E8%87%AA%E5%B7%B1%E5%9C%A8%E4%B8%AD%E5%9B%BD%E8%BF%99%E7%89%87%E5%9C%9F%E5%9C%B0%E4%B8%8A%E6%88%90%E9%95%BF%EF%BC%8C%E6%84%9F%E5%88%B0%E5%8D%81%E5%88%86%E8%87%AA%E8%B1%AA%E3%80%82%E2%80%9D+%E2%80%9C%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%28%E4%B8%8E%E4%BB%A5%E5%BE%80%29%E4%B8%80%E6%A0%B7%EF%BC%8C%E4%BD%86%E6%84%8F%E4%B9%89%E5%8D%B4%E4%B8%8D%E5%90%8C%E3%80%82%E2%80%9D%E4%BD%9C%E4%B8%BA%E5%BD%93%E5%A4%A9%E5%8D%87%E6%97%97%E9%98%9F%E6%88%90%E5%91%98%E4%B9%8B%E4%B8%80%E7%9A%84%E9%AB%98%E4%B8%AD%E7%94%9F%E8%B5%B5%E9%A2%96%E8%B4%A4%E8%AF%B4%EF%BC%8C%E5%9B%BD%E6%97%97%E5%92%8C%E5%9B%BD%E5%BE%BD%E4%BB%A3%E8%A1%A8%E4%BA%86%E4%B8%80%E4%B8%AA%E5%9B%BD%E5%AE%B6%E7%9A%84%E5%B0%8A%E4%B8%A5%EF%BC%8C%E4%B8%8D%E5%AE%B9%E8%B7%B5%E8%B8%8F%EF%BC%8C%E5%BE%88%E6%9C%9F%E6%9C%9B%E5%BD%93%E5%A4%A9%E7%9A%84%E6%B4%BB%E5%8A%A8%E8%83%BD%E5%90%91%E5%B9%BF%E5%A4%A7%E5%B8%82%E6%B0%91%E4%BC%A0%E8%BE%BE%E8%BF%99%E4%B8%80%E4%BF%A1%E6%81%AF%E3%80%82++%E5%8D%B3%E5%B0%86%E5%8D%87%E8%AF%BB%E5%88%9D%E4%B8%89%E7%9A%84%E8%92%8B%E9%9D%96%E8%BD%A9%E8%AE%A4%E4%B8%BA%EF%BC%8C%E8%BF%91%E6%97%A5%E9%A6%99%E6%B8%AF%E5%8F%91%E7%94%9F%E8%BF%9E%E4%B8%B2%E6%9A%B4%E5%8A%9B%E4%BA%8B%E4%BB%B6%EF%BC%8C%E5%BD%93%E5%A4%A9%E7%9A%84%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%E6%9B%B4%E6%98%BE%E6%84%8F%E4%B9%89%EF%BC%8C%E5%B8%8C%E6%9C%9B%E9%A6%99%E6%B8%AF%E5%BF%AB%E5%BF%AB%E6%81%A2%E5%A4%8D%E5%B9%B3%E9%9D%99%EF%BC%8C%E6%B8%AF%E4%BA%BA%E9%83%BD%E5%9B%A2%E7%BB%93%E8%B5%B7%E6%9D%A5%E3%80%82 HTTP/1.1" 200 1823
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.551 seconds.
+Prefix dict has been built succesfully.
+Bottle v0.12.17 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8229/
+Hit Ctrl-C to quit.
+
+119.123.40.60 - - [22/Sep/2019 18:48:02] "GET / HTTP/1.1" 200 2579
+119.123.40.60 - - [22/Sep/2019 18:48:07] "GET /demo?textin=%E6%96%B0%E5%8D%8E%E7%A4%BE%E9%A6%99%E6%B8%AF8%E6%9C%8811%E6%97%A5%E7%94%B5+%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A11%E6%97%A5%E5%9C%A8%E6%96%B0%E7%95%8C%E5%85%83%E6%9C%97%E4%B8%80%E5%AE%B6%E4%B8%AD%E5%AD%A6%E4%B8%BE%E8%A1%8C%E2%80%9C%E5%AE%B6%E5%9C%A8%E4%B8%AD%E5%8D%8E%E2%80%9D%E5%8D%87%E6%97%97%E7%A4%BC%EF%BC%8C%E5%90%B8%E5%BC%95%E5%A4%9A%E5%90%8D%E5%B8%82%E6%B0%91%E5%8F%82%E4%B8%8E%E3%80%82++%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%85%88%E7%94%9F%E4%B9%9F%E8%AF%B4%E8%BF%87%E8%BF%99%E6%98%AF%E4%B8%80%E4%BB%B6%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85%E3%80%82++%E6%AD%A3%E5%8D%88%E6%97%B6%E5%88%86%EF%BC%8C%E8%89%B3%E9%98%B3%E9%AB%98%E7%85%A7%E3%80%82%E7%94%B1%E9%A6%99%E6%B8%AF%E5%A4%9A%E5%AE%B6%E4%B8%AD%E5%AD%A6%E7%BB%84%E6%88%90%E7%9A%84%E5%8D%87%E6%97%97%E9%98%9F%E4%BC%8D%EF%BC%8C%E6%8A%A4%E9%80%81%E5%9B%BD%E6%97%97%E5%88%B0%E5%AD%A6%E6%A0%A1%E6%93%8D%E5%9C%BA%E7%9A%84%E6%97%97%E6%9D%86%E4%B8%8B%E3%80%82%E4%BA%94%E6%98%9F%E7%BA%A2%E6%97%97%E4%BC%B4%E9%9A%8F%E7%9D%80%E5%9B%BD%E6%AD%8C%E5%86%89%E5%86%89%E5%8D%87%E8%B5%B7%EF%BC%8C%E6%B0%94%E6%B0%9B%E5%BA%84%E4%B8%A5%E3%80%82+%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A%E4%B8%BB%E5%B8%AD%E5%91%A8%E4%B8%96%E8%80%80%E5%9C%A8%E5%9B%BD%E6%97%97%E4%B8%8B%E8%87%B4%E8%BE%9E%E6%97%B6%E8%A1%A8%E7%A4%BA%EF%BC%8C%E6%9C%80%E8%BF%91%E9%A6%99%E6%B8%AF%E5%8F%91%E7%94%9F%E5%BE%88%E5%A4%9A%E4%B8%8D%E6%84%89%E5%BF%AB%E7%9A%84%E4%BA%8B%E4%BB%B6%EF%BC%8C%E5%8C%85%E6%8B%AC%E9%83%A8%E5%88%86%E4%BA%BA%E4%BE%AE%E8%BE%B1%E5%9B%BD%E6%97%97%E5%9B%BD%E5%BE%BD%E3%80%81%E6%8C%91%E6%88%98%E2%80%9C%E4%B8%80%E5%9B%BD%E4%B8%A4%E5%88%B6%E2%80%9D%E5%8E%9F%E5%88%99%E5%BA%95%E7%BA%BF%EF%BC%8C%E4%B9%9F%E5%88%86%E5%8C%96%E4%BA%86%E9%A6%99%E6%B8%AF%E5%92%8C%E5%86%85%E5%9C%B0%E7%9A%84%E5%90%8C%E8%83%9E%E3%80%82%E5%B8%8C%E6%9C%9B%E9%80%9A%E8%BF%87%E5%BD%93%E5%A4%A9%E4%B8%BE%E8%A1%8C%E5%8D%87%E6%97%97%E6%B4%BB%E5%8A%A8%E5%BC%98%E6%89%AC%E6%AD%A3%E8%83%BD%E9%87%8F%EF%BC%8C%E5%B9%B6%E4%BC%A0%E9%80%92%E4%B8%80%E4%B8%AA%E9%87%8D%E8%A6%81%E8%AE%AF%E6%81%AF%EF%BC%9A%E9%A6%99%E6%B8%AF%E5%B1%9E%E4%BA%8E%E4%B8%AD%E5%8D%8E%E6%B0%91%E6%97%8F%E5%A4%A7%E5%AE%B6%E5%BA%AD%E3%80%82++%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A%E6%80%BB%E7%9B%91%E8%AE%B8%E6%8C%AF%E9%9A%86%E5%8B%89%E5%8A%B1%E5%B9%B4%E8%BD%BB%E4%BA%BA%E8%AF%B4%EF%BC%8C%E8%A6%81%E5%85%B3%E5%BF%83%E7%A4%BE%E4%BC%9A%EF%BC%8C%E5%85%B3%E5%BF%83%E5%9B%BD%E5%AE%B6%EF%BC%8C%E5%B8%8C%E6%9C%9B%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%BB%A5%E5%9B%BD%E4%B8%BA%E8%8D%A3%EF%BC%8C%E4%B8%BA%E5%9B%BD%E4%BA%89%E5%85%89%E3%80%82+%E6%B4%BB%E5%8A%A8%E6%8E%A5%E8%BF%91%E5%B0%BE%E5%A3%B0%EF%BC%8C%E5%8F%82%E4%B8%8E%E8%80%85%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%9C%B0%E5%9B%BE%E4%B8%8A%E8%B4%B4%E4%B8%8A%E4%B8%AD%E5%9B%BD%E5%9B%BD%E6%97%97%EF%BC%8C%E8%B1%A1%E5%BE%81%E5%A4%A7%E5%AE%B6%E5%85%B1%E5%90%8C%E5%8A%AA%E5%8A%9B%E5%BB%BA%E8%AE%BE%E5%9B%BD%E5%AE%B6%E3%80%82%E6%9C%80%E5%90%8E%EF%BC%8C%E5%85%A8%E4%BD%93%E4%BA%BA%E5%91%98%E5%90%88%E5%94%B1%E3%80%8A%E6%98%8E%E5%A4%A9%E4%BC%9A%E6%9B%B4%E5%A5%BD%E3%80%8B%EF%BC%8C%E4%B8%BA%E9%A6%99%E6%B8%AF%E9%80%81%E4%B8%8A%E7%BE%8E%E5%A5%BD%E7%A5%9D%E6%84%BF%E3%80%82++%E4%BB%8A%E5%B9%B415%E5%B2%81%E7%9A%84%E9%83%AD%E7%B4%AB%E6%99%B4%E5%9C%A8%E9%A6%99%E6%B8%AF%E5%9C%9F%E7%94%9F%E5%9C%9F%E9%95%BF%E3%80%82%E5%A5%B9%E8%A1%A8%E7%A4%BA%EF%BC%8C%E8%BF%99%E6%AC%A1%E5%8D%87%E6%97%97%E7%A4%BC%E6%98%AF%E7%89%B9%E5%88%AB%E4%B8%BA%E9%A6%99%E6%B8%AF%E5%8A%A0%E6%B2%B9%E8%80%8C%E4%B8%BE%E8%A1%8C%E7%9A%84%EF%BC%8C%E5%B8%8C%E6%9C%9B%E5%A4%A7%E5%AE%B6%E9%83%BD%E6%87%82%E5%BE%97%E5%B0%8A%E9%87%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9B%BD%E5%AE%B6%E3%80%82%E2%80%9C%E7%9C%8B%E7%9D%80%E5%9B%BD%E6%97%97%E5%8D%87%E8%B5%B7%EF%BC%8C%E6%83%B3%E5%88%B0%E8%87%AA%E5%B7%B1%E5%9C%A8%E4%B8%AD%E5%9B%BD%E8%BF%99%E7%89%87%E5%9C%9F%E5%9C%B0%E4%B8%8A%E6%88%90%E9%95%BF%EF%BC%8C%E6%84%9F%E5%88%B0%E5%8D%81%E5%88%86%E8%87%AA%E8%B1%AA%E3%80%82%E2%80%9D+%E2%80%9C%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%28%E4%B8%8E%E4%BB%A5%E5%BE%80%29%E4%B8%80%E6%A0%B7%EF%BC%8C%E4%BD%86%E6%84%8F%E4%B9%89%E5%8D%B4%E4%B8%8D%E5%90%8C%E3%80%82%E2%80%9D%E4%BD%9C%E4%B8%BA%E5%BD%93%E5%A4%A9%E5%8D%87%E6%97%97%E9%98%9F%E6%88%90%E5%91%98%E4%B9%8B%E4%B8%80%E7%9A%84%E9%AB%98%E4%B8%AD%E7%94%9F%E8%B5%B5%E9%A2%96%E8%B4%A4%E8%AF%B4%EF%BC%8C%E5%9B%BD%E6%97%97%E5%92%8C%E5%9B%BD%E5%BE%BD%E4%BB%A3%E8%A1%A8%E4%BA%86%E4%B8%80%E4%B8%AA%E5%9B%BD%E5%AE%B6%E7%9A%84%E5%B0%8A%E4%B8%A5%EF%BC%8C%E4%B8%8D%E5%AE%B9%E8%B7%B5%E8%B8%8F%EF%BC%8C%E5%BE%88%E6%9C%9F%E6%9C%9B%E5%BD%93%E5%A4%A9%E7%9A%84%E6%B4%BB%E5%8A%A8%E8%83%BD%E5%90%91%E5%B9%BF%E5%A4%A7%E5%B8%82%E6%B0%91%E4%BC%A0%E8%BE%BE%E8%BF%99%E4%B8%80%E4%BF%A1%E6%81%AF%E3%80%82++%E5%8D%B3%E5%B0%86%E5%8D%87%E8%AF%BB%E5%88%9D%E4%B8%89%E7%9A%84%E8%92%8B%E9%9D%96%E8%BD%A9%E8%AE%A4%E4%B8%BA%EF%BC%8C%E8%BF%91%E6%97%A5%E9%A6%99%E6%B8%AF%E5%8F%91%E7%94%9F%E8%BF%9E%E4%B8%B2%E6%9A%B4%E5%8A%9B%E4%BA%8B%E4%BB%B6%EF%BC%8C%E5%BD%93%E5%A4%A9%E7%9A%84%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%E6%9B%B4%E6%98%BE%E6%84%8F%E4%B9%89%EF%BC%8C%E5%B8%8C%E6%9C%9B%E9%A6%99%E6%B8%AF%E5%BF%AB%E5%BF%AB%E6%81%A2%E5%A4%8D%E5%B9%B3%E9%9D%99%EF%BC%8C%E6%B8%AF%E4%BA%BA%E9%83%BD%E5%9B%A2%E7%BB%93%E8%B5%B7%E6%9D%A5%E3%80%82 HTTP/1.1" 200 1854
+119.123.40.60 - - [22/Sep/2019 18:49:16] "GET /demo?textin=%E6%96%B0%E5%8D%8E%E7%A4%BE%E9%A6%99%E6%B8%AF8%E6%9C%8811%E6%97%A5%E7%94%B5+%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A11%E6%97%A5%E5%9C%A8%E6%96%B0%E7%95%8C%E5%85%83%E6%9C%97%E4%B8%80%E5%AE%B6%E4%B8%AD%E5%AD%A6%E4%B8%BE%E8%A1%8C%E2%80%9C%E5%AE%B6%E5%9C%A8%E4%B8%AD%E5%8D%8E%E2%80%9D%E5%8D%87%E6%97%97%E7%A4%BC%EF%BC%8C%E5%90%B8%E5%BC%95%E5%A4%9A%E5%90%8D%E5%B8%82%E6%B0%91%E5%8F%82%E4%B8%8E%E3%80%82++%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%85%88%E7%94%9F%E4%B9%9F%E8%AF%B4%E8%BF%87%E8%BF%99%E6%98%AF%E4%B8%80%E4%BB%B6%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85%E3%80%82++%E6%AD%A3%E5%8D%88%E6%97%B6%E5%88%86%EF%BC%8C%E8%89%B3%E9%98%B3%E9%AB%98%E7%85%A7%E3%80%82%E7%94%B1%E9%A6%99%E6%B8%AF%E5%A4%9A%E5%AE%B6%E4%B8%AD%E5%AD%A6%E7%BB%84%E6%88%90%E7%9A%84%E5%8D%87%E6%97%97%E9%98%9F%E4%BC%8D%EF%BC%8C%E6%8A%A4%E9%80%81%E5%9B%BD%E6%97%97%E5%88%B0%E5%AD%A6%E6%A0%A1%E6%93%8D%E5%9C%BA%E7%9A%84%E6%97%97%E6%9D%86%E4%B8%8B%E3%80%82%E4%BA%94%E6%98%9F%E7%BA%A2%E6%97%97%E4%BC%B4%E9%9A%8F%E7%9D%80%E5%9B%BD%E6%AD%8C%E5%86%89%E5%86%89%E5%8D%87%E8%B5%B7%EF%BC%8C%E6%B0%94%E6%B0%9B%E5%BA%84%E4%B8%A5%E3%80%82+%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A%E4%B8%BB%E5%B8%AD%E5%91%A8%E4%B8%96%E8%80%80%E5%9C%A8%E5%9B%BD%E6%97%97%E4%B8%8B%E8%87%B4%E8%BE%9E%E6%97%B6%E8%A1%A8%E7%A4%BA%EF%BC%8C%E6%9C%80%E8%BF%91%E9%A6%99%E6%B8%AF%E5%8F%91%E7%94%9F%E5%BE%88%E5%A4%9A%E4%B8%8D%E6%84%89%E5%BF%AB%E7%9A%84%E4%BA%8B%E4%BB%B6%EF%BC%8C%E5%8C%85%E6%8B%AC%E9%83%A8%E5%88%86%E4%BA%BA%E4%BE%AE%E8%BE%B1%E5%9B%BD%E6%97%97%E5%9B%BD%E5%BE%BD%E3%80%81%E6%8C%91%E6%88%98%E2%80%9C%E4%B8%80%E5%9B%BD%E4%B8%A4%E5%88%B6%E2%80%9D%E5%8E%9F%E5%88%99%E5%BA%95%E7%BA%BF%EF%BC%8C%E4%B9%9F%E5%88%86%E5%8C%96%E4%BA%86%E9%A6%99%E6%B8%AF%E5%92%8C%E5%86%85%E5%9C%B0%E7%9A%84%E5%90%8C%E8%83%9E%E3%80%82%E5%B8%8C%E6%9C%9B%E9%80%9A%E8%BF%87%E5%BD%93%E5%A4%A9%E4%B8%BE%E8%A1%8C%E5%8D%87%E6%97%97%E6%B4%BB%E5%8A%A8%E5%BC%98%E6%89%AC%E6%AD%A3%E8%83%BD%E9%87%8F%EF%BC%8C%E5%B9%B6%E4%BC%A0%E9%80%92%E4%B8%80%E4%B8%AA%E9%87%8D%E8%A6%81%E8%AE%AF%E6%81%AF%EF%BC%9A%E9%A6%99%E6%B8%AF%E5%B1%9E%E4%BA%8E%E4%B8%AD%E5%8D%8E%E6%B0%91%E6%97%8F%E5%A4%A7%E5%AE%B6%E5%BA%AD%E3%80%82++%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A%E6%80%BB%E7%9B%91%E8%AE%B8%E6%8C%AF%E9%9A%86%E5%8B%89%E5%8A%B1%E5%B9%B4%E8%BD%BB%E4%BA%BA%E8%AF%B4%EF%BC%8C%E8%A6%81%E5%85%B3%E5%BF%83%E7%A4%BE%E4%BC%9A%EF%BC%8C%E5%85%B3%E5%BF%83%E5%9B%BD%E5%AE%B6%EF%BC%8C%E5%B8%8C%E6%9C%9B%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%BB%A5%E5%9B%BD%E4%B8%BA%E8%8D%A3%EF%BC%8C%E4%B8%BA%E5%9B%BD%E4%BA%89%E5%85%89%E3%80%82+%E6%B4%BB%E5%8A%A8%E6%8E%A5%E8%BF%91%E5%B0%BE%E5%A3%B0%EF%BC%8C%E5%8F%82%E4%B8%8E%E8%80%85%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%9C%B0%E5%9B%BE%E4%B8%8A%E8%B4%B4%E4%B8%8A%E4%B8%AD%E5%9B%BD%E5%9B%BD%E6%97%97%EF%BC%8C%E8%B1%A1%E5%BE%81%E5%A4%A7%E5%AE%B6%E5%85%B1%E5%90%8C%E5%8A%AA%E5%8A%9B%E5%BB%BA%E8%AE%BE%E5%9B%BD%E5%AE%B6%E3%80%82%E6%9C%80%E5%90%8E%EF%BC%8C%E5%85%A8%E4%BD%93%E4%BA%BA%E5%91%98%E5%90%88%E5%94%B1%E3%80%8A%E6%98%8E%E5%A4%A9%E4%BC%9A%E6%9B%B4%E5%A5%BD%E3%80%8B%EF%BC%8C%E4%B8%BA%E9%A6%99%E6%B8%AF%E9%80%81%E4%B8%8A%E7%BE%8E%E5%A5%BD%E7%A5%9D%E6%84%BF%E3%80%82++%E4%BB%8A%E5%B9%B415%E5%B2%81%E7%9A%84%E9%83%AD%E7%B4%AB%E6%99%B4%E5%9C%A8%E9%A6%99%E6%B8%AF%E5%9C%9F%E7%94%9F%E5%9C%9F%E9%95%BF%E3%80%82%E5%A5%B9%E8%A1%A8%E7%A4%BA%EF%BC%8C%E8%BF%99%E6%AC%A1%E5%8D%87%E6%97%97%E7%A4%BC%E6%98%AF%E7%89%B9%E5%88%AB%E4%B8%BA%E9%A6%99%E6%B8%AF%E5%8A%A0%E6%B2%B9%E8%80%8C%E4%B8%BE%E8%A1%8C%E7%9A%84%EF%BC%8C%E5%B8%8C%E6%9C%9B%E5%A4%A7%E5%AE%B6%E9%83%BD%E6%87%82%E5%BE%97%E5%B0%8A%E9%87%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9B%BD%E5%AE%B6%E3%80%82%E2%80%9C%E7%9C%8B%E7%9D%80%E5%9B%BD%E6%97%97%E5%8D%87%E8%B5%B7%EF%BC%8C%E6%83%B3%E5%88%B0%E8%87%AA%E5%B7%B1%E5%9C%A8%E4%B8%AD%E5%9B%BD%E8%BF%99%E7%89%87%E5%9C%9F%E5%9C%B0%E4%B8%8A%E6%88%90%E9%95%BF%EF%BC%8C%E6%84%9F%E5%88%B0%E5%8D%81%E5%88%86%E8%87%AA%E8%B1%AA%E3%80%82%E2%80%9D+%E2%80%9C%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%28%E4%B8%8E%E4%BB%A5%E5%BE%80%29%E4%B8%80%E6%A0%B7%EF%BC%8C%E4%BD%86%E6%84%8F%E4%B9%89%E5%8D%B4%E4%B8%8D%E5%90%8C%E3%80%82%E2%80%9D%E4%BD%9C%E4%B8%BA%E5%BD%93%E5%A4%A9%E5%8D%87%E6%97%97%E9%98%9F%E6%88%90%E5%91%98%E4%B9%8B%E4%B8%80%E7%9A%84%E9%AB%98%E4%B8%AD%E7%94%9F%E8%B5%B5%E9%A2%96%E8%B4%A4%E8%AF%B4%EF%BC%8C%E5%9B%BD%E6%97%97%E5%92%8C%E5%9B%BD%E5%BE%BD%E4%BB%A3%E8%A1%A8%E4%BA%86%E4%B8%80%E4%B8%AA%E5%9B%BD%E5%AE%B6%E7%9A%84%E5%B0%8A%E4%B8%A5%EF%BC%8C%E4%B8%8D%E5%AE%B9%E8%B7%B5%E8%B8%8F%EF%BC%8C%E5%BE%88%E6%9C%9F%E6%9C%9B%E5%BD%93%E5%A4%A9%E7%9A%84%E6%B4%BB%E5%8A%A8%E8%83%BD%E5%90%91%E5%B9%BF%E5%A4%A7%E5%B8%82%E6%B0%91%E4%BC%A0%E8%BE%BE%E8%BF%99%E4%B8%80%E4%BF%A1%E6%81%AF%E3%80%82++%E5%8D%B3%E5%B0%86%E5%8D%87%E8%AF%BB%E5%88%9D%E4%B8%89%E7%9A%84%E8%92%8B%E9%9D%96%E8%BD%A9%E8%AE%A4%E4%B8%BA%EF%BC%8C%E8%BF%91%E6%97%A5%E9%A6%99%E6%B8%AF%E5%8F%91%E7%94%9F%E8%BF%9E%E4%B8%B2%E6%9A%B4%E5%8A%9B%E4%BA%8B%E4%BB%B6%EF%BC%8C%E5%BD%93%E5%A4%A9%E7%9A%84%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%E6%9B%B4%E6%98%BE%E6%84%8F%E4%B9%89%EF%BC%8C%E5%B8%8C%E6%9C%9B%E9%A6%99%E6%B8%AF%E5%BF%AB%E5%BF%AB%E6%81%A2%E5%A4%8D%E5%B9%B3%E9%9D%99%EF%BC%8C%E6%B8%AF%E4%BA%BA%E9%83%BD%E5%9B%A2%E7%BB%93%E8%B5%B7%E6%9D%A5%E3%80%82 HTTP/1.1" 200 1854
+Bottle v0.12.17 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8229/
+Hit Ctrl-C to quit.
+
+119.123.40.60 - - [22/Sep/2019 19:15:27] "GET /demo?textin=%E4%BC%A0%E7%BB%9F%E5%A4%96%E4%BC%81%E8%A1%B0%E8%90%BD%E4%BA%86%E5%A5%BD%E4%BA%9B%E5%B9%B4%EF%BC%8C%E4%BA%92%E8%81%94%E7%BD%91%E5%A4%96%E4%BC%81%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%8F%88%E6%B2%A1%E6%9C%89%E7%89%B9%E5%88%AB%E8%83%BD%E6%89%93%E7%9A%84%E3%80%82%20%20%E5%A4%A7%E5%AE%B6%E9%83%BD%E4%B8%8D%E7%9C%8B%E5%A5%BD%E5%A4%96%E4%BC%81%E3%80%82%20%20%E4%BD%86%E8%BF%99%E4%B8%8D%E4%BB%A3%E8%A1%A8%E5%A4%96%E4%BC%81%E6%B2%A1%E6%9C%89%E4%BC%98%E5%8A%BF%E3%80%82%20%20%EF%BC%88%E6%AC%A7%E7%BE%8E%EF%BC%89%E5%A4%96%E4%BC%81%E6%9C%80%E5%A4%A7%E7%9A%84%E4%BC%98%E5%8A%BF%EF%BC%8C%E5%9C%A8%E6%88%91%E7%9C%8B%E6%9D%A5%EF%BC%8C%E6%98%AF%E4%BA%BA%E6%80%A7%E5%8C%96%E3%80%82%20%20%E5%9C%A8%E4%B8%80%E4%B8%AA%E6%AC%A7%E7%BE%8E%E6%96%87%E5%8C%96%E7%9A%84%E4%BC%81%E4%B8%9A%E7%8E%AF%E5%A2%83%E4%B8%8B%EF%BC%8C%E4%BD%A0%E5%8F%AF%E4%BB%A5%E5%87%86%E7%82%B9%E4%B8%8B%E7%8F%AD%E5%9B%9E%E5%AE%B6%EF%BC%8C%E4%BD%A0%E5%8F%AF%E4%BB%A5%E6%AF%8F%E5%B9%B4%E6%89%BE%E6%97%B6%E9%97%B4%E4%BC%91%E5%B9%B4%E5%81%87%EF%BC%8C%E4%BD%A0%E5%8F%AF%E4%BB%A5%E6%AD%A3%E5%B8%B8%E6%80%80%E5%AD%95%E7%94%9F%E5%AD%A9%E5%AD%90%EF%BC%8C%E4%BD%A0%E5%8F%AF%E4%BB%A5%E8%BF%87%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%E4%BA%BA%E7%9A%84%E7%94%9F%E6%B4%BB%E3%80%82%20%20%E4%B8%8D%E5%B0%91%E6%B0%91%E4%BC%81%E5%B0%B1%E4%B8%8D%E8%BF%99%E4%B9%88%E7%9C%8B%E4%BA%86%EF%BC%8C%E4%BB%96%E4%BB%AC%E5%B8%8C%E6%9C%9B%E5%91%98%E5%B7%A5%E3%80%8C%E6%8B%BC%E6%90%8F%EF%BC%8C%E5%A5%8B%E6%96%97%EF%BC%8C%E8%87%AA%E6%88%91%E5%A5%89%E7%8C%AE%E3%80%8D%EF%BC%8C%E4%B8%94%E4%B8%8D%E8%AF%B4%E8%BF%99%E7%A7%8D%E4%BB%B7%E5%80%BC%E8%A7%82%E6%98%AF%E5%8F%8D%E4%BA%BA%E6%80%A7%EF%BC%8C%E6%98%AF%E6%9C%89%E6%AF%92%E7%9A%84%E3%80%82%20%20%E4%BD%95%E5%86%B5%EF%BC%8C%E5%A6%82%E4%BB%8A%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91%E5%88%9D%E5%88%9B%E5%85%AC%E5%8F%B8%E7%BC%BA%E4%B9%8F%E4%B8%80%E4%B8%AA%E6%9C%89%E6%95%88%E8%A1%A1%E9%87%8F%E6%99%AE%E9%80%9A%E5%91%98%E5%B7%A5%E8%B4%A1%E7%8C%AE%E5%BA%A6%E7%9A%84%E6%8C%87%E6%A0%87%EF%BC%8C%E4%BB%96%E4%BB%AC%E6%89%80%E6%9C%89%E7%9A%84%E6%8B%BC%E6%90%8F%E3%80%81%E5%A5%8B%E6%96%97%E5%92%8C%E5%A5%89%E7%8C%AE%EF%BC%8C%E6%9C%80%E7%BB%88%E9%83%BD%E6%8D%A2%E7%AE%97%E6%88%90%E4%BA%86%E5%8A%A0%E7%8F%AD%E7%86%AC%E5%A4%9C996%E3%80%82%20%20%E5%A6%82%E6%9E%9C%E4%B8%80%E6%97%A6%E6%9C%89%E4%B8%80%E5%A4%A9%E4%BD%A0%E5%8A%A0%E4%B8%8D%E4%BA%86%E7%8F%AD%E4%BA%86%EF%BC%8C%E7%86%AC%E4%B8%8D%E8%B5%B7%E5%A4%9C%E4%BA%86%EF%BC%8C%E8%A6%81%E7%94%9F%E5%AD%A9%E5%AD%90%E4%BA%86%EF%BC%8C%E5%9C%A8%E5%85%AC%E5%8F%B8%E7%9C%BC%E9%87%8C%E4%BD%A0%E7%9E%AC%E9%97%B4%E5%B0%B1%E6%88%90%E4%B8%BA%E4%BA%86%E8%B4%9F%E8%B5%84%E4%BA%A7%EF%BC%8C%E5%85%AC%E5%8F%B8%E4%BC%9A%E4%B8%8D%E6%8B%A9%E6%89%8B%E6%AE%B5%E6%8A%8A%E4%BD%A0%E8%B8%A2%E5%87%BA%E5%8E%BB%E3%80%82%20%20%E5%9C%A8%E8%BF%87%E5%8E%BB%E7%9A%84%E4%B8%80%E5%B9%B4%E9%87%8C%EF%BC%8C%E6%88%91%E6%8E%A5%E5%88%B0%E7%9A%84%E6%9C%80%E5%B8%B8%E8%A7%81%E7%9A%84%E5%92%A8%E8%AF%A2%E5%B0%B1%E6%98%AF%EF%BC%9A%E5%85%AC%E5%8F%B8%E6%83%B3%E8%A6%81%E8%A3%81%E6%8E%89%E6%88%91%EF%BC%8C%E4%BD%86%E5%B8%8C%E6%9C%9B%E6%88%91%E8%87%AA%E5%B7%B1%E8%BE%9E%E8%81%8C%EF%BC%8C%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F%20%20%E8%BF%87%E5%8E%BB%E4%B8%80%E5%B9%B4%EF%BC%8C%E6%88%91%E4%BB%AC%E8%A7%81%E8%AF%86%E4%BA%86%E6%B0%91%E4%BC%81%E7%9A%84996%E5%8A%9D%E9%80%80%E5%BC%8F%E8%A3%81%E5%91%98%E3%80%81%E6%9F%A5%E6%8A%A5%E9%94%80%E8%A3%81%E5%91%98%E3%80%81%E8%80%83%E9%AB%98%E6%95%B0%E8%A3%81%E5%91%98%E3%80%81%E5%85%AC%E5%8F%B8%E6%90%AC%E5%AE%B6%E8%A3%81%E5%91%98%E7%AD%89%E4%B8%80%E7%B3%BB%E5%88%97%E6%96%B0%E9%A2%96%E7%9A%84%E2%80%9C%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E5%88%9B%E6%96%B0%E4%B9%8B%E4%B8%BE%E2%80%9D%E3%80%82%20%20%E8%BF%99%E7%A7%8D%E6%88%91%E4%B8%8D%E8%A6%81%E8%84%B8%E6%88%91%E9%AA%84%E5%82%B2%E7%9A%84%E6%96%87%E5%8C%96%EF%BC%8C%E5%9C%A8%E6%AC%A7%E7%BE%8E%E5%A4%96%E4%BC%81%EF%BC%8C%E6%98%AF%E5%BE%88%E9%9A%BE%E6%89%BE%E5%88%B0%E7%9A%84%E3%80%82%20%20%E8%BF%98%E6%98%AF%E9%82%A3%E4%BD%8D%E5%9C%A8%E7%99%BD%E6%9D%BF%E4%B8%8A%E7%94%BB%E5%9B%BE%EF%BC%8C%E6%8B%92%E7%BB%9D%E7%BB%99%E5%91%98%E5%B7%A5%E6%B6%A8%E8%96%AA%E7%9A%84%E6%80%BB%E8%A3%81%EF%BC%8C%E6%9C%89%E4%B8%80%E6%AC%A1%E6%8B%9B%E4%BA%86%E4%B8%AA%E5%A7%91%E5%A8%98%E8%BF%9B%E5%85%AC%E5%8F%B8%E3%80%82%20%20%E6%80%BB%E7%9B%91%E5%A5%BD%E6%84%8F%E6%8F%90%E9%86%92%EF%BC%9A%E8%BF%99%E4%B8%AA%E5%80%99%E9%80%89%E4%BA%BA%E6%98%AF%E4%B8%AA%E5%A7%91%E5%A8%98%E2%80%A6%E2%80%A6%20%E4%BB%96%EF%BC%9A%E5%A7%91%E5%A8%98%E6%80%8E%E4%B9%88%E4%BA%86%EF%BC%9F%20%E6%80%BB%E7%9B%91%EF%BC%9A%E8%BF%99%E5%A7%91%E5%A8%98%E5%B7%B2%E5%A9%9A%E6%9C%AA%E8%82%B2%E3%80%82%20%E4%BB%96%EF%BC%9A%E5%B7%B2%E5%A9%9A%E6%9C%AA%E8%82%B2%E6%80%8E%E4%B9%88%E4%BA%86%EF%BC%9F%20%E6%80%BB%E7%9B%91%EF%BC%9A%E6%9D%A5%E4%BA%86%E8%A6%81%E6%98%AF%E7%94%9F%E5%AD%A9%E5%AD%90%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F%E4%B8%89%E6%9C%9F%E9%98%B6%E6%AE%B5%E4%B8%8D%E8%83%BD%E5%B9%B2%E6%B4%BB%E4%B9%9F%E5%BE%97%E5%85%BB%E7%9D%80%E3%80%82%20%E4%BB%96%EF%BC%9A%E8%BF%99%E4%B8%8D%E6%98%AF%E5%BA%94%E8%AF%A5%E7%9A%84%E5%98%9B%EF%BC%9F%E8%BF%99%E4%B8%8D%E6%98%AF%E6%B3%95%E5%BE%8B%E8%A7%84%E5%AE%9A%E5%90%97%EF%BC%9F%E5%91%98%E5%B7%A5%E7%94%9F%E5%AD%A9%E5%AD%90%E6%9C%9F%E9%97%B4%EF%BC%8C%E6%98%AF%E4%B8%8D%E6%98%AF%E5%BA%94%E8%AF%A5%E7%BB%99%E4%BF%9D%E9%9A%9C%EF%BC%9F%20%E6%80%BB%E7%9B%91%EF%BC%9A%E2%80%A6%E2%80%A6%20%E4%BD%9C%E4%B8%BA%E4%B8%80%E4%B8%AA%E4%B8%8D%E6%84%BF%E6%84%8F%E7%BB%99%E5%91%98%E5%B7%A5%E6%B6%A8%E8%96%AA%E7%9A%84%E8%80%81%E6%9D%BF%EF%BC%8C%E4%BD%A0%E5%8F%AF%E8%83%BD%E8%A7%89%E5%BE%97%E4%BB%96%E5%BE%88%E8%AE%A8%E5%8E%8C%EF%BC%9B%E4%BD%86%E6%98%AF%E4%BB%96%E7%9A%84%E5%86%B3%E5%AE%9A%E9%83%BD%E6%98%AF%E6%A0%B9%E6%8D%AE%E6%AD%A3%E5%B8%B8%E4%BA%BA%E7%9A%84%E9%80%BB%E8%BE%91%E6%9D%A5%E7%9A%84%EF%BC%9A%E6%8C%81%E7%BB%AD%E6%B6%A8%E8%96%AA%EF%BC%8C%E5%85%AC%E5%8F%B8%E6%97%A0%E6%B3%95%E7%9B%88%E5%88%A9%EF%BC%9B%E5%85%AC%E5%8F%B8%E6%9C%89%E4%B9%89%E5%8A%A1%E7%85%A7%E9%A1%BE%E6%80%80%E5%AD%95%E5%A5%B3%E5%91%98%E5%B7%A5%E3%80%82 HTTP/1.1" 200 1444
+119.123.40.60 - - [22/Sep/2019 19:16:16] "GET / HTTP/1.1" 200 2579
+119.123.40.60 - - [22/Sep/2019 19:16:16] "GET /assets/css/main.css HTTP/1.1" 200 77011
+119.123.40.60 - - [22/Sep/2019 19:16:16] "GET /assets/js/jquery.min.js HTTP/1.1" 200 95957
+119.123.40.60 - - [22/Sep/2019 19:16:17] "GET /images/slide01.jpg HTTP/1.1" 200 575353
+119.123.40.60 - - [22/Sep/2019 19:16:17] "GET /assets/js/jquery.scrollex.min.js HTTP/1.1" 200 2257
+119.123.40.60 - - [22/Sep/2019 19:16:17] "GET /assets/css/font-awesome.min.css HTTP/1.1" 200 29063
+119.123.40.60 - - [22/Sep/2019 19:16:17] "GET /assets/js/util.js HTTP/1.1" 200 12433
+119.123.40.60 - - [22/Sep/2019 19:16:17] "GET /assets/js/skel.min.js HTTP/1.1" 200 9066
+119.123.40.60 - - [22/Sep/2019 19:16:17] "GET /assets/js/main.js HTTP/1.1" 200 6557
+119.123.40.60 - - [22/Sep/2019 19:16:18] "GET /assets/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+119.123.40.60 - - [22/Sep/2019 19:16:39] "GET /demo?textin=%E6%96%B0%E5%8D%8E%E7%A4%BE%E9%A6%99%E6%B8%AF8%E6%9C%8811%E6%97%A5%E7%94%B5+%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A11%E6%97%A5%E5%9C%A8%E6%96%B0%E7%95%8C%E5%85%83%E6%9C%97%E4%B8%80%E5%AE%B6%E4%B8%AD%E5%AD%A6%E4%B8%BE%E8%A1%8C%E2%80%9C%E5%AE%B6%E5%9C%A8%E4%B8%AD%E5%8D%8E%E2%80%9D%E5%8D%87%E6%97%97%E7%A4%BC%EF%BC%8C%E5%90%B8%E5%BC%95%E5%A4%9A%E5%90%8D%E5%B8%82%E6%B0%91%E5%8F%82%E4%B8%8E%E3%80%82++%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%85%88%E7%94%9F%E4%B9%9F%E8%AF%B4%E8%BF%87%E8%BF%99%E6%98%AF%E4%B8%80%E4%BB%B6%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%8B%E6%83%85%E3%80%82++%E6%AD%A3%E5%8D%88%E6%97%B6%E5%88%86%EF%BC%8C%E8%89%B3%E9%98%B3%E9%AB%98%E7%85%A7%E3%80%82%E7%94%B1%E9%A6%99%E6%B8%AF%E5%A4%9A%E5%AE%B6%E4%B8%AD%E5%AD%A6%E7%BB%84%E6%88%90%E7%9A%84%E5%8D%87%E6%97%97%E9%98%9F%E4%BC%8D%EF%BC%8C%E6%8A%A4%E9%80%81%E5%9B%BD%E6%97%97%E5%88%B0%E5%AD%A6%E6%A0%A1%E6%93%8D%E5%9C%BA%E7%9A%84%E6%97%97%E6%9D%86%E4%B8%8B%E3%80%82%E4%BA%94%E6%98%9F%E7%BA%A2%E6%97%97%E4%BC%B4%E9%9A%8F%E7%9D%80%E5%9B%BD%E6%AD%8C%E5%86%89%E5%86%89%E5%8D%87%E8%B5%B7%EF%BC%8C%E6%B0%94%E6%B0%9B%E5%BA%84%E4%B8%A5%E3%80%82+%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A%E4%B8%BB%E5%B8%AD%E5%91%A8%E4%B8%96%E8%80%80%E5%9C%A8%E5%9B%BD%E6%97%97%E4%B8%8B%E8%87%B4%E8%BE%9E%E6%97%B6%E8%A1%A8%E7%A4%BA%EF%BC%8C%E6%9C%80%E8%BF%91%E9%A6%99%E6%B8%AF%E5%8F%91%E7%94%9F%E5%BE%88%E5%A4%9A%E4%B8%8D%E6%84%89%E5%BF%AB%E7%9A%84%E4%BA%8B%E4%BB%B6%EF%BC%8C%E5%8C%85%E6%8B%AC%E9%83%A8%E5%88%86%E4%BA%BA%E4%BE%AE%E8%BE%B1%E5%9B%BD%E6%97%97%E5%9B%BD%E5%BE%BD%E3%80%81%E6%8C%91%E6%88%98%E2%80%9C%E4%B8%80%E5%9B%BD%E4%B8%A4%E5%88%B6%E2%80%9D%E5%8E%9F%E5%88%99%E5%BA%95%E7%BA%BF%EF%BC%8C%E4%B9%9F%E5%88%86%E5%8C%96%E4%BA%86%E9%A6%99%E6%B8%AF%E5%92%8C%E5%86%85%E5%9C%B0%E7%9A%84%E5%90%8C%E8%83%9E%E3%80%82%E5%B8%8C%E6%9C%9B%E9%80%9A%E8%BF%87%E5%BD%93%E5%A4%A9%E4%B8%BE%E8%A1%8C%E5%8D%87%E6%97%97%E6%B4%BB%E5%8A%A8%E5%BC%98%E6%89%AC%E6%AD%A3%E8%83%BD%E9%87%8F%EF%BC%8C%E5%B9%B6%E4%BC%A0%E9%80%92%E4%B8%80%E4%B8%AA%E9%87%8D%E8%A6%81%E8%AE%AF%E6%81%AF%EF%BC%9A%E9%A6%99%E6%B8%AF%E5%B1%9E%E4%BA%8E%E4%B8%AD%E5%8D%8E%E6%B0%91%E6%97%8F%E5%A4%A7%E5%AE%B6%E5%BA%AD%E3%80%82++%E9%A6%99%E6%B8%AF%E5%8D%87%E6%97%97%E9%98%9F%E6%80%BB%E4%BC%9A%E6%80%BB%E7%9B%91%E8%AE%B8%E6%8C%AF%E9%9A%86%E5%8B%89%E5%8A%B1%E5%B9%B4%E8%BD%BB%E4%BA%BA%E8%AF%B4%EF%BC%8C%E8%A6%81%E5%85%B3%E5%BF%83%E7%A4%BE%E4%BC%9A%EF%BC%8C%E5%85%B3%E5%BF%83%E5%9B%BD%E5%AE%B6%EF%BC%8C%E5%B8%8C%E6%9C%9B%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%BB%A5%E5%9B%BD%E4%B8%BA%E8%8D%A3%EF%BC%8C%E4%B8%BA%E5%9B%BD%E4%BA%89%E5%85%89%E3%80%82+%E6%B4%BB%E5%8A%A8%E6%8E%A5%E8%BF%91%E5%B0%BE%E5%A3%B0%EF%BC%8C%E5%8F%82%E4%B8%8E%E8%80%85%E5%9C%A8%E4%B8%AD%E5%9B%BD%E5%9C%B0%E5%9B%BE%E4%B8%8A%E8%B4%B4%E4%B8%8A%E4%B8%AD%E5%9B%BD%E5%9B%BD%E6%97%97%EF%BC%8C%E8%B1%A1%E5%BE%81%E5%A4%A7%E5%AE%B6%E5%85%B1%E5%90%8C%E5%8A%AA%E5%8A%9B%E5%BB%BA%E8%AE%BE%E5%9B%BD%E5%AE%B6%E3%80%82%E6%9C%80%E5%90%8E%EF%BC%8C%E5%85%A8%E4%BD%93%E4%BA%BA%E5%91%98%E5%90%88%E5%94%B1%E3%80%8A%E6%98%8E%E5%A4%A9%E4%BC%9A%E6%9B%B4%E5%A5%BD%E3%80%8B%EF%BC%8C%E4%B8%BA%E9%A6%99%E6%B8%AF%E9%80%81%E4%B8%8A%E7%BE%8E%E5%A5%BD%E7%A5%9D%E6%84%BF%E3%80%82++%E4%BB%8A%E5%B9%B415%E5%B2%81%E7%9A%84%E9%83%AD%E7%B4%AB%E6%99%B4%E5%9C%A8%E9%A6%99%E6%B8%AF%E5%9C%9F%E7%94%9F%E5%9C%9F%E9%95%BF%E3%80%82%E5%A5%B9%E8%A1%A8%E7%A4%BA%EF%BC%8C%E8%BF%99%E6%AC%A1%E5%8D%87%E6%97%97%E7%A4%BC%E6%98%AF%E7%89%B9%E5%88%AB%E4%B8%BA%E9%A6%99%E6%B8%AF%E5%8A%A0%E6%B2%B9%E8%80%8C%E4%B8%BE%E8%A1%8C%E7%9A%84%EF%BC%8C%E5%B8%8C%E6%9C%9B%E5%A4%A7%E5%AE%B6%E9%83%BD%E6%87%82%E5%BE%97%E5%B0%8A%E9%87%8D%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9B%BD%E5%AE%B6%E3%80%82%E2%80%9C%E7%9C%8B%E7%9D%80%E5%9B%BD%E6%97%97%E5%8D%87%E8%B5%B7%EF%BC%8C%E6%83%B3%E5%88%B0%E8%87%AA%E5%B7%B1%E5%9C%A8%E4%B8%AD%E5%9B%BD%E8%BF%99%E7%89%87%E5%9C%9F%E5%9C%B0%E4%B8%8A%E6%88%90%E9%95%BF%EF%BC%8C%E6%84%9F%E5%88%B0%E5%8D%81%E5%88%86%E8%87%AA%E8%B1%AA%E3%80%82%E2%80%9D+%E2%80%9C%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%28%E4%B8%8E%E4%BB%A5%E5%BE%80%29%E4%B8%80%E6%A0%B7%EF%BC%8C%E4%BD%86%E6%84%8F%E4%B9%89%E5%8D%B4%E4%B8%8D%E5%90%8C%E3%80%82%E2%80%9D%E4%BD%9C%E4%B8%BA%E5%BD%93%E5%A4%A9%E5%8D%87%E6%97%97%E9%98%9F%E6%88%90%E5%91%98%E4%B9%8B%E4%B8%80%E7%9A%84%E9%AB%98%E4%B8%AD%E7%94%9F%E8%B5%B5%E9%A2%96%E8%B4%A4%E8%AF%B4%EF%BC%8C%E5%9B%BD%E6%97%97%E5%92%8C%E5%9B%BD%E5%BE%BD%E4%BB%A3%E8%A1%A8%E4%BA%86%E4%B8%80%E4%B8%AA%E5%9B%BD%E5%AE%B6%E7%9A%84%E5%B0%8A%E4%B8%A5%EF%BC%8C%E4%B8%8D%E5%AE%B9%E8%B7%B5%E8%B8%8F%EF%BC%8C%E5%BE%88%E6%9C%9F%E6%9C%9B%E5%BD%93%E5%A4%A9%E7%9A%84%E6%B4%BB%E5%8A%A8%E8%83%BD%E5%90%91%E5%B9%BF%E5%A4%A7%E5%B8%82%E6%B0%91%E4%BC%A0%E8%BE%BE%E8%BF%99%E4%B8%80%E4%BF%A1%E6%81%AF%E3%80%82++%E5%8D%B3%E5%B0%86%E5%8D%87%E8%AF%BB%E5%88%9D%E4%B8%89%E7%9A%84%E8%92%8B%E9%9D%96%E8%BD%A9%E8%AE%A4%E4%B8%BA%EF%BC%8C%E8%BF%91%E6%97%A5%E9%A6%99%E6%B8%AF%E5%8F%91%E7%94%9F%E8%BF%9E%E4%B8%B2%E6%9A%B4%E5%8A%9B%E4%BA%8B%E4%BB%B6%EF%BC%8C%E5%BD%93%E5%A4%A9%E7%9A%84%E5%8D%87%E6%97%97%E4%BB%AA%E5%BC%8F%E6%9B%B4%E6%98%BE%E6%84%8F%E4%B9%89%EF%BC%8C%E5%B8%8C%E6%9C%9B%E9%A6%99%E6%B8%AF%E5%BF%AB%E5%BF%AB%E6%81%A2%E5%A4%8D%E5%B9%B3%E9%9D%99%EF%BC%8C%E6%B8%AF%E4%BA%BA%E9%83%BD%E5%9B%A2%E7%BB%93%E8%B5%B7%E6%9D%A5%E3%80%82 HTTP/1.1" 200 1505
+119.123.40.60 - - [22/Sep/2019 19:18:35] code 414, message Request-URI Too Long
+119.123.40.60 - - [22/Sep/2019 19:18:35] "" 414 -
+119.123.40.60 - - [22/Sep/2019 19:20:31] "GET /demo?textin=%E7%99%BE%E5%BA%A6%E7%9A%84%E6%B5%81%E9%87%8F%E4%BC%98%E5%8A%BF%E5%86%8D%E6%AC%A1%E5%8F%91%E6%8C%A5%E4%BD%9C%E7%94%A8%E3%80%82%20%20%E7%99%BE%E5%BA%A6%E5%B9%B3%E5%8F%B0%E9%87%8C%E7%9A%84%E2%80%9C%E6%90%9C%E7%B4%A2%E5%92%8C%E4%BF%A1%E6%81%AF%E6%B5%81%E2%80%9D%E5%AD%98%E5%9C%A8%E7%9D%80%E5%90%84%E7%A7%8D%E4%B8%8E%E5%95%86%E5%93%81%E4%BA%A4%E6%98%93%E7%9B%B8%E5%85%B3%E7%9A%84%E9%9C%80%E6%B1%82%EF%BC%8C%E7%94%A8%E6%88%B7%E5%8F%AF%E4%BB%A5%E6%A0%B9%E6%8D%AE%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E3%80%81%E4%BF%A1%E6%81%AF%E6%B5%81%E6%8E%A8%E8%8D%90%EF%BC%8C%E9%80%9A%E8%BF%87%E6%8C%82%E8%BD%BD%E7%9A%84%E6%99%BA%E8%83%BD%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9B%B4%E8%BE%BE%E5%95%86%E5%93%81%E8%B4%AD%E4%B9%B0%E9%A1%B5%E9%9D%A2%E5%B9%B6%E5%AE%8C%E6%88%90%E8%B4%AD%E4%B9%B0%E3%80%82%E5%80%BC%E5%BE%97%E5%85%B3%E6%B3%A8%E7%9A%84%E4%B8%80%E4%B8%AA%E7%BB%86%E8%8A%82%E6%98%AF%EF%BC%8C%E6%B2%88%E6%8A%96%E5%9C%A8%E4%BB%96%E7%9A%84%E6%BC%94%E8%AE%B2%E4%B8%AD%E6%BC%94%E7%A4%BA%E4%BA%86%E8%BF%99%E6%A0%B7%E4%B8%80%E4%B8%AA%E4%BA%A7%E5%93%81%E8%83%BD%E5%8A%9B%EF%BC%8C%E7%94%A8%E6%88%B7%E6%89%93%E5%BC%80%E7%99%BE%E5%BA%A6App%20%E6%8B%8D%E7%85%A7%E6%90%9C%E7%B4%A2%E5%AF%B9%E7%9D%80%E5%8C%96%E5%A6%86%E5%93%81%E6%8B%8D%E7%85%A7%E8%AF%86%E5%88%AB%E4%B9%8B%E5%90%8E%E5%8F%AF%E4%BB%A5%E7%9B%B4%E8%BE%BE%E4%BA%AC%E4%B8%9C%E4%B9%8B%E7%B1%BB%E7%9A%84%E7%94%B5%E5%95%86%E6%99%BA%E8%83%BD%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%8C%E5%B9%B6%E5%AE%8C%E6%88%90%E8%B4%AD%E4%B9%B0%E3%80%82%20%20%E2%80%9C%E7%A7%8D%E8%8D%89%E2%80%9D%E6%88%90%E4%B8%BA%E6%97%B6%E4%B8%8B%E5%B9%B4%E8%BD%BB%E4%BA%BA%E6%9C%80%E6%B5%81%E8%A1%8C%E7%9A%84%E4%B8%80%E7%A7%8D%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F%E3%80%82%20%20%E6%88%91%E4%BB%AC%E5%9C%A8%E5%B0%8F%E7%BA%A2%E4%B9%A6%E7%A7%8D%E8%8D%89%EF%BC%8C%E5%9C%A8%E6%8A%96%E9%9F%B3%E5%BF%AB%E6%89%8B%E7%A7%8D%E8%8D%89%EF%BC%8C%E5%90%8C%E6%A0%B7%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%9C%A8%E7%99%BE%E5%BA%A6%E4%BF%A1%E6%81%AF%E6%B5%81%E4%B8%AD%E7%A7%8D%E8%8D%89%E3%80%82%E6%89%93%E9%80%9A%E2%80%9C%E7%A7%8D%E8%8D%89%E2%80%9D%E5%88%B0%E8%B4%AD%E4%B9%B0%E7%9A%84%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%EF%BC%8C%E8%BF%99%E5%B0%B1%E6%98%AF%E7%99%BE%E5%BA%A6%E6%99%BA%E8%83%BD%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%BF%9B%E5%86%9B%E7%9B%B4%E8%90%A5%E7%94%B5%E5%95%86%E7%9A%84%E4%B8%80%E4%B8%AA%E6%9C%80%E4%BC%98%E8%A7%A3%E3%80%82%20%20%E8%80%8C%E4%B8%94%EF%BC%8C%E6%99%BA%E8%83%BD%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%BF%98%E6%8A%8A%E6%9C%8D%E5%8A%A1%E7%B2%BE%E5%8A%9B%E4%B8%8B%E6%B2%89%E5%88%B0%E4%BA%86%E2%80%9C%E4%BA%94%E7%8E%AF%E5%A4%96%E2%80%9D%E7%9A%84%E5%B0%8F%E5%93%81%E7%89%8C%E5%95%86%E3%80%82%E5%85%B7%E4%BD%93%E7%9A%84%E5%81%9A%E6%B3%95%E6%98%AF%E5%92%8C%E7%B1%BB%E4%BC%BC%E4%BA%8E%E4%B8%AD%E5%85%B3%E6%9D%91%E5%9C%A8%E7%BA%BF%E3%80%81%E6%B1%BD%E8%BD%A6%E4%B9%8B%E5%AE%B6%E8%BF%99%E6%A0%B7%E7%9A%84%E5%90%88%E4%BD%9C%E6%96%B9%E5%90%88%E4%BD%9C%E3%80%82%20%20%E2%80%9C%E4%B8%AD%E5%85%B3%E6%9D%91%E5%9C%A8%E7%BA%BF%E8%A6%81%E5%81%9A%E7%9A%84%E5%B0%B1%E6%98%AF%E6%88%90%E4%B8%BA%E7%99%BE%E5%BA%A6%E6%99%BA%E8%83%BD%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E2%80%98%E6%8B%BC%E5%A4%9A%E5%A4%9A%E2%80%99%E2%80%9D%E3%80%82%E4%B8%AD%E5%85%B3%E6%9D%91%E5%9C%A8%E7%BA%BF%E7%9B%B8%E5%85%B3%E8%B4%9F%E8%B4%A3%E4%BA%BA%E5%9C%A8%E6%8E%A5%E5%8F%97%E9%87%87%E8%AE%BF%E6%97%B6%E8%A1%A8%E7%A4%BA%EF%BC%8C%E4%B8%AD%E5%85%B3%E6%9D%91%E5%9C%A8%E7%BA%BF%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E6%99%BA%E8%83%BD%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%BF%9E%E6%8E%A5%E8%B5%B7%E6%95%B0%E5%8D%83%E4%B8%87%E5%AE%B6%E6%89%8B%E6%9C%BA%E6%B8%A0%E9%81%93%E5%95%86%E3%80%81%E5%AE%B6%E7%94%B5%E5%95%86%E7%AD%89%EF%BC%8C%E8%BF%99%E5%9C%A8%E4%B8%8B%E6%B2%89%E5%B8%82%E5%9C%BA%E5%85%B6%E5%AE%9E%E6%9C%89%E9%9D%9E%E5%B8%B8%E5%A4%A7%E7%9A%84%E7%A9%BA%E9%97%B4%E3%80%82%20%20%E7%99%BE%E5%BA%A6%E7%9A%84%E9%87%8E%E5%BF%83%E8%BF%9C%E4%B8%8D%E6%AD%A2%E4%BA%8E%E6%AD%A4%E3%80%82%20%20%E6%B2%88%E6%8A%96%E6%89%80%E8%AF%B4%E7%9A%84%E8%BF%9E%E6%8E%A5%E8%83%8C%E5%90%8E%E6%9B%B4%E6%9C%9F%E6%9C%9B%E8%BE%BE%E6%88%90%E7%9A%84%E6%98%AF%E5%AF%B9%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%B7%B1%E5%BA%A6%E8%BF%9E%E6%8E%A5%EF%BC%8C%E7%99%BE%E5%BA%A6%E4%B8%8D%E4%BB%85%E8%A6%81%E5%81%9A%E4%B8%AD%E8%BD%AC%E7%AB%99%EF%BC%8C%E6%9B%B4%E8%A6%81%E5%81%9A%E7%94%A8%E6%88%B7%E7%9A%84%E7%BB%88%E7%82%B9%E7%AB%99%E3%80%82%E5%B0%B1%E5%83%8F%E5%89%8D%E9%9D%A2%E8%B0%88%E5%88%B0%E7%9A%84%E4%B8%8A%E6%B5%B7%E8%BD%A6%E5%B1%95%E5%B0%8F%E7%A8%8B%E5%BA%8F%E3%80%81%E7%91%9E%E5%A3%AB%E5%9B%BD%E5%AE%B6%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%8C%E8%BF%99%E4%BA%9B%E6%A0%87%E6%9D%86%E6%89%93%E8%B5%B7%E6%9D%A5%E8%BF%98%E4%B8%8D%E5%A4%9F%EF%BC%8C%E6%9B%B4%E9%87%8D%E8%A6%81%E7%9A%84%E6%98%AF%E5%9C%A8%E6%AF%8F%E4%B8%80%E4%B8%AA%E9%A2%86%E5%9F%9F%E6%B7%B1%E6%B7%B1%E7%9A%84%E6%89%8E%E4%B8%8B%E5%8E%BB%E3%80%82%20%20%E8%BF%99%E4%B9%9F%E6%98%AF%E9%98%BF%E9%87%8C%E3%80%81%E8%85%BE%E8%AE%AF%E5%BD%93%E4%B8%8B%E6%AD%A3%E5%9C%A8%E5%8F%91%E5%8A%9B%E7%9A%84%E6%A0%B8%E5%BF%83%E6%88%98%E5%9C%BA%E4%B9%8B%E4%B8%80%EF%BC%8CBAT%E7%9C%8B%E4%B8%8A%E7%9A%84%E6%98%AF%E8%BF%99%E8%83%8C%E5%90%8E%E5%B7%A8%E5%A4%A7%E7%9A%84%E4%BA%A7%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E7%9A%84%E4%BB%B7%E5%80%BC%E3%80%82%20%20%E5%87%AF%E6%96%87%E5%87%AF%E5%88%A9%E8%AF%B4%EF%BC%8C%E9%87%8D%E6%9E%84%E6%98%AF%E7%8E%B0%E5%9C%A8%E4%BC%81%E4%B8%9A%E6%9C%80%E9%87%8D%E8%A6%81%E7%9A%84%E6%8A%80%E8%83%BD%EF%BC%8C%E2%80%9C%E4%BB%BB%E4%BD%95%E4%BC%81%E4%B8%9A%E5%92%8C%E4%B8%AA%E4%BA%BA%E8%A6%81%E6%83%B3%E5%88%9B%E9%80%A0%E6%96%B0%E7%9A%84%E4%BB%B7%E5%80%BC%EF%BC%8C%E5%BF%85%E9%A1%BB%E8%A6%81%E9%87%8D%E7%BB%84%E8%87%AA%E5%B7%B1%EF%BC%8C%E4%B8%8D%E7%AE%A1%E6%98%AF%E7%BB%84%E7%BB%87%E7%BB%93%E6%9E%84%E3%80%81%E8%BF%98%E6%98%AF%E7%9F%A5%E8%AF%86%E7%BB%93%E6%9E%84%E3%80%82%E5%8F%AA%E6%9C%89%E9%80%9A%E8%BF%87%E9%87%8D%E7%BB%84%E6%89%8D%E8%83%BD%E5%8F%91%E7%8E%B0%E4%B8%80%E4%BA%9B%E6%96%B0%E7%9A%84%E4%B8%9C%E8%A5%BF%EF%BC%8C%E6%89%8D%E8%83%BD%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA%EF%BC%8C%E6%89%8D%E8%83%BD%E6%8F%90%E9%AB%98%E6%95%B4%E4%BD%93%E7%9A%84%E7%AB%9E%E4%BA%89%E5%8A%9B%E3%80%82%E2%80%9D%20%20%E4%B8%8D%E8%AE%BA%E6%98%AF%E4%BF%A1%E6%81%AF%E6%B5%81%E8%BF%98%E6%98%AF%E6%99%BA%E8%83%BD%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%8C%E7%99%BE%E5%BA%A6%E9%83%BD%E6%98%AF%E5%9C%A8%E5%AE%8C%E6%88%90%E5%AF%B9%E6%90%9C%E7%B4%A2%E7%9A%84%E9%87%8D%E6%9E%84%EF%BC%8C%E9%87%8D%E6%9E%84%E5%AE%83%E7%9A%84%E7%94%9F%E6%80%81%EF%BC%8C%E9%87%8D%E6%9E%84%E5%AE%83%E7%9A%84%E6%8A%A4%E5%9F%8E%E6%B2%B3%EF%BC%8C%E8%BF%99%E6%98%AF%E7%99%BE%E5%BA%A6%E8%83%BD%E4%B8%8D%E8%83%BD%E2%80%9C%E5%86%B3%E8%83%9CAI%E6%97%B6%E4%BB%A3%E2%80%9D%E7%9A%84%E6%A0%B9%E6%9C%AC%E3%80%82%20%20%E6%AE%8B%E9%85%B7%E7%9A%84%E6%98%AF%EF%BC%8C%E9%BB%8E%E6%98%8E%E8%BF%98%E6%B2%A1%E6%9C%89%E5%88%B0%E6%9D%A5%EF%BC%8C%E6%88%98%E4%BA%89%E4%B9%9F%E4%BE%BF%E4%B8%8D%E4%BC%9A%E7%BB%93%E6%9D%9F%EF%BC%8C%E7%94%9A%E8%87%B3%E4%BB%8D%E5%B0%86%E6%9B%B4%E5%8A%A0%E6%BF%80%E7%83%88%EF%BC%8C%E4%B9%9F%E4%BB%8D%E5%B0%86%E9%9D%99%E6%82%84%E6%82%84%E3%80%82%E7%99%BE%E5%BA%A6%E5%A6%82%E6%AD%A4%EF%BC%8C%E8%85%BE%E8%AE%AF%E3%80%81%E9%98%BF%E9%87%8C%E7%9A%86%E5%A6%82%E6%AD%A4%E3%80%82 HTTP/1.1" 200 872
+119.123.40.60 - - [22/Sep/2019 19:21:08] "GET /demo?textin=%E8%85%BE%E8%AE%AF%E5%B9%BF%E5%91%8A%E5%9C%A8%E9%9B%86%E5%9B%A2%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91+%E6%88%98%E7%95%A5%E4%B8%8B%EF%BC%8C%E6%8F%90%E5%87%BA%E4%BA%86%E5%B9%BF%E5%91%8A+%E6%A6%82%E5%BF%B5%E3%80%82%E5%85%B6%E4%B8%AD%E5%BE%88%E5%85%B3%E9%94%AE%E7%9A%84%E4%B8%80%E7%82%B9%E5%B0%B1%E6%98%AF%E9%80%9A%E8%BF%87%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BA%A7%E5%93%81%EF%BC%8C%E8%85%BE%E8%AE%AF%E8%B5%8B%E4%BA%88%E4%BA%86%E5%B9%BF%E5%91%8A%E4%B8%BB%E6%9B%B4%E5%BC%BA%E7%9A%84%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E3%80%81%E8%BF%90%E8%90%A5%E7%94%A8%E6%88%B7%E7%9A%84%E8%83%BD%E5%8A%9B%EF%BC%8C%E5%B8%AE%E5%8A%A9%E5%B9%BF%E5%91%8A%E4%B8%BB%E5%AE%9E%E7%8E%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E5%A2%9E%E9%95%BF%E3%80%82%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A5%BD%E6%A6%82%E5%BF%B5%EF%BC%8C%E5%90%8C%E6%A0%B7%E4%B9%9F%E9%80%82%E5%90%88%E7%99%BE%E5%BA%A6%E9%80%BB%E8%BE%91%E3%80%82%20%20%E8%80%8C%E7%99%BE%E5%BA%A6%E7%9A%84%E4%BC%98%E5%8A%BF%E6%98%AF%EF%BC%8C%E4%B8%8D%E4%BB%85%E5%8F%AF%E4%BB%A5%E8%AE%A9%E5%B9%BF%E5%91%8A%E4%B8%BB%E5%85%B7%E5%A4%87%E8%BF%90%E8%90%A5%E7%94%A8%E6%88%B7%E7%9A%84%E8%83%BD%E5%8A%9B%EF%BC%8C%E8%BF%98%E5%8F%AF%E4%BB%A5%E6%8A%8AAI%E5%8A%A0%E8%BF%9B%E6%9D%A5%EF%BC%8C%E8%AE%A9AI%E6%9B%B4%E5%85%B7%E6%99%AE%E9%80%82%E6%80%A7%E3%80%82%E8%BF%99%E6%98%AF%E7%99%BE%E5%BA%A6%E6%99%BA%E8%83%BD%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BD%93%E4%B8%8B%E6%AD%A3%E5%9C%A8%E7%9D%80%E5%8A%9B%E7%AA%81%E7%A0%B4%E7%9A%84%E4%BA%8B%E4%B9%8B%E4%B8%80%E3%80%82%20%20%E4%B8%9A%E5%86%85%E4%BA%BA%E5%A3%AB%E8%A1%A8%E7%A4%BA%EF%BC%8C%E9%99%A4%E4%BA%86%E6%90%9C%E7%B4%A2%E5%B9%BF%E5%91%8A%EF%BC%8C%E4%BF%A1%E6%81%AF%E6%B5%81%E5%B9%BF%E5%91%8A%EF%BC%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%8F%8A%E7%99%BE%E5%BA%A6%E4%BB%8A%E5%B9%B4%E6%8E%A8%E5%87%BA%E7%9A%84%E5%90%84%E7%A7%8D%E6%96%B0%E4%BA%A7%E5%93%81%EF%BC%8C%E9%83%BD%E5%B0%86%E4%B8%BA%E7%99%BE%E5%BA%A6%E6%8E%A2%E7%B4%A2%E6%96%B0%E7%9A%84%E5%B9%BF%E5%91%8A%E5%BD%A2%E5%BC%8F%E5%92%8C%E7%B3%BB%E7%BB%9F%E3%80%82%E7%9B%AE%E5%89%8D%E7%99%BE%E5%BA%A6%E8%BF%98%E6%9C%AA%E5%B0%86%E7%8E%B0%E6%9C%89%E7%9A%84%E6%B5%81%E9%87%8F%E8%BF%9B%E8%A1%8C%E5%AE%8C%E5%85%A8%E7%9A%84%E8%B4%A7%E5%B8%81%E5%8C%96%EF%BC%8C%E4%B9%8B%E5%90%8E%EF%BC%8C%E4%B8%8D%E8%AE%BA%E6%98%AF%E6%8F%90%E5%8D%87%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%EF%BC%8C%E8%BF%98%E6%98%AF%E6%8F%90%E5%8D%87%E7%94%A8%E6%88%B7%E5%A2%9E%E9%95%BF%EF%BC%8C%E4%BB%A5%E5%8F%8A%E6%8E%A2%E7%B4%A2%E9%99%A4%E7%99%BE%E5%BA%A6App%E5%A4%96%E7%9A%84%E6%96%B0%E4%BA%A7%E5%93%81%E3%80%82%E8%BF%99%E4%BA%9BApp%E9%83%BD%E4%BC%9A%E5%B8%A6%E6%9D%A5%E6%B5%81%E9%87%8F%EF%BC%8C%E9%83%BD%E4%BC%9A%E4%B8%BA%E8%B4%A7%E5%B8%81%E5%8C%96%E5%88%9B%E9%80%A0%E6%96%B0%E7%9A%84%E6%9C%BA%E4%BC%9A%E3%80%82%20%20%E7%99%BE%E5%BA%A6%E7%9A%84%E7%AC%AC%E4%BA%8C%E9%87%8D%E9%87%8E%E5%BF%83%E6%98%AF%EF%BC%8C%E5%80%9F%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%9D%80%E5%85%A5%E9%98%BF%E9%87%8C%E3%80%81%E8%85%BE%E8%AE%AF%E7%9A%84%E8%85%B9%E5%9C%B0%E3%80%82%20%20%E6%AD%A4%E6%AC%A1%E7%99%BE%E5%BA%A6AI%E5%BC%80%E5%8F%91%E8%80%85%E5%A4%A7%E4%BC%9A%E7%9A%84%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%85%B3%E9%94%AE%E4%BF%A1%E6%81%AF%E6%98%AF%EF%BC%8C%E6%9C%89%E8%B5%9E%E5%B0%86%E5%B8%A6%E7%9D%80%E9%9F%A9%E9%83%BD%E8%A1%A3%E8%88%8D%E7%AD%89%E5%A4%9A%E4%B8%AA%E4%BC%81%E4%B8%9A%E5%8A%A0%E5%85%A5%E7%99%BE%E5%BA%A6%E6%99%BA%E8%83%BD%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%8C%E8%BF%99100%E5%A4%9A%E4%B8%AA%E7%9B%B4%E8%90%A5%E7%94%B5%E5%95%86%E5%B0%86%E9%80%9A%E8%BF%87%E6%99%BA%E8%83%BD%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%9C%A8%E7%99%BE%E5%BA%A6%E5%BC%80%E5%BA%97%E2%80%9C%E5%8D%96%E8%B4%A7%E2%80%9D%E3%80%82 HTTP/1.1" 200 547
+119.123.40.60 - - [22/Sep/2019 19:21:36] "GET /demo?textin=2019%E5%B9%B4Q1%E8%B4%A2%E6%8A%A5%E5%8F%91%E5%B8%83%E5%90%8E%EF%BC%8C%E6%9D%8E%E5%BD%A6%E5%AE%8F%E5%9C%A8%E5%86%85%E9%83%A8%E4%BF%A1%E4%B8%AD%E8%A1%A8%E7%A4%BA%EF%BC%9A%20%20%E5%9C%A8%E7%A7%BB%E5%8A%A8%E4%B8%9A%E5%8A%A1%E6%96%B9%E9%9D%A2%EF%BC%8C%E6%88%91%E4%BB%AC%E5%B0%86%E7%BB%A7%E7%BB%AD%E5%8A%A0%E5%BC%BA%E5%92%8C%E6%89%A9%E5%A4%A7%E7%99%BE%E5%BA%A6%E7%9A%84%E4%BA%A7%E5%93%81%E7%9F%A9%E9%98%B5%E4%BC%98%E5%8A%BF%EF%BC%8C%E5%B9%B6%E5%9C%A8%E4%B8%A4%E4%B8%AA%E5%BC%95%E6%93%8E%E9%A9%B1%E5%8A%A8%E7%9A%84%E6%90%9C%E7%B4%A2%E5%92%8C%E4%BF%A1%E6%81%AF%E6%B5%81%E7%9A%84%E5%9F%BA%E7%A1%80%E4%B8%8A%EF%BC%8C%E8%BF%9B%E4%B8%80%E6%AD%A5%E6%8F%90%E5%8D%87%E5%88%B0%E7%94%9F%E6%80%81%E6%80%9D%E7%BB%B4%E3%80%82%E6%88%91%E4%BB%AC%E5%B0%86%E9%80%9A%E8%BF%87%E7%A4%BE%E5%8C%BA%E8%BF%90%E8%90%A5%E3%80%81%E6%B7%B1%E5%BA%A6%E5%9F%B9%E5%85%BB%E5%9E%82%E7%9B%B4%E5%86%85%E5%AE%B9%E5%92%8C%E6%96%B0%E7%9A%84%E4%BA%92%E5%8A%A8%E5%BD%A2%E5%BC%8F%EF%BC%8C%E6%8F%90%E9%AB%98%E7%94%A8%E6%88%B7%E7%9A%84%E6%97%B6%E9%97%B4%E5%92%8C%E7%B2%98%E6%80%A7%E3%80%82%E5%9C%A8%E6%B4%BB%E8%B7%83%E7%9A%84%E7%94%A8%E6%88%B7%E9%87%8F%E5%92%8C%E6%9C%89%E6%95%88%E5%A2%9E%E9%95%BF%E7%9A%84%E5%9F%BA%E7%A1%80%E4%B8%8A%EF%BC%8C%E5%AE%9E%E7%8E%B0%E6%94%B6%E5%85%A5%E7%BB%93%E6%9E%84%E5%A4%9A%E5%85%83%E5%8C%96%EF%BC%8C%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%E5%81%A5%E5%BA%B7%E5%8D%87%E7%BA%A7%E3%80%82%20%20%E5%9C%A8%E7%94%A8%E2%80%9C%E4%BF%A1%E6%81%AF+%E6%9C%8D%E5%8A%A1%E2%80%9D%E7%A7%AF%E7%B4%AF%E8%B5%B7%E5%BA%9E%E5%A4%A7%E7%9A%84%E7%94%A8%E6%88%B7%E4%BD%93%E9%87%8F%E4%B9%8B%E5%90%8E%EF%BC%8C%E5%B0%86%E6%95%B4%E4%B8%AA%E7%94%9F%E6%80%81%E5%9C%88%E2%80%9C%E8%BF%9E%E6%8E%A5%E2%80%9D%E8%B5%B7%E6%9D%A5%EF%BC%8C%E5%9C%A8%E6%94%B6%E5%85%A5%E4%B8%8A%E5%88%9B%E6%96%B0%E6%A8%A1%E5%BC%8F%E3%80%81%E5%A4%9A%E7%82%B9%E5%BC%80%E8%8A%B1%EF%BC%8C%E4%B9%9F%E6%88%90%E4%BA%86%E7%99%BE%E5%BA%A6%E4%B8%8B%E4%B8%80%E9%98%B6%E6%AE%B5%E5%95%86%E4%B8%9A%E5%8C%96%E7%9A%84%E5%85%B3%E9%94%AE%E8%8A%82%E7%82%B9%E6%89%80%E5%9C%A8%E3%80%82%20%20%E9%99%A4%E4%BA%86%E5%8E%9F%E6%9C%89%E5%87%AD%E5%80%9F%E2%80%9C%E6%90%9C%E7%B4%A2%E2%80%9D%E4%B8%9A%E5%8A%A1%E5%B8%A6%E6%9D%A5%E7%9A%84%E5%B9%BF%E5%91%8A%E6%94%B6%E7%9B%8A%EF%BC%8C%E7%99%BE%E5%BA%A6%E4%BE%9D%E6%89%98%E4%BF%A1%E6%81%AF%E6%B5%81%E3%80%81%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%AD%89%E4%B8%9A%E5%8A%A1%E5%B8%A6%E6%9D%A5%E4%BA%86%E6%9B%B4%E5%8A%A0%E4%B8%B0%E5%AF%8C%E7%9A%84%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%E5%92%8C%E6%9C%AA%E6%9D%A5%E4%BB%B7%E5%80%BC%E3%80%82%20%20%E4%BF%A1%E6%81%AF%E6%B5%81%E5%92%8C%E6%99%BA%E8%83%BD%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A6%96%E5%85%88%E5%AF%B9%E7%99%BE%E5%BA%A6%E5%95%86%E4%B8%9A%E5%B9%BF%E5%91%8A%E4%BA%A7%E5%93%81%E6%9D%A5%E8%AF%B4%E6%98%AF%E4%B8%80%E6%AC%A1%E6%9E%81%E5%A4%A7%E7%9A%84%E5%8D%87%E7%BA%A7%E6%9C%BA%E9%81%87%E3%80%82%E4%BF%A1%E6%81%AF%E6%B5%81%E7%9A%84%E5%B9%BF%E5%91%8A%E4%BB%B7%E5%80%BC%E8%87%AA%E7%84%B6%E4%B8%8D%E7%94%A8%E5%A4%9A%E8%A8%80%EF%BC%8C%E5%AE%83%E5%B7%B2%E7%BB%8F%E6%88%90%E4%B8%BA%E6%97%B6%E4%B8%8B%E6%9C%80%E4%B8%BB%E6%B5%81%E7%9A%84%E5%B9%BF%E5%91%8A%E4%BA%A7%E5%93%81%E4%B9%8B%E4%B8%80%E3%80%82%20%202018%E5%B9%B4%E4%B8%AD%E5%9B%BD%E4%BF%A1%E6%81%AF%E6%B5%81%E5%B9%BF%E5%91%8A%E5%B8%82%E5%9C%BA%E6%95%B4%E4%BD%93%E8%A7%84%E6%A8%A1%E5%B7%B2%E7%BB%8F%E8%B6%85%E8%BF%87%E5%8D%83%E4%BA%BF%E3%80%82%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%88%99%E6%98%AF%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%B7%A8%E5%A4%A7%E7%9A%84%E5%A2%9E%E9%87%8F%E5%9B%A0%E7%B4%A0%E3%80%82%E2%80%9C%E8%BF%87%E5%8E%BB%E5%9C%A8%E7%99%BE%E5%BA%A6%E6%8A%95%E6%94%BE%E5%B9%BF%E5%91%8A%E6%9B%B4%E5%A4%9A%E7%9A%84%E8%BF%98%E6%98%AF%E8%8E%B7%E5%8F%96%E6%B5%81%E9%87%8F%EF%BC%8C%E8%80%8C%E6%9C%89%E4%BA%86%E6%99%BA%E8%83%BD%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B9%8B%E5%90%8E%EF%BC%8C%E5%B9%BF%E5%91%8A%E4%B8%BB%E4%B8%8D%E4%BB%85%E5%8F%AF%E4%BB%A5%E8%8E%B7%E5%8F%96%E6%B5%81%E9%87%8F%E8%BF%98%E5%8F%AF%E4%BB%A5%E5%81%9A%E7%94%A8%E6%88%B7%E8%BF%90%E8%90%A5%E3%80%82%E2%80%9D%E4%B8%80%E4%BD%8D%E7%99%BE%E5%BA%A6%E6%99%BA%E8%83%BD%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E8%AE%B2%E5%B8%88%E5%9C%A8%E5%A5%B9%E7%9A%84%E6%BC%94%E8%AE%B2%E4%B8%AD%E8%A1%A8%E7%A4%BA%EF%BC%8C%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%81%B0%E6%81%B0%E6%98%AF%E8%A7%A3%E5%86%B3%E6%97%B6%E4%B8%8B%E6%9C%80%E7%81%AB%E7%83%AD%E7%9A%84%E7%A7%81%E5%9F%9F%E6%B5%81%E9%87%8F%E8%BF%90%E8%90%A5%E7%9A%84%E6%9C%80%E4%BD%B3%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E3%80%82 HTTP/1.1" 200 801
+119.123.40.60 - - [22/Sep/2019 19:23:26] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:23:34] "GET /try? HTTP/1.1" 200 2154
+119.123.40.60 - - [22/Sep/2019 19:23:40] "GET /try? HTTP/1.1" 200 1227
+119.123.40.60 - - [22/Sep/2019 19:23:42] "GET /try? HTTP/1.1" 200 578
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.467 seconds.
+Prefix dict has been built succesfully.
+119.123.40.60 - - [22/Sep/2019 19:23:44] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:23:47] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:23:48] "GET /try? HTTP/1.1" 200 1199
+119.123.40.60 - - [22/Sep/2019 19:23:55] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:23:56] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:23:58] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:24:00] "GET /try? HTTP/1.1" 200 659
+119.123.40.60 - - [22/Sep/2019 19:24:02] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:24:03] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:24:05] "GET /try? HTTP/1.1" 200 1826
+119.123.40.60 - - [22/Sep/2019 19:24:07] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:24:07] "GET /try? HTTP/1.1" 200 647
+119.123.40.60 - - [22/Sep/2019 19:24:09] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:24:11] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:24:11] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:24:12] "GET /try? HTTP/1.1" 200 2174
+119.123.40.60 - - [22/Sep/2019 19:24:23] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:24:24] "GET /try? HTTP/1.1" 200 968
+119.123.40.60 - - [22/Sep/2019 19:24:25] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:24:29] "GET /try? HTTP/1.1" 200 633
+119.123.40.60 - - [22/Sep/2019 19:24:43] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:25:18] "GET /try? HTTP/1.1" 200 678
+119.123.40.60 - - [22/Sep/2019 19:25:21] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:25:22] "GET /try? HTTP/1.1" 200 646
+119.123.40.60 - - [22/Sep/2019 19:25:25] "GET /try? HTTP/1.1" 200 643
+119.123.40.60 - - [22/Sep/2019 19:25:26] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:25:27] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:25:28] "GET /try? HTTP/1.1" 200 2026
+119.123.40.60 - - [22/Sep/2019 19:25:29] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:25:30] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:25:31] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:25:32] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:25:33] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:25:33] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:25:35] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:25:36] "GET /try? HTTP/1.1" 200 2987
+119.123.40.60 - - [22/Sep/2019 19:25:37] "GET /try? HTTP/1.1" 200 4429
+119.123.40.60 - - [22/Sep/2019 19:26:41] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:26:43] "GET /try? HTTP/1.1" 200 3027
+119.123.40.60 - - [22/Sep/2019 19:26:44] "GET /try? HTTP/1.1" 200 721
+119.123.40.60 - - [22/Sep/2019 19:26:45] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:26:46] "GET /try? HTTP/1.1" 200 1311
+119.123.40.60 - - [22/Sep/2019 19:26:48] "GET /try? HTTP/1.1" 200 614
+119.123.40.60 - - [22/Sep/2019 19:26:48] "GET /try? HTTP/1.1" 200 914
+119.123.40.60 - - [22/Sep/2019 19:26:49] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:26:51] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:26:52] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:27:39] "GET /try? HTTP/1.1" 200 664
+119.123.40.60 - - [22/Sep/2019 19:27:50] "GET /demo?textin=%E8%87%B3%E4%BA%8E%E8%81%8C%E5%9C%BA%E6%96%B0%E4%BA%BA%EF%BC%8C%E9%82%A3%E5%B0%B1%E4%B8%8D%E8%A6%81%E6%83%B3%E4%BA%86%E3%80%82%E4%BB%A5%E4%BD%A0%E5%88%9A%E5%88%9A%E6%AF%95%E4%B8%9A%E7%9A%84%E8%83%BD%E5%8A%9B%EF%BC%8C%E5%9C%A8%E5%88%9D%E5%88%9B%E4%BC%81%E4%B8%9A%E4%B9%9F%E6%8B%BF%E4%B8%8D%E5%88%B0%E5%A5%BD%E7%9A%84%E6%9C%9F%E6%9D%83%E6%BF%80%E5%8A%B1%EF%BC%8C%E6%88%90%E9%95%BF%E6%80%A7%E8%82%AF%E5%AE%9A%E8%BF%9C%E4%B8%8D%E5%A6%82%E7%9F%A5%E5%90%8D%E5%A4%96%E4%BC%81%E6%9B%B4%E5%A5%BD%E3%80%82 HTTP/1.1" 200 401
+119.123.40.60 - - [22/Sep/2019 19:28:03] "GET /demo?textin=%E4%BB%8E%E8%81%8C%E5%9C%BA%E4%BA%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E8%AF%B4%EF%BC%8C%E6%88%91%E5%BE%88%E5%B8%8C%E6%9C%9B%E5%A4%96%E4%BC%81%E8%83%BD%E5%A4%9F%E6%81%A2%E5%A4%8D%E8%87%B3%E5%B0%91%E9%83%A8%E5%88%86%E5%BE%80%E6%97%A5%E7%9A%84%E5%85%89%E8%BE%89%EF%BC%8C%E6%AF%95%E7%AB%9F%E5%A6%82%E4%BD%95%E5%BE%88%E5%A4%9A%E4%BA%92%E8%81%94%E7%BD%91%E5%88%9D%E5%88%9B%E5%85%AC%E5%8F%B8%EF%BC%8C%E5%A4%AA%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B9%A0%E5%A4%96%E4%BC%81%E7%B2%BE%E7%BB%86%E5%8C%96%E8%BF%90%E8%90%A5%E5%92%8C%E4%BA%BA%E6%80%A7%E5%8C%96%E7%AE%A1%E7%90%86%E7%9A%84%E8%83%BD%E5%8A%9B%E3%80%82 HTTP/1.1" 200 401
+119.123.40.60 - - [22/Sep/2019 19:28:30] "GET /demo?textin=%E4%BB%8E%E8%81%8C%E5%9C%BA%E4%BA%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E8%AF%B4%EF%BC%8C%E6%88%91%E5%BE%88%E5%B8%8C%E6%9C%9B%E5%A4%96%E4%BC%81%E8%83%BD%E5%A4%9F%E6%81%A2%E5%A4%8D%E8%87%B3%E5%B0%91%E9%83%A8%E5%88%86%E5%BE%80%E6%97%A5%E7%9A%84%E5%85%89%E8%BE%89%EF%BC%8C%E6%AF%95%E7%AB%9F%E5%A6%82%E4%BD%95%E5%BE%88%E5%A4%9A%E4%BA%92%E8%81%94%E7%BD%91%E5%88%9D%E5%88%9B%E5%85%AC%E5%8F%B8%EF%BC%8C%E5%A4%AA%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B9%A0%E5%A4%96%E4%BC%81%E7%B2%BE%E7%BB%86%E5%8C%96%E8%BF%90%E8%90%A5%E5%92%8C%E4%BA%BA%E6%80%A7%E5%8C%96%E7%AE%A1%E7%90%86%E7%9A%84%E8%83%BD%E5%8A%9B%E3%80%82 HTTP/1.1" 200 401
+119.123.40.60 - - [22/Sep/2019 19:28:31] "GET /try? HTTP/1.1" 200 397
+119.123.40.60 - - [22/Sep/2019 19:28:57] "GET /demo?textin=%E4%BB%8E%E8%81%8C%E5%9C%BA%E4%BA%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E8%AF%B4%EF%BC%8C%E6%88%91%E5%BE%88%E5%B8%8C%E6%9C%9B%E5%A4%96%E4%BC%81%E8%83%BD%E5%A4%9F%E6%81%A2%E5%A4%8D%E8%87%B3%E5%B0%91%E9%83%A8%E5%88%86%E5%BE%80%E6%97%A5%E7%9A%84%E5%85%89%E8%BE%89%EF%BC%8C%E6%AF%95%E7%AB%9F%E5%A6%82%E4%BD%95%E5%BE%88%E5%A4%9A%E4%BA%92%E8%81%94%E7%BD%91%E5%88%9D%E5%88%9B%E5%85%AC%E5%8F%B8%EF%BC%8C%E5%A4%AA%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B9%A0%E5%A4%96%E4%BC%81%E7%B2%BE%E7%BB%86%E5%8C%96%E8%BF%90%E8%90%A5%E5%92%8C%E4%BA%BA%E6%80%A7%E5%8C%96%E7%AE%A1%E7%90%86%E7%9A%84%E8%83%BD%E5%8A%9B%E3%80%82 HTTP/1.1" 200 401
+119.123.40.60 - - [22/Sep/2019 19:28:59] "GET /demo?textin=%E4%BB%8E%E8%81%8C%E5%9C%BA%E4%BA%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E8%AF%B4%EF%BC%8C%E6%88%91%E5%BE%88%E5%B8%8C%E6%9C%9B%E5%A4%96%E4%BC%81%E8%83%BD%E5%A4%9F%E6%81%A2%E5%A4%8D%E8%87%B3%E5%B0%91%E9%83%A8%E5%88%86%E5%BE%80%E6%97%A5%E7%9A%84%E5%85%89%E8%BE%89%EF%BC%8C%E6%AF%95%E7%AB%9F%E5%A6%82%E4%BD%95%E5%BE%88%E5%A4%9A%E4%BA%92%E8%81%94%E7%BD%91%E5%88%9D%E5%88%9B%E5%85%AC%E5%8F%B8%EF%BC%8C%E5%A4%AA%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B9%A0%E5%A4%96%E4%BC%81%E7%B2%BE%E7%BB%86%E5%8C%96%E8%BF%90%E8%90%A5%E5%92%8C%E4%BA%BA%E6%80%A7%E5%8C%96%E7%AE%A1%E7%90%86%E7%9A%84%E8%83%BD%E5%8A%9B%E3%80%82 HTTP/1.1" 200 401
+119.123.40.60 - - [22/Sep/2019 19:29:00] "GET /demo?textin=%E4%BB%8E%E8%81%8C%E5%9C%BA%E4%BA%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E8%AF%B4%EF%BC%8C%E6%88%91%E5%BE%88%E5%B8%8C%E6%9C%9B%E5%A4%96%E4%BC%81%E8%83%BD%E5%A4%9F%E6%81%A2%E5%A4%8D%E8%87%B3%E5%B0%91%E9%83%A8%E5%88%86%E5%BE%80%E6%97%A5%E7%9A%84%E5%85%89%E8%BE%89%EF%BC%8C%E6%AF%95%E7%AB%9F%E5%A6%82%E4%BD%95%E5%BE%88%E5%A4%9A%E4%BA%92%E8%81%94%E7%BD%91%E5%88%9D%E5%88%9B%E5%85%AC%E5%8F%B8%EF%BC%8C%E5%A4%AA%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B9%A0%E5%A4%96%E4%BC%81%E7%B2%BE%E7%BB%86%E5%8C%96%E8%BF%90%E8%90%A5%E5%92%8C%E4%BA%BA%E6%80%A7%E5%8C%96%E7%AE%A1%E7%90%86%E7%9A%84%E8%83%BD%E5%8A%9B%E3%80%82 HTTP/1.1" 200 401
+119.123.40.60 - - [22/Sep/2019 19:29:01] "GET /demo?textin=%E4%BB%8E%E8%81%8C%E5%9C%BA%E4%BA%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E8%AF%B4%EF%BC%8C%E6%88%91%E5%BE%88%E5%B8%8C%E6%9C%9B%E5%A4%96%E4%BC%81%E8%83%BD%E5%A4%9F%E6%81%A2%E5%A4%8D%E8%87%B3%E5%B0%91%E9%83%A8%E5%88%86%E5%BE%80%E6%97%A5%E7%9A%84%E5%85%89%E8%BE%89%EF%BC%8C%E6%AF%95%E7%AB%9F%E5%A6%82%E4%BD%95%E5%BE%88%E5%A4%9A%E4%BA%92%E8%81%94%E7%BD%91%E5%88%9D%E5%88%9B%E5%85%AC%E5%8F%B8%EF%BC%8C%E5%A4%AA%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B9%A0%E5%A4%96%E4%BC%81%E7%B2%BE%E7%BB%86%E5%8C%96%E8%BF%90%E8%90%A5%E5%92%8C%E4%BA%BA%E6%80%A7%E5%8C%96%E7%AE%A1%E7%90%86%E7%9A%84%E8%83%BD%E5%8A%9B%E3%80%82 HTTP/1.1" 200 401
+119.123.40.60 - - [22/Sep/2019 19:29:01] "GET /demo?textin=%E4%BB%8E%E8%81%8C%E5%9C%BA%E4%BA%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E8%AF%B4%EF%BC%8C%E6%88%91%E5%BE%88%E5%B8%8C%E6%9C%9B%E5%A4%96%E4%BC%81%E8%83%BD%E5%A4%9F%E6%81%A2%E5%A4%8D%E8%87%B3%E5%B0%91%E9%83%A8%E5%88%86%E5%BE%80%E6%97%A5%E7%9A%84%E5%85%89%E8%BE%89%EF%BC%8C%E6%AF%95%E7%AB%9F%E5%A6%82%E4%BD%95%E5%BE%88%E5%A4%9A%E4%BA%92%E8%81%94%E7%BD%91%E5%88%9D%E5%88%9B%E5%85%AC%E5%8F%B8%EF%BC%8C%E5%A4%AA%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B9%A0%E5%A4%96%E4%BC%81%E7%B2%BE%E7%BB%86%E5%8C%96%E8%BF%90%E8%90%A5%E5%92%8C%E4%BA%BA%E6%80%A7%E5%8C%96%E7%AE%A1%E7%90%86%E7%9A%84%E8%83%BD%E5%8A%9B%E3%80%82 HTTP/1.1" 200 401
+Bottle v0.12.17 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8229/
+Hit Ctrl-C to quit.
+
+119.123.40.60 - - [22/Sep/2019 19:33:52] "GET /demo?textin=%E4%BB%8E%E8%81%8C%E5%9C%BA%E4%BA%BA%E7%9A%84%E8%A7%92%E5%BA%A6%E8%AF%B4%EF%BC%8C%E6%88%91%E5%BE%88%E5%B8%8C%E6%9C%9B%E5%A4%96%E4%BC%81%E8%83%BD%E5%A4%9F%E6%81%A2%E5%A4%8D%E8%87%B3%E5%B0%91%E9%83%A8%E5%88%86%E5%BE%80%E6%97%A5%E7%9A%84%E5%85%89%E8%BE%89%EF%BC%8C%E6%AF%95%E7%AB%9F%E5%A6%82%E4%BD%95%E5%BE%88%E5%A4%9A%E4%BA%92%E8%81%94%E7%BD%91%E5%88%9D%E5%88%9B%E5%85%AC%E5%8F%B8%EF%BC%8C%E5%A4%AA%E9%9C%80%E8%A6%81%E5%AD%A6%E4%B9%A0%E5%A4%96%E4%BC%81%E7%B2%BE%E7%BB%86%E5%8C%96%E8%BF%90%E8%90%A5%E5%92%8C%E4%BA%BA%E6%80%A7%E5%8C%96%E7%AE%A1%E7%90%86%E7%9A%84%E8%83%BD%E5%8A%9B%E3%80%82 HTTP/1.1" 200 346
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.193 seconds.
+Prefix dict has been built succesfully.
+Bottle v0.12.17 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8229/
+Hit Ctrl-C to quit.
+
+119.123.40.60 - - [22/Sep/2019 20:18:23] "GET /download/what_he_said.crx HTTP/1.1" 200 4833
+119.123.40.60 - - [22/Sep/2019 20:18:25] "GET /download/what_he_said.crx HTTP/1.1" 304 0
+119.123.40.60 - - [22/Sep/2019 20:18:36] "GET / HTTP/1.1" 304 0
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.900 seconds.
+Prefix dict has been built succesfully.
